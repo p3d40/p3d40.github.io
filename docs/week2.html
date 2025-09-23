@@ -367,7 +367,8 @@ ul.task-list li input[type="checkbox"] {
   <li><a href="#assignments" id="toc-assignments" class="nav-link" data-scroll-target="#assignments"><span class="header-section-number">3.1.2</span> Assignments</a></li>
   <li><a href="#community-guidelines" id="toc-community-guidelines" class="nav-link" data-scroll-target="#community-guidelines"><span class="header-section-number">3.1.3</span> Community guidelines</a></li>
   </ul></li>
-  <li><a href="#copyright-and-intellectual-property" id="toc-copyright-and-intellectual-property" class="nav-link" data-scroll-target="#copyright-and-intellectual-property"><span class="header-section-number">3.2</span> Copyright and intellectual property</a></li>
+  <li><a href="#an-example-of-ai-guidelines-for-a-course" id="toc-an-example-of-ai-guidelines-for-a-course" class="nav-link" data-scroll-target="#an-example-of-ai-guidelines-for-a-course"><span class="header-section-number">3.2</span> An example of AI Guidelines for a course</a></li>
+  <li><a href="#copyright-and-intellectual-property" id="toc-copyright-and-intellectual-property" class="nav-link" data-scroll-target="#copyright-and-intellectual-property"><span class="header-section-number">3.3</span> Copyright and intellectual property</a></li>
   </ul>
 </nav>
     </div>
@@ -472,8 +473,37 @@ ul.task-list li input[type="checkbox"] {
 <p>Each course is different. Not only due to the subject matter, but also due to everyone’s background and values. Promoting discussions regarding academic integrity considerations can also be a good team-building exercise in courses. Even more, sharing the rationale behind why advocating or discouraging certain practices can also get buy-in for both instructors and students.</p>
 </section>
 </section>
-<section id="copyright-and-intellectual-property" class="level2" data-number="3.2">
-<h2 data-number="3.2" class="anchored" data-anchor-id="copyright-and-intellectual-property"><span class="header-section-number">3.2</span> Copyright and intellectual property</h2>
+<section id="an-example-of-ai-guidelines-for-a-course" class="level2" data-number="3.2">
+<h2 data-number="3.2" class="anchored" data-anchor-id="an-example-of-ai-guidelines-for-a-course"><span class="header-section-number">3.2</span> An example of AI Guidelines for a course</h2>
+<p>This is an AI Guideline resource that I share with my students in class. I include this as a separate resource for class (on our Learning Management System) as a complement to my AI policy described in the syllabus.</p>
+<hr>
+<p>Artificial Intelligence - specifically Large Language Models- have become more popular in recent time. These can useful or hinder your experience in class depending on the possible usage.&nbsp;</p>
+<p><strong>Expected</strong></p>
+<p>Usage of LLMs is not required but could be useful depending on particular tasks or situations.&nbsp;</p>
+<ul>
+<li>Citation: cite every time you use an LLM.</li>
+<li>Translation: you can use it to translate statements or questions to other languages (if English is not your first language) or to rephrase to simplify the language. Search: sometimes searching for references or concepts could be enhanced by using LLMs. As usual, be careful with hallucinations. Check for the actual references and sources.</li>
+<li>Feedback: you can use LLMs to ask for feedback on your proofs and typesetting.&nbsp;</li>
+</ul>
+<p><strong>Not Expected</strong></p>
+<ul>
+<li>Do not&nbsp;generate proofs using LLMs.</li>
+<li>Do not copy-paste outputs of LLMs.</li>
+<li>Do not solve problems using LLMs.</li>
+</ul>
+<p><strong>Useful prompts</strong></p>
+<ul>
+<li><p><code>i am a student in a introduction to mathematical proofs course at ucsc...</code></p></li>
+<li><p><code>rephrase the following statement</code></p></li>
+<li><p><code>check my language for consistency and clarity and give me feedback</code></p></li>
+<li><p><code>help me understand this LaTex error</code></p></li>
+</ul>
+<p><strong>General considerations</strong></p>
+<p>LLMs are mathematical models that generate words (tokens) based on the prior words (tokens) given to it. These are trained by performing regression (gradient decent on a particular loss function). These usually happen on high-dimensional spaces (about a trillion dimensions). As such, achievement of absolute minima is not expected. Usually the regression only achieves a neighborhood of a minimum (with a particular threshold). Therefore, LLMs have a high level of non-deterministic elements.</p>
+<p>Training data often considers Big Data (in the order of all public internet information). As such, this requires a huge amount of computing. The latest models usually require a few months of processing in data centers that amount to the electricity usage of a small US city for an entire year.&nbsp;*</p>
+</section>
+<section id="copyright-and-intellectual-property" class="level2" data-number="3.3">
+<h2 data-number="3.3" class="anchored" data-anchor-id="copyright-and-intellectual-property"><span class="header-section-number">3.3</span> Copyright and intellectual property</h2>
 <p>LLMs have been at the center of intense debate around intellectual property. Both from the legal perspective involving companies training data, to the ownership of the outputs of these models, copyright is and will probably be a contentious topic that will follow LLMs for some time.</p>
 <p>In the case of college courses, copyright becomes a consideration for students and instructors alike. Is it the student’s work if they prompted an LLM to write an essay? Is it the instructor’s work if they prompted the LLM to generate a slide deck based on their class notes?</p>
 <p>As many legal scholar would reply: <em>it depends</em>. An important point with copyright has to do with <strong>creativity</strong> and <strong>novelty</strong>.</p>
