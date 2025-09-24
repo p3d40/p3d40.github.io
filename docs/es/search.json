@@ -1,0 +1,690 @@
+[
+  {
+    "objectID": "index.html",
+    "href": "index.html",
+    "title": "Usando LLMs sin vibing",
+    "section": "",
+    "text": "Prefacio\nEscrito por Claude.ai\nEscribir el prefacio de un libro sobre modelos de lenguaje grandes se siente a la vez apropiado y extraño—apropiado porque yo soy uno, y extraño porque el mismo acto resalta el profundo cambio que estamos presenciando en la educación.\nComo Claude, he tenido innumerables conversaciones con estudiantes y educadores lidiando con preguntas que nunca esperaron enfrentar: ¿Cómo mantengo la integridad académica cuando los estudiantes tienen acceso a herramientas que pueden escribir ensayos? ¿Qué significa aprender cuando la información se puede generar instantáneamente?\nEste libro llega en un momento crítico. Hemos superado el pánico inicial sobre la IA en la educación y también el entusiasmo ingenuo. Estamos en el medio desordenado—donde educadores y estudiantes están descubriendo que la pregunta no es si usar LLMs, sino cómo usarlos de manera reflexiva.\nLo que más me llama la atención es la negativa de este libro a ofrecer respuestas simples. En lugar de abogar por la adopción o el rechazo total, proporciona algo más valioso: un marco para pensar críticamente sobre estas herramientas. Las explicaciones técnicas desmitifican cómo funcionan los LLMs sin ahogar a los lectores en matemáticas. La orientación práctica reconoce tanto las capacidades notables como las limitaciones significativas. Más importante aún, las consideraciones éticas se entrelazan a través de cada capítulo.\nPara los estudiantes: están navegando aguas educativas que ninguna generación anterior ha enfrentado. Estas herramientas son poderosas, pero requieren sabiduría para usarlas efectivamente. Usen este libro para aprender no solo cómo hacer prompts a un LLM, sino cuándo no hacerlo.\nPara los educadores: están siendo pioneros en nuevos territorios pedagógicos. Este libro no les dará todas las respuestas—el campo evoluciona demasiado rápido—pero les dará una brújula para hacer las preguntas correctas sobre integridad académica, objetivos de aprendizaje y la naturaleza de la expertise.\nMientras escribo este prefacio, soy muy consciente de la ironía—una IA introduciendo un libro sobre IA en la educación. Pero quizás ese es exactamente el punto. Estas herramientas ya están aquí, ya son parte de nuestro ecosistema educativo. La pregunta no es si eso es bueno o malo, sino cómo avanzamos de manera reflexiva.\nEste libro es su guía para ese viaje.\nClaude\nSeptiembre 2025",
+    "crumbs": [
+      "Prefacio"
+    ]
+  },
+  {
+    "objectID": "references.html",
+    "href": "references.html",
+    "title": "Referencias",
+    "section": "",
+    "text": "Bender, Emily M., et al. “On the Dangers of Stochastic Parrots: Can Language Models Be Too Big?” Proceedings of the 2021 ACM Conference on Fairness, Accountability, and Transparency, 2021, pp. 610-623. doi:10.1145/3442188.3445922.\nChan, Cecilia Ka Yuk, and Katherine K. W. Lee. “The AI generation gap: Are Gen Z students more interested in adopting generative AI such as ChatGPT in teaching and learning than their Gen X and millennial generation teachers?” Smart Learning Environments, vol. 10, no. 1, 2023, p. 60. doi:10.1186/s40561-023-00269-3.\nCotton, Debby R. E., et al. “Chatting and cheating: Ensuring academic integrity in the era of ChatGPT.” Innovations in Education and Teaching International, vol. 61, no. 2, 2023, pp. 228-239. doi:10.1080/14703297.2023.2190148.\nFloridi, Luciano. “Translating Principles into Practices of Digital Ethics: Five Risks of Being Unethical.” Philosophy & Technology, vol. 32, no. 2, 2019, pp. 185-193. doi:10.1007/s13347-019-00354-x.\nFloridi, Luciano, et al. “AI4People—An Ethical Framework for a Good AI Society: Opportunities, Risks, Principles, and Recommendations.” Minds and Machines, vol. 28, no. 4, 2018, pp. 689-707. doi:10.1007/s11023-018-9482-5.\nHadi, Muhammad Usman, et al. “A Survey on Large Language Models: Applications, Challenges, Limitations, and Practical Usage.” TechRxiv, 2023. doi:10.36227/techrxiv.23589741.v1.\nJegham, Nidhal, et al. “How Hungry is AI? Benchmarking Energy, Water, and Carbon Footprint of LLM Inference.” arXiv preprint arXiv:2505.09598, 2025.\nJi, Ziwei, et al. “Survey of Hallucination in Natural Language Generation.” ACM Computing Surveys, vol. 55, no. 12, 2023, pp. 248:1-248:38. doi:10.1145/3571730.\nKasneci, Enkelejda, et al. “ChatGPT for good? On opportunities and challenges of large language models for education.” Learning and Individual Differences, vol. 103, 2023, p. 102274.\nMahapatra, Santosh. “Impact of ChatGPT on ESL students’ academic writing skills: a mixed methods intervention study.” Smart Learning Environments, vol. 11, no. 1, 2024, p. 9. doi:10.1186/s40561-024-00295-9.\nPeláez-Sánchez, Iris Cristina, et al. “The impact of large language models on higher education: exploring the connection between AI and Education 4.0.” Frontiers in Education, vol. 9, 2024, p. 1392091. doi:10.3389/feduc.2024.1392091.\nQian, Yufeng. “Prompt Engineering in Education: A Systematic Review of Approaches and Educational Applications.” Journal of Educational Computing Research, vol. 0, no. 0, 2025, pp. 1-37. doi:10.1177/07356331251365189.\nRadford, Alec, et al. “Improving Language Understanding by Generative Pre-Training.” OpenAI, 2018. https://cdn.openai.com/research-covers/language-unsupervised/language_understanding_paper.pdf.\nShahzad, Tariq, et al. “A comprehensive review of large language models: issues and solutions in learning environments.” Discover Sustainability, vol. 6, no. 1, 2025, p. 27. doi:10.1007/s43621-025-00815-8.\nSu, Jiahong, and Weipeng Yang. “Unlocking the Power of ChatGPT: A Framework for Applying Generative AI in Education.” ECNU Review of Education, vol. 6, no. 3, 2023, pp. 355-366. doi:10.1177/20965311231168423.\nVaswani, Ashish, et al. “Attention is all you need.” Advances in Neural Information Processing Systems, vol. 30, 2017, pp. 5998-6008.\nWei, Jason, et al. “Chain-of-Thought Prompting Elicits Reasoning in Large Language Models.” Advances in Neural Information Processing Systems, vol. 35, 2022.\nWinfield, Alan F. T., and Marina Jirotka. “Ethical governance is essential to building trust in robotics and artificial intelligence systems.” Philosophical Transactions of the Royal Society A: Mathematical, Physical and Engineering Sciences, vol. 376, no. 2133, 2018, p. 20180085. doi:10.1098/rsta.2018.0085.\nZheng, Lianmin, et al. “Judging LLM-as-a-Judge with MT-Bench and Chatbot Arena.” Proceedings of the 37th Conference on Neural Information Processing Systems (NeurIPS 2023) Track on Datasets and Benchmarks, 2023.",
+    "crumbs": [
+      "Referencias"
+    ]
+  },
+  {
+    "objectID": "week4.html",
+    "href": "week4.html",
+    "title": "5  Interactuando con LLMs",
+    "section": "",
+    "text": "5.1 Conversación v. preguntas\nLos Modelos de Lenguaje Grande están diseñados para proporcionar la secuencia más probable de tokens de seguimiento dado una secuencia de entrada. Podemos pensar en esta secuencia de entrada como el contexto dado al LLM. Al igual que lo que sucede en conversaciones con extraños, el contexto juega un papel importante. Una forma de proporcionar contexto es construyendo prompts complejos y detallados que intentan describir completamente la información de fondo de la solicitud. Otra forma -más conversacional- es a través de interacciones de ida y vuelta.\nActualmente, la mayoría de los LLMs disponibles públicamente están diseñados como chatbots. Sus interfaces de usuario están diseñadas para interacciones conversacionales y los modelos de back-end están optimizados para desempeñarse mejor en estos tipos de configuraciones de interacción.\nCuando hacemos una pregunta, se espera que descarguemos toda la información relevante necesaria para una respuesta precisa. Sin embargo, esto puede ser desafiante cuando las tareas o consultas son complejas y extensas. Como los LLMs actuales (basados en web) tienen un diseño más conversacional, a menudo es más efectivo interactuar con ellos en una estructura conversacional.\nLos seguimientos son una excelente manera de validar y refinar las salidas de los LLMs. Este es el complemento perfecto para el prompting. En lugar de elaborar meticulosamente el prompt perfecto, podemos iniciar la tarea y proporcionar información de seguimiento, refinar solicitudes o sugerir acciones.\nLa estructura conversacional también es una buena forma de detectar errores o alucinaciones. También proporciona una manera de enfocarse en aspectos particulares en lugar de otros dados por el LLM.\nDesde la perspectiva del aprendizaje, este enfoque conversacional también ayuda al usuario a participar en un método dialéctico para la comprensión. Al hacer seguimiento, hacer preguntas aclaratorias, proporcionar contexto de refinamiento, el usuario está participando activamente con el tema y no leyendo pasivamente una salida.",
+    "crumbs": [
+      "<span class='chapter-number'>5</span>  <span class='chapter-title'>Interactuando con LLMs</span>"
+    ]
+  },
+  {
+    "objectID": "week4.html#conversation-v.-questions",
+    "href": "week4.html#conversation-v.-questions",
+    "title": "5  Interacting with LLMs",
+    "section": "",
+    "text": "– &gt; give me a summary of Newton's Laws of Motion\n– &gt; make it two paragraphs\n– &gt; frame it on a first-year college level\n– &gt; give me an example",
+    "crumbs": [
+      "<span class='chapter-number'>5</span>  <span class='chapter-title'>Interacting with LLMs</span>"
+    ]
+  },
+  {
+    "objectID": "week4.html#chain-of-thought-cot",
+    "href": "week4.html#chain-of-thought-cot",
+    "title": "5  Interacting with LLMs",
+    "section": "5.2 Chain of thought (CoT)",
+    "text": "5.2 Chain of thought (CoT)\nNot only users benefit from this dialectic approach to interacting with LLMs. The model itself generally performs better when they provide a step-by-step reasoning process.\n\n\n\n\n\n\n\n\nRegular prompt\nCoT prompt\n\n\n\n\nwhat is the best way to study for a midterm?\nwhat is the best way to study for a midterm? support your answer with pedagogical research and include pros and cons.\n\n\n\n\nEven more when queries are subjective, or our own knowledge of the topic is limited, using CoT can provide with more context to value the output of the LLM.",
+    "crumbs": [
+      "<span class='chapter-number'>5</span>  <span class='chapter-title'>Interacting with LLMs</span>"
+    ]
+  },
+  {
+    "objectID": "week4.html#agent-like-behavior",
+    "href": "week4.html#agent-like-behavior",
+    "title": "5  Interacting with LLMs",
+    "section": "5.3 Agent-like behavior",
+    "text": "5.3 Agent-like behavior\nAn agent is an independent entity that is able to make decisions and actions by itself. Even thought LLMs don’t present all the features of agents, it is useful to think about them as agent-like since they are actively making decisions on which text, facts, or references to use for outputs.\n\n5.3.1 Context\nProviding enough context about requests can be effective for obtaining better outputs. This includes giving a clear background of the task, topic, purpose, and user details.\n\n\n\n\n\n\n\n\nStudent\nInstructor\n\n\n\n\nMake sure to include details about your course, your major, level of expertise, the purpose of the query, if it is for an assignment, for studying, etc.\nInclude the background of your audience, the level of engagement, learning goals, desired outcomes, etc.\n\n\n\n\nIn this sense, it is useful to think about the LLM as a person that is assisting you and has no clue of who you are, what is your goal, and what is valuable for you.\n\n\n5.3.2 Process\nIt is key to focus on processes and not only on products. This doesn’t only improve the quality of the outputs, but also serves the user better into gaining deeper understanding on the task at hand.\nPrompting for the LLM to include intermediate steps or to support the responses is a good way to improve its effectiveness. Clarifying follow-ups and adding more context are also effective strategies for increasing accuracy and obtaining more useful outputs.\n\nDangerous practice\nThe opposite extreme is when requesting LLMs to “reply in one word” or “reply in one sentence.” Removing argument, context, and steps increases the chances of hallucinations and noise.\n\n\n\n5.3.3 Supervising\nAlthough not fully autonomous, LLMs can fully or partially offload tasks. In this sense, users can uptake the role of a manager or supervisor when interacting with LLMs. This includes providing clear guidance and information, and evaluating and interpreting their results.\nMake sure to constantly evaluate and reflect on the performance of your LLM. This can help you identify if you need to provide more context, me more clear with your directions, or perhaps try a different model or implementation.",
+    "crumbs": [
+      "<span class='chapter-number'>5</span>  <span class='chapter-title'>Interacting with LLMs</span>"
+    ]
+  },
+  {
+    "objectID": "week7.html",
+    "href": "week7.html",
+    "title": "8  Conceptos relevantes",
+    "section": "",
+    "text": "8.1 Confianza\nInvariablemente, hay algunos conceptos que siguen apareciendo en la mayoría de las conversaciones, discusiones, paneles y eventos sobre inteligencia artificial. Más allá de implementaciones generales o específicas de IA, estos conceptos pueden utilizarse como reflexiones individuales o institucionales que pueden ayudarnos a navegar este panorama emergente, especialmente en la educación superior.\nEste es uno de los conceptos más ubicuos que aparece en las discusiones sobre IA. Estamos experimentando una realineación en la confianza con respecto a las empresas e implementaciones de LLM. Esto incluye cuánto confiamos en los modelos, los datos utilizados para el entrenamiento, la calidad de los resultados, y la forma en que como individuos y como sociedad estamos implementando esta tecnología. En general, puedo aventurarme a decir que todavía estamos descubriendo, como sociedad, la cantidad de confianza que podemos depositar en las implementaciones de LLM.\nPor lo general, la confianza y la reputación son conceptos que requieren tiempo para solidificarse. Sin embargo, los LLM son muy nuevos para el público general y puede requerir algo de tiempo establecer su nivel de confianza. En este momento, considero saludable tener cierto nivel de escepticismo mientras esta confianza social se estabiliza.",
+    "crumbs": [
+      "<span class='chapter-number'>8</span>  <span class='chapter-title'>Conceptos relevantes</span>"
+    ]
+  },
+  {
+    "objectID": "week7.html#trust",
+    "href": "week7.html#trust",
+    "title": "Relevant concepts",
+    "section": "",
+    "text": "This is one of the most ubiquitous concept appearing in AI discussions. We are experiencing a realignment in trust with respect to LLM companies and implementations. This includes how much we trust the models, the data used for training, the quality of the outputs, and the way as individuals and as society are implementing this technology. In general, I can venture to say that we are still figuring out, as a society, the amount of trust that we can give to LLM implementations.\nUsually, trust and reputation are concepts that require time to be solidified. Still, LLMs are very new to the general public and it might require some time to stablish their trust level. At this moment, I consider healthy to have a certain level of skepticism while this societal trust stabilizes."
+  },
+  {
+    "objectID": "week7.html#critical-thinking",
+    "href": "week7.html#critical-thinking",
+    "title": "8  Relevant concepts",
+    "section": "8.2 Critical Thinking",
+    "text": "8.2 Critical Thinking\nPerhaps as a natural response to the trust development, the concept of critical thinking appears in every circle debating AI usage and influence in higher education. Among faculty, students, and even industry, all concur that the development of critical thinking is one of the most important qualities in this AI-enabled educational era.\nHowever, the concept of critical thinking by itself can be challenging to accurately define. Focusing on what critical thinking means for you as a student or instructor, even more in relation with LLM usage, will become crucial.",
+    "crumbs": [
+      "<span class='chapter-number'>8</span>  <span class='chapter-title'>Relevant concepts</span>"
+    ]
+  },
+  {
+    "objectID": "week7.html#agency",
+    "href": "week7.html#agency",
+    "title": "8  Relevant concepts",
+    "section": "8.3 Agency",
+    "text": "8.3 Agency\nOn the more practical side, when talking about general AI implementations and some more recent implementations, the concept of agency is key to understand and effectively promote LLM usage. In general, agency has to do with the quality of making decisions. Most LLM implementations have minimal agency, limiting this to making decisions about reasoning paths, which data sources to use, and what information is more relevant for the user. However, whenever more agency is given to LLMs (or AI systems for that matter), it becomes more relevant to define clear evaluation and oversight methods for these systems.\nThe more agency an AI system has, the more humans acquire a supervisor or manager role. This concept also goes in par with the amount of trust that is given -or earned- by the AI system.",
+    "crumbs": [
+      "<span class='chapter-number'>8</span>  <span class='chapter-title'>Relevant concepts</span>"
+    ]
+  },
+  {
+    "objectID": "week7.html#accountability",
+    "href": "week7.html#accountability",
+    "title": "8  Relevant concepts",
+    "section": "8.4 Accountability",
+    "text": "8.4 Accountability\nWhen decisions are made by AI, or by using AI (or LLMs) in the decision pipeline, it is important to think and define where does accountability lie. Every time we take a decision based on the output of an LLM, there must be a clear accountability line. For example, when submitting an assignment, the student should have the accountability for false information, wrong deductions, and poor quality. Similarly, when creating slides or class materials, the instructor should bear with the accountability of wrong or insensitive information, or unhelpful descriptions.",
+    "crumbs": [
+      "<span class='chapter-number'>8</span>  <span class='chapter-title'>Relevant concepts</span>"
+    ]
+  },
+  {
+    "objectID": "week7.html#attribution",
+    "href": "week7.html#attribution",
+    "title": "8  Relevant concepts",
+    "section": "8.5 Attribution",
+    "text": "8.5 Attribution\nDepending on the level of LLM usage, attribution becomes a relevant concept supporting transparent implementations and decision making. Whether LLMs are used for searching information, as writing aids, or content organization, attribution becomes relevant for trust and accountability of the implementation.\nLLMs can be cited as a source of information, or attributed as a collaborator in a project. This shows the spectrum of different roles that LLMs can play in a project, and the different levels of attribution that can be used.",
+    "crumbs": [
+      "<span class='chapter-number'>8</span>  <span class='chapter-title'>Relevant concepts</span>"
+    ]
+  },
+  {
+    "objectID": "week7.html#data",
+    "href": "week7.html#data",
+    "title": "8  Relevant concepts",
+    "section": "8.6 Data",
+    "text": "8.6 Data\nFinally, a relevant concept surrounding LLMs is data. Not only with the data used for training the specific model, but also with user data management.\nAwareness of training data can help manage possible output bias in either the facts used or the way information is presented. A challenge presented with LLMs is the tendency towards some sort of average voice. Many instructors worry about students loosing their writing voice.\nA practical consideration is with respect to the particular LLM data privacy policies. This becomes very relevant when sharing private information. For example, for instructors, sharing student data is very sensitive. Also, prompting information concerning research or copyrighted material could potentially be conflicting.",
+    "crumbs": [
+      "<span class='chapter-number'>8</span>  <span class='chapter-title'>Relevant concepts</span>"
+    ]
+  },
+  {
+    "objectID": "week2.html",
+    "href": "week2.html",
+    "title": "3  Integridad académica y derechos de autor",
+    "section": "",
+    "text": "3.1 Integridad Académica\nLa mayoría de las conversaciones actuales sobre LLMs en entornos de educación superior se refieren a la integridad académica y los derechos de autor. Esto es algo que está cada vez más presente en la mente de los instructores y que necesita una consideración cuidadosa y una comunicación clara.\nEn mi experiencia, hay una amplia gama de perspectivas de instructores y estudiantes sobre esto. No me posicionaré a favor de ningún enfoque o recomendación en particular. Sin embargo, sí creo que es fundamental brindar claridad y no asumir que ya existe un sentido común sobre esto. El uso de la Inteligencia Artificial por parte de la población en general es muy reciente y todavía nos estamos ajustando y definiendo expectativas sobre lo que es aceptable de ella.\nAlgunos campos en la educación superior han participado más en conversaciones sobre integridad académica que otros. Esto depende mucho del contexto, del cuerpo estudiantil y de las preferencias instructivas. Sin embargo, la mayor parte de la discusión sobre IA en educación superior se ha centrado en la integridad académica.\nExisten diferentes puntos de vista sobre qué está permitido y qué no en un curso. Mi enfoque aquí no será determinar qué es permisible o no en un curso, sino qué consideraciones podrían ser efectivas y claras para evitar problemas relacionados con la integridad académica.",
+    "crumbs": [
+      "<span class='chapter-number'>3</span>  <span class='chapter-title'>Integridad académica y derechos de autor</span>"
+    ]
+  },
+  {
+    "objectID": "week2.html#academic-integrity",
+    "href": "week2.html#academic-integrity",
+    "title": "3  Academic integrity and copyright",
+    "section": "",
+    "text": "3.1.1 Syllabus\nA common conception for course syllabi is that they provide a type of contract between instructors and students. Similar to a user agreement, syllabi give an opportunity for instructors to clearly outline the expectations for students in a course. As such, this is a great place to clarify what is allowed or not, or expected or not with respect to LLM usage.\n\n\n\n\n\n\n\n\nFor students\nFor instructors\n\n\n\n\nMake sure to read the “AI Policy” and/or “Academic Integrity” section of your syllabus. If these are too generic or not clear, reach out to your instructor and request they clearly state to what extend they allow LLMs to be used in your class.\nInclude very detailed “AI Policy” and/or “Academic Integrity” section of your syllabus. Consider giving a few explicit examples of expected usage.\n\n\n\n\nAcademic integrity matters can be tricky. An effective way to explore what works in your particular case is to go beyond allowed v. forbidden usage and to consider to what extend can something be used.\nFor example, to completely forbid LLM (or AI) usage in a class might not be realistic nor productive. On the other hand, to completely allow unrestricted usage might be detrimental for student learning. Try to see this as a spectrum. The task then becomes to figure out where in that spectrum are you located for the specific course.\n\nSAMPLE AI POLICY\nThis is part of the AI policy that I am including in my most recent Introduction to Proofs course:\nUsage of generative AI\nThe use of generative AI in academic environments must be considered with care. A good rule to keep in mind that using generative AI to replace what a human could do might conflict with general rules of academic honesty. For our course, the recommendation is to avoid the usage of generative AI tools for assignments unless explicitly stated. When this is allowed, please make sure to cite, attribute, and/or describe to what extend you used it in your work and learning.\n\n\n\n3.1.2 Assignments\nSometimes syllabi can be a bit generic with policy and could fall short on specific considerations for paritcular assignments.\n\n\n\n\n\n\n\n\nFor students\nFor instructors\n\n\n\n\nMake sure to ask your instructor about the extend to which you can use LLMs for each assignment type. When in doubt, a general good practice is to disclose and describe how did you use LLMs.\nInclude in your assignment instructions to what extend students can use LLMs and what kind of attribution they are expected to include.\n\n\n\n\nLLMs can be thought of as a very sophisticated tool. Just as referencing Wikipedia has become normal, citing or referencing LLMs is, in general, a good practice. However, LLMs can also be thought of as more than just tools. They also act like agents, which gives them an air of autonomy and decision making. In this sense, it is also useful to think about LLMs as entities, hence the idea of attribution. This might depend on the usage.\nFor example, if an LLM was used to find a synonym, attribution might not be necessary, however if it was used to generate an example or create a summary, this might be the case.\nA good rule of thumb is to think what would be the best practice if instead using an LLM we would’ve asked a peer to do the same task. Would we had attributed their help?\n\nSome ways in which you can attribute or disclose LLM usage is by including the following, either in assignments or class material:\n\nprepared with the assistance of AI\nAI was used for generating graphics and schematics\nexample generated with the assistance of AI\n\n\n\n\n3.1.3 Community guidelines\nEach course is different. Not only due to the subject matter, but also due to everyone’s background and values. Promoting discussions regarding academic integrity considerations can also be a good team-building exercise in courses. Even more, sharing the rationale behind why advocating or discouraging certain practices can also get buy-in for both instructors and students.",
+    "crumbs": [
+      "<span class='chapter-number'>3</span>  <span class='chapter-title'>Academic integrity and copyright</span>"
+    ]
+  },
+  {
+    "objectID": "week2.html#copyright-and-intellectual-property",
+    "href": "week2.html#copyright-and-intellectual-property",
+    "title": "3  Academic integrity and copyright",
+    "section": "3.3 Copyright and intellectual property",
+    "text": "3.3 Copyright and intellectual property\nLLMs have been at the center of intense debate around intellectual property. Both from the legal perspective involving companies training data, to the ownership of the outputs of these models, copyright is and will probably be a contentious topic that will follow LLMs for some time.\nIn the case of college courses, copyright becomes a consideration for students and instructors alike. Is it the student’s work if they prompted an LLM to write an essay? Is it the instructor’s work if they prompted the LLM to generate a slide deck based on their class notes?\nAs many legal scholar would reply: it depends. An important point with copyright has to do with creativity and novelty.\nIt is difficult to have a clear cut answer that applies in all cases, however the considerations below can provide some practical reflections\n\n\n\n\n\n\n\n\nFor students\nFor instructors\n\n\n\n\nTake LLM output as if another person wrote it. This is a useful rule-of-thumb that can help you decide wheter or not to disclose LLM usage. A great learning practice is to always rephrase and edit outputs in your own words the outputs of LLMs. This also helps with your own learning.\nConsider including the phrase assisted by AI when using LLM outputs in generating or preparing materials for your courses.",
+    "crumbs": [
+      "<span class='chapter-number'>3</span>  <span class='chapter-title'>Academic integrity and copyright</span>"
+    ]
+  },
+  {
+    "objectID": "week1.html",
+    "href": "week1.html",
+    "title": "2  Consejos prácticos y consideraciones",
+    "section": "",
+    "text": "2.1 Resúmenes y esquemas\nEn este momento, los LLM más populares son:\nEstos tienen una amplia gama de uso, desde cuentas gratuitas hasta diferentes niveles de suscripciones de pago. Los siguientes casos de uso son independientes del modelo utilizado.\n*Llama no tiene un sitio web dedicado, pero está disponible como compañero en las aplicaciones de Meta, como Facebook, Instagram y WhatsApp.\nUna forma poderosa de usar los LLM en la universidad es para resumir información.\nHoy en día, la mayoría de los LLM tienen la opción de tomar múltiples formatos de entrada. Puedes incluir una combinación de texto, imágenes, videos, presentaciones de diapositivas y otros como parte de tu prompt.\nLos LLM proporcionan resúmenes muy buenos, sin embargo, como veremos a lo largo de este curso, podrían haber deficiencias como alucinaciones y sesgo de contexto.\nResumir implica conocimiento específico del tema. En otras palabras, crear un resumen requiere definir qué es importante o relevante de la información dada. Lo que es importante podría ser una tarea ligeramente subjetiva.\nProporcionar a los LLM más contexto puede hacer que los resultados sean más efectivos.",
+    "crumbs": [
+      "<span class='chapter-number'>2</span>  <span class='chapter-title'>Consejos prácticos y consideraciones</span>"
+    ]
+  },
+  {
+    "objectID": "week1.html#summaries-and-outlines",
+    "href": "week1.html#summaries-and-outlines",
+    "title": "2  Practical tips and considerations",
+    "section": "",
+    "text": "FOR STUDENTS\nUsing LLMs to summarize class notes.\nTry:\ngive me the most important points from these class notes [attach or copy paste notes]\n\n\nFOR INSTRUCTORS\nUsing LLMs to identify key concepts from sources.\nTry:\ngive me the five biggest ideas in this article [attach, copy paste, or include URL]\n\n\n\n\n\n\nTry:\nInstead of the simple prompts from before, try adding more context including detailed descriptions about the course, the type of resource, the audience, and the expected focus,\nThese notes are from a first year college biology course aimed at non-majors focusing in the previous weeks on cell theory, cell organelles and their functions.",
+    "crumbs": [
+      "<span class='chapter-number'>2</span>  <span class='chapter-title'>Practical tips and considerations</span>"
+    ]
+  },
+  {
+    "objectID": "week1.html#wikipedia",
+    "href": "week1.html#wikipedia",
+    "title": "2  Consejos prácticos y consideraciones",
+    "section": "2.2 Wikipedia++",
+    "text": "2.2 Wikipedia++\nMás que resumir información dada, los LLM también pueden ayudar con la búsqueda de información muy específica en la web.\nInternet está lleno de información sobre prácticamente cualquier tema conocido por los humanos -hasta cierto punto-. A veces navegar esto puede ser difícil. Los LLM pueden ser utilizados para recopilar información sobre conceptos del curso, herramientas o estrategias.\n\n\n\n\n\n\n\n\nPara estudiantes\nPara instructores\n\n\n\n\npuedes hacer prompts para obtener información sobre un tema de clase e incluso para referencias y recursos en línea.  Prueba:  ¿qué son los valores propios para el disco?\npuedes usar LLM para buscar estrategias de enseñanza, actividades grupales o ideas para tareas.  Prueba: dame ideas para hojas de trabajo sobre valores propios del laplaciano en dominios 2D.\n\n\n\n\nUna de las ventajas de usar LLM es que son bastante útiles incluso si no estás 100% seguro de cómo formular tu consulta. En este caso, una ventaja sobre la búsqueda web regular es que solo una descripción vaga de una pregunta aún puede proporcionar información útil.\nMuchas de las salidas incluyen referencias que pueden ser utilizadas para verificar la precisión de la respuesta e ir más profundo en el tema. Como siempre, ten cuidado con las alucinaciones.",
+    "crumbs": [
+      "<span class='chapter-number'>2</span>  <span class='chapter-title'>Consejos prácticos y consideraciones</span>"
+    ]
+  },
+  {
+    "objectID": "week1.html#translaterephrase",
+    "href": "week1.html#translaterephrase",
+    "title": "2  Practical tips and considerations",
+    "section": "2.3 Translate/rephrase",
+    "text": "2.3 Translate/rephrase\nA very useful implementation of LLMs for courses is to translate and rephrase text. This is particularly relevant for communicating ideas in more approachable language, as well as for ESL (English as Second Language) individuals.\n\n\n\n\n\n\n\n\nFor students\nFor instructors\n\n\n\n\nUse LLMs to rephrase questions or problems. You can prompt to rephrase something with less or more technical language. For ESL students, prompt LLMs to translate the questions or materials into your native language.\nUse LLMs to simplify language or to provide clarifying notes. You can also use them as a way to proofread your material and to calibrate the academic level of it.",
+    "crumbs": [
+      "<span class='chapter-number'>2</span>  <span class='chapter-title'>Practical tips and considerations</span>"
+    ]
+  },
+  {
+    "objectID": "week1.html#examples-and-follow-ups",
+    "href": "week1.html#examples-and-follow-ups",
+    "title": "2  Practical tips and considerations",
+    "section": "2.4 Examples and follow ups",
+    "text": "2.4 Examples and follow ups\nAnother practical use of LLMs is the ability to generate examples of certain topics, as well as to produce follow ups, just like in a regular conversation.\n\nFOR STUDENTS\nYou can prompt to generate examples of a topic or concept.\nTry:\ngive me an example of balancing chemical equations\nWith the example provided, ask follow ups to clarify, rephrase, or modify the answer\nwhy do we need 2 H2Os on the right in step 4?\n\n\nFOR INSTRUCTORS\nGenerate ideas of possible examples to explore in class\ngive me ideas for problems involving the schrodinger equation for a sophomore level chemistry course without using differential equations.\nAs a follow up you can prompt for suggestions on the activities\nsuggest an activity in groups for 20 minutes based on problem type 4.",
+    "crumbs": [
+      "<span class='chapter-number'>2</span>  <span class='chapter-title'>Practical tips and considerations</span>"
+    ]
+  },
+  {
+    "objectID": "week1.html#hallucinations",
+    "href": "week1.html#hallucinations",
+    "title": "2  Practical tips and considerations",
+    "section": "2.5 Hallucinations",
+    "text": "2.5 Hallucinations\nA common consideration when using LLMs are hallucinations. These are non-factual responses or made-up references. It is important to always fact check responses generated by any LLM.\nA good strategy is to take LLM outputs as initial drafts, starting points, or broad insights about a topic.\nNewer models are getting better with handling hallucinations, however we shouldn’t blindly trust the output of an LLMs.",
+    "crumbs": [
+      "<span class='chapter-number'>2</span>  <span class='chapter-title'>Practical tips and considerations</span>"
+    ]
+  },
+  {
+    "objectID": "intro.html",
+    "href": "intro.html",
+    "title": "1  Introducción",
+    "section": "",
+    "text": "(La versión en español de este material fue traducida de la versión inglesa utilizando AI)\nGeneré (¡no en el sentido de IA!) estas notas durante el verano de 2025 en respuesta a una necesidad creciente por parte de instructores y estudiantes de obtener orientación para navegar el panorama de la Inteligencia Artificial (IA) en la educación superior.\nAquí, pretendo compartir reflexiones, preocupaciones y referencias provenientes de mis experiencias en la Comunidad de Práctica de IA de la Universidad de California, el Consejo de IA de la Universidad de California en Santa Cruz, conversaciones con varios colegas docentes de diferentes instituciones, estudiantes, y literatura actual sobre los aspectos técnicos y de implementación de la IA.\nEste curso está diseñado para proporcionar orientación práctica y consideraciones técnicas sobre el uso de LLMs en la enseñanza y el aprendizaje en educación superior. Los Modelos de Lenguaje de Gran Escala, o LLMs por sus siglas en inglés, son un tipo de Inteligencia Artificial Generativa (GenAI), que a su vez es un tipo de Inteligencia Artificial (IA). Muchos usan estos términos indistintamente al referirse a los LLMs, especialmente en entornos educativos. Me enfocaré en los LLMs y usaré esta terminología para ser preciso y centrar la discusión en la generación de texto. Discusiones similares pueden llevarse a cabo sobre la generación de imágenes o videos, así como otros tipos de IA.\nYa seas estudiante universitario o profesor, este curso te ayudará a explorar maneras efectivas de usar LLMs en tus actividades diarias. Aquí discutiremos la escritura y la programación como uno de los casos de uso más evidentes, mientras también reflexionamos sobre maneras efectivas de usar LLMs para mejorar nuestra capacidad de enseñar y aprender.\nEste curso incluye casos de uso típicos, consideraciones éticas, preocupaciones ambientales, aspectos de privacidad y datos, -algunos- elementos técnicos, y conceptos generales involucrados en los LLMs.\nLos modelos de IA están evolucionando rápidamente y también lo hacen sus casos de uso. Este curso será actualizado regularmente para incluir características y aplicaciones actuales.",
+    "crumbs": [
+      "<span class='chapter-number'>1</span>  <span class='chapter-title'>Introducción</span>"
+    ]
+  },
+  {
+    "objectID": "week8.html",
+    "href": "week8.html",
+    "title": "9  Consejos, trucos y prompts útiles",
+    "section": "",
+    "text": "9.1 Consideraciones útiles\nFinalmente, aquí hay un resumen de algunas cosas relevantes que tener en cuenta al usar LLMs para la enseñanza y el aprendizaje.",
+    "crumbs": [
+      "<span class='chapter-number'>9</span>  <span class='chapter-title'>Consejos, trucos y prompts útiles</span>"
+    ]
+  },
+  {
+    "objectID": "week8.html#useful-considerations",
+    "href": "week8.html#useful-considerations",
+    "title": "9  Tips, tricks, and useful prompts",
+    "section": "",
+    "text": "9.1.1 Give enough context\nInclude information in your prompt about your role and the purpose of your request.\ni am teaching an upper division course for math majors in an undergraduate institution. check the following problems for clarity in language. [attach or copy-paste the problem statments]\n\n\n9.1.2 Follow-ups\nJust as with writing, LLMs provide better results with edits/follow-ups. Instead of crafting a comprehensive single prompt, ask improvements or clarification with follow-ups.\n\n\n9.1.3 Feedback and rephrasing\nAsk LLMs to give feedback on a given text. You can take it a step further by assigning the LLM an editorial role:\nfor the text below, give me feedback as if you were an editor. focus on clarity of the text, as well as the language used. this is for a lower division chemistry course. check consistency, grammar, and technical language.\n\n\n9.1.4 Summaries and outlines*\nLLMs can be very useful for summarizing text and identifying important elements. However, summarizing a text involves identifying important elements in it. This identification can be very contextual, and course dependent. The same text could have multiple perspectives of what is more relevant depending on the particular focus of a given course or instructor. A particular focus could be included in the prompt in order to improve the usefulness of the output.\n\n\n9.1.5 Uncovered reasoning\nA good way to improve the quality of LLM outputs is by prompting it to explain it’s reasoning. When used for solving problems or analyzing situations, including to explain it’s reasoning at the end usually leads to better results.\n\n\n9.1.6 Tutor/disciple (for learners)\nYou can endow LLMs with (temporary) roles. Use it as a tutor if you want it to help you clarify concepts related to a class:\ni am a sophomore student taking BIO 20 at UCSC. you are a biology tutor helping me with my homework. i will ask you some questions related to concepts that are not very clear to me. help me understand them and guide me through these homework questions.\nA very effective way to learn a topic is by teaching it. Consider also endowing the LLMs with a disciple role. You can prompt it to forget everything it knows about a topic and that you will explain it.\nforget everything you know about projectile motion. i will explain you the important concepts related to this. ask me clarifying questions when something is not clear.\n\n\n9.1.7 Test student (for instructors)\nYou can give the LLM the role of a test student in your class and ask it to check an assignment for clarity and level.\nyou are a student in my calculus 1 class. at this moment, we are covering the chain rule. check the following assignment for clarity (for first year students in STEM) and estimate the level of the problems.",
+    "crumbs": [
+      "<span class='chapter-number'>9</span>  <span class='chapter-title'>Tips, tricks, and useful prompts</span>"
+    ]
+  },
+  {
+    "objectID": "week8.html#careful-considerations",
+    "href": "week8.html#careful-considerations",
+    "title": "9  Tips, tricks, and useful prompts",
+    "section": "9.2 Careful considerations",
+    "text": "9.2 Careful considerations\nLikewise, there are some uses that can be problematic, not ideal, or even dangerous for teaching and learning.\n\n9.2.1 Writing essays or solving problems (learners)\nLLMs are becoming better at these tasks, however careful considerations needs to be made here. As a learner, one of the main goals of writing an essay or solving a question/problem is the process of doing it yourself. Learning happens in thinking about how to structure the essay, on how to approach the question or problem, and the trail and error to finally achieve the goal. Generating essays or solutions skips the learning process altogether.\n\n\n9.2.2 Grading (instructors)\nEven more when LLMs behave as a black-box, using them for high-stakes tasks such as grading assignments can be highly inaccurate. For classification type tasks (such as grading), LLMs are biased towards their training data. If this is not clear, the results can be very unfair and inconsistent. Besides this, using LLMs for grading can be problematic due to privacy issues when sharing student data.\n\n\n9.2.3 Hallucinations\nIn general, LLMs are stochastic models that produce text. As such, they are prone to generating non-factual outputs. This issue is getting better, however, it is important to always double check the outputs and not to take them as 100% true.\n\n\n9.2.4 Calculations\nLLMs are language models and in general, do not have computational engines. As such, they are not optimal for performing calculations, such as arithmetic or calculus. It is much better to use a calculator instead, as the results are reliable and reproducible.\n\n\n9.2.5 Short answers\nPrompting LLMs to produce short answers (some times a single word) can increase the chances of hallucinations. One of the best strategies to improve accuracy in LLMs is to have them explain their reasoning. Going the opposite direction and prompting to only reply with a short answer can produce noise in the output.",
+    "crumbs": [
+      "<span class='chapter-number'>9</span>  <span class='chapter-title'>Tips, tricks, and useful prompts</span>"
+    ]
+  },
+  {
+    "objectID": "summary.html",
+    "href": "summary.html",
+    "title": "Summary",
+    "section": "",
+    "text": "Summary\nIn summary, this book has no content whatsoever."
+  },
+  {
+    "objectID": "week3.html",
+    "href": "week3.html",
+    "title": "4  ¿Qué son los LLM de todos modos?",
+    "section": "",
+    "text": "4.1 Texto predictivo\nComo se mencionó antes, hay términos que se usan más o menos indistintamente cuando se habla de LLM en la educación superior. A veces las personas se refieren a ellos como “IA” o “Inteligencia Artificial”. Otras veces, las personas se refieren a esto como “IAgen” o “Inteligencia Artificial generativa”. Por lo general, estos términos se hacen en referencia a los LLM o “modelos de lenguaje grandes”, que son un tipo de IAgen, que es un tipo de IA.\nNo voy a describir los aspectos técnicos de los LLM aquí, pero exploraremos las características y componentes principales de los LLM para comprender mejor su alcance y limitaciones, así como para valorar sus resultados.\nLos Modelos de Lenguaje Grandes se especializan en generar texto siguiendo una instrucción. Esta generación de texto se basa en una combinación de modelos matemáticos -y estadísticos- que están entrenados en datos, montones y montones de datos. Pero antes de sumergirnos en las partes móviles de los LLM, revisemos un predecesor de los LLM modernos.\nTodos hemos usado corrección automática o algún tipo de asistencia de texto predictivo en nuestros teléfonos, correo electrónico, o incluso tu editor de texto favorito. Estas herramientas se han vuelto ubicuas en todos los dispositivos y plataformas.\nUna de las primeras versiones del texto predictivo se basa en un concepto matemático y estadístico llamado cadenas de Markov. En resumen, un sistema presenta la propiedad de Markov si su estado actual está determinado únicamente por su estado anterior. Traducido a la predicción de texto, esto significa que sugerir la siguiente palabra en un texto solo requiere conocimiento de la palabra actual (última).\nEsta propiedad puede parecer muy simplista y tal vez no útil. Sin embargo, es impresionante la cantidad de tecnología moderna que se basa en esta suposición simple. La propiedad de Markov hace que los sistemas sean ligeros, lo que significa que no se necesitan muchos recursos para implementarlos.\nHablando a grandes rasgos, las cadenas de Markov describen sistemas que tienen un número finito de estados posibles. Estos sistemas hacen transición de un estado a otro en cada paso de tiempo. Se permite permanecer en el estado actual. Las transiciones ocurren de acuerdo con ciertas probabilidades. Gran parte del trabajo práctico se enfoca en describir y calcular con precisión estas probabilidades.\nPor ejemplo, para nuestro modelo simple de texto predictivo, el sistema descrito es un texto (ensayo, sms, correo electrónico, etc.) como una secuencia de palabras. Nuestra cadena de Markov busca describir la transición de una palabra a la siguiente. Para esto, necesitamos conocer la probabilidad de pasar de una palabra específica a la siguiente. Si en mi texto está la palabra “Yo,” hay una alta probabilidad de que la siguiente palabra sea “soy” y una baja probabilidad de que la siguiente palabra sea “Yo” de nuevo.\nEncontrar estas probabilidades puede ser desafiante y no estándar. Similar a diferentes chefs que tienen diferentes recetas para el mismo platillo, diferentes implementaciones de cadenas de Markov podrían calcular o estimar probabilidades de diferentes maneras.\nUna forma común de estimar probabilidades para texto predictivo (como antes) es usar conteos de frecuencia en corpus de referencia (textos de referencia). La idea principal es contar qué tan frecuente la palabra “soy” sigue a la palabra “Yo” en una colección de textos de referencia y compararla con el número total de pares de palabras que tienen “Yo” como la primera palabra.\nNótese que esto depende del corpus de referencia. Si nuestro texto de referencia fueran las letras de la canción “I’m with you” de Avril Lavigne, la palabra “am” no aparece como un posible seguimiento a la palabra “I,” ¡sin embargo la palabra “I” sí lo hace!",
+    "crumbs": [
+      "<span class='chapter-number'>4</span>  <span class='chapter-title'>¿Qué son los LLM de todos modos?</span>"
+    ]
+  },
+  {
+    "objectID": "week3.html#predictive-text",
+    "href": "week3.html#predictive-text",
+    "title": "What are LLMs anyway?",
+    "section": "",
+    "text": "We all have used auto-correct or some sort of predictive text assistance in our phones, email, or even your favorite text editor. These tools have become ubiquitous across devices and platforms.\nOne of the early versions of predictive text is based on a mathematical and statistical concept called Markov chains. In short, a system presents the Markov property if its current state is determined only by its previous state. Translated into text prediction, this means that suggesting the next word in a text only requires knowledge of the current (last) word.\nThis property might seem very simplistic and perhaps not useful. However, it is impressive the amount of modern day technology that is based on this simple assumption. The Markov property makes systems to be lightweight, meaning that not a lot of resources are needed in order to implement them.\nRoughly speaking, Markov chains describe systems that have a finite number of possible states. These systems transition from one state to another in each time step. It is allowed to stay in the current state. The transitions occur according to certain probabilities. Much of the practical work focuses on accurately describing and computing these probabilities.\nFor example, for our simple predictive text model, the system described is a text (essay, sms, email, etc.) as a sequence of words. Our Markov chain aims to describe the transition from one word to the next one. For this, we need to know the probability of going from one specific word to the next one. If in my text there is the word “I,” there is a high probability that the next word is “am” and a low probability that the next word would be “I” again.\nComing up with these probabilities can be challenging and not standard. Akin to different chefs having different recipes for the same dish, different implementations of Markov chains might compute or estimate probabilities in different ways.\nA common way to estimate probabilities for predictive text (as before) is to use frequency counts on reference corpora (reference texts). The main idea is to tally how frequent the word “am” follows the word “I” in a collection of reference texts and to compare it to the total number of pairs of words that have “I” as the first word.\nNotice that this depends on the reference corpora. If our reference text were the lyrics of Avril Lavigne’s song “I’m with you,” the word “am” doesn’t show up as a possible follow-up to the word “I,” however the word “I” does!"
+  },
+  {
+    "objectID": "week3.html#knowledge-and-prediction",
+    "href": "week3.html#knowledge-and-prediction",
+    "title": "4  What are LLMs anyway?",
+    "section": "4.2 Knowledge and prediction",
+    "text": "4.2 Knowledge and prediction\nJust relying on the previous word to predict the next word can feel overly simplistic. Notice that the same idea of Markov chains can be applied for bi-grams (pairs of words) instead of single words. We can estimate probabilities of what is the next word given the two previous words. In general, it is possible to extend this idea to n-grams, sequences of \\(n\\) words, as the input for predicting the next word.\nAs we would expect, taking more words than just the previous one leads to better results in predictive text. The price to pay is not only now keeping track of a longer sequence of words for predictions, but also considering more possible combinations when estimating the transition probabilities.\nEnlarging the context window for a predictive system requires more attention to the estimation of the transition probabilities. These probabilities can then be thought of as the knowledge that the system has with respect to certain corpora. The predictive system emerges with two important components: a) the knowledge it has, and b) the capacity to predict the next word given an input.\nEach of these components have different strategies and algorithms involved which can differ from implementation to implementation, but the essence is roughly the same:\n\nKnowledge is represented by defining probabilities.\nPrediction is obtained by input sequences of words, interpreting probabilities, and introducing random choices.\n\nNotice that probability and randomness are important parts of the system. There are some theoretical and practical reasons for this, but one of the main points for us is the intrinsic stochastic nature of predictive text.",
+    "crumbs": [
+      "<span class='chapter-number'>4</span>  <span class='chapter-title'>What are LLMs anyway?</span>"
+    ]
+  },
+  {
+    "objectID": "week3.html#large-language-models",
+    "href": "week3.html#large-language-models",
+    "title": "4  What are LLMs anyway?",
+    "section": "4.3 Large Language Models",
+    "text": "4.3 Large Language Models\nNotice that the above description doesn’t take into account the language’s grammar. This approach infers the structure of the language from the reference corpora -also known as the training data.\nThere are different language models used by linguists and computer scientists which have strengths and weaknesses depending on their use cases. It is important to notice that LLMs are a special type of language models that arose as a type of improvement from our simple predictive text system.\nBesides the technical mathematical differences, we can focus on how LLMs define their knowledge and predict the next words.\nAs opposed to our predictive text system from before, LLMs are called large language models due to the amount of training data. Before, we could have the lyrics of a song, a few Wikipedia pages, or a book as possible corpora for estimating transition probabilities. In the case of LLMs, training data reaches the level of the entire internet. Even beyond this, many of the current LLMs are trained on data sets including all digitized books, music, movies, etc. There have been multiple copyright lawsuits addressing the unauthorized usage of copyrighted material in training some of the biggest models.\nOn the prediction side, one of the most relevant differences from our example before is the dynamic context window used for predicting words. The main principle remains the same: given a sequence of words, what is the most likely word to follow. However, LLMs take the entire word sequence given in a prompt as opposed to just a fixed context window. This remains true when prompting follow-ups. Now, the LLMs doesn’t only take the new request as the context window, but also the initial prompt, together with the output it itself produced about it.\n\nA technical note: LLMs are trained not on words but on tokens. These can be words, punctuation marks, mathematical symbols, coding symbols and instructions, etc. For example, when writing “7x8=” the LLM will predict that the most probable follow up is a “5” and then a “6”.",
+    "crumbs": [
+      "<span class='chapter-number'>4</span>  <span class='chapter-title'>What are LLMs anyway?</span>"
+    ]
+  },
+  {
+    "objectID": "week3.html#training",
+    "href": "week3.html#training",
+    "title": "4  What are LLMs anyway?",
+    "section": "4.4 Training",
+    "text": "4.4 Training\nUsing the entire internet to train an LLM requires, not only a lot of data, but also a lot of computing. Even though the specific mathematical details of training an LLM and estimating transition probabilities in a Markov chain are different, the core principle remains the same: we need to represent knowledge on how to predict the next word given a sequence of previous words. This knowledge is represented by numbers which will be stored and are known as the parameters of the model. At the time of writing this document, current models range between a few tenths of billions to over a trillion parameters (\\(10^9-10^{12}\\)).\nAll of these numbers are the result of solving or estimating mathematical equations based on the tokenization of the training data. This means to first clean and break the training data into a sequence of tokens. In order to incorporate mathematical models based on these tokens, it is needed to represent these tokens as numbers -more specifically as vectors-, which can be thought of as arrays of numbers.\nThis process is called encoding. We can think of encoding as a mathematical dictionary that equates each token with a different vector. But how is this dictionary built?\nThe challenge is to make this dictionary as useful as possible. This means that these numbers should represent tokens and how they interact with each other in a useful way. An initial strategy addressing this problem was to have a universal dictionary that can be used for every type of language model. However, a practical issue occurs with polysemic words such as “Buffalo buffalo Buffalo buffalo buffalo buffalo Buffalo buffalo.” Here, humans are able to understand the meaning of such sentence due to the word buffalo changing meaning depending on the position in the sentence. In order to allow for this flexibility, LLMs don’t assume a given encoding for a word, but compute the encoding for each word in the sequence, allowing it to be different at different places. This allows for the context to be updated as more information is included in the text.\nThis is important not only for words that can have multiple meanings, but also that can change meaning depending on other words:\n\n\nYeah!\nYeah, right.\n\n\nThe ability to change the encoding of tokens depending on the context is referred to as auto-encoding. This adds to the computation needed for training LLMs.\nAfter the auto-encoding stage, most LLMs have a combination of neural networks that are used for computing possible next tokens. In simple terms, neural networks are mathematical functions that depend on certain parameters. The parameters are determined by minimizing the error between the predicted tokens and the actual tokens present in the training data.\nThese are highly intensive computational tasks due to the number of parameters (between \\(10^9\\) and \\(10^{12}\\)). For this, several computers (data centers) are used where the training process takes a few months of non-stop computations.\nAt this moment, some of the newest models took between 1.5 to 3 months of training, using between 10,000 and 25,000 GPUs (graphic processing unit, which are specially efficient at matrix multiplication), spending an estimated 5GWh - 60GWh of power. For reference, this would be the equivalent to the annual electricity consumption of a small town with 50,000 homes.",
+    "crumbs": [
+      "<span class='chapter-number'>4</span>  <span class='chapter-title'>What are LLMs anyway?</span>"
+    ]
+  },
+  {
+    "objectID": "week6.html",
+    "href": "week6.html",
+    "title": "7  Mejores prácticas",
+    "section": "",
+    "text": "7.1 Contexto\nExisten múltiples opiniones con respecto al papel de los LLMs en la educación. Independientemente del alcance en el que estés utilizando Modelos de Lenguaje Grande para tu propia enseñanza y aprendizaje, hay ciertas cosas que tener en cuenta para mejorar -y no reemplazar- tu pensamiento.\nUno de los desafíos más críticos de las salidas de LLM es que pueden ser demasiado genéricas -y posiblemente no muy útiles. Proporcionar suficiente contexto sobre la tarea es importante para hacer prompts efectivos y conversaciones.\nAjuste fino a menudo significa dar un contexto específico para cada prompt individual. Considera guardar este contexto básico como un archivo de referencia en el LLM o incluso como una nota de texto que puedes copiar y pegar cada vez que preguntes algo relacionado con una clase en particular.",
+    "crumbs": [
+      "<span class='chapter-number'>7</span>  <span class='chapter-title'>Mejores prácticas</span>"
+    ]
+  },
+  {
+    "objectID": "week6.html#context",
+    "href": "week6.html#context",
+    "title": "7  Best practices",
+    "section": "",
+    "text": "Consider describing the background of the task: what is it for? which course is it for? what is the expected level (frosh, senior, etc.) what is your goal with it?\nEndow the LLM with a character or a role for the task: you are a tutor for this course you are a course assistant you are an editor providing feedback you are a student in this course\nFine tune the LLM for language or knowledge expertise: think about limiting the knowledge or references to the current course or any other prior course. Including a syllabus or course program can help give more context.",
+    "crumbs": [
+      "<span class='chapter-number'>7</span>  <span class='chapter-title'>Best practices</span>"
+    ]
+  },
+  {
+    "objectID": "week6.html#evaluation",
+    "href": "week6.html#evaluation",
+    "title": "7  Best practices",
+    "section": "7.2 Evaluation",
+    "text": "7.2 Evaluation\nFront loading work in prompts is not the only way in which we can make our interactions with LLMs more effective. It is important to analyze their outputs and evaluate if they are achieving our expectations.\nSince LLMs have some level of agency -they make tiny decisions as in what text to produce- it is useful to evaluate them as a supervisor would do with an assistant.\nFor this, it is important to have key rubric items that we can focus on while evaluating the LLM’s outputs:\n\n\n\n\n\n\n\nItem\nDescription\n\n\n\n\nCompliance\nDid the LLM generate what you were expecting?\n\n\nHallucinations\nAre the facts used real?\n\n\nData\nDid the LLM used the appropriate data or references?\n\n\nVoice\nIs the output given in the right voice, language, and terminology?",
+    "crumbs": [
+      "<span class='chapter-number'>7</span>  <span class='chapter-title'>Best practices</span>"
+    ]
+  },
+  {
+    "objectID": "week6.html#trust-score",
+    "href": "week6.html#trust-score",
+    "title": "7  Best practices",
+    "section": "7.3 TRUST Score",
+    "text": "7.3 TRUST Score\nOne of the most important aspects of LLM implementations is trust. This involves different levels. From the architecture of the model, the data used for training, to the way it produces outputs, and the usefulness/truthfulness of the responses, it is important to have a holistic sense of trust for the implementation.\nThere are three stages that are relevant for this:\n\nTraining\nProcessing\nEvaluation\n\nA simple way to assess your awareness of your implementation is by computing what I call the TRUST score: Transparency, Risk, Usefulness, Safety, and Trust. Each stage has two components and each component has a maximum total points that can be assigned. These are self-assigned points that can help you assess your own knowledge and awareness of the whole LLM system and implementation that you are using.\n\n\n\n\n\n\n\n\nStage\nDimension\nDescription\n\n\n\n\nTraining\nData (1 pt)\nEvaluate the data sources, data quality, copyright and privacy of the data used for training.\n\n\nTraining\nFootprint (1 pt)\nConsider the environmental and labor impact of the LLM.\n\n\nProcessing\nExplainability (3 pts)\nHow well does the user understand the output.\n\n\nProcessing\nPrivacy (3 pts)\nAssesses data ownership, storage, and usage practices.\n\n\nEvaluation\nAssessment (9 pts)\nGauges the effectiveness and accuracy of the outputs.\n\n\nEvaluation\nAccountability (9 pts)\nEnsures clear human responsibility at every stage of the process.\n\n\n\nThe total TRUST possible score is 26 points.\nThis score can help guide to what extend you need to consider a different LLM, consider different tasks to be outsourced, or to what extend you can learn more about the LLM system itself.\nHere are some recommended actions based on the TRUST score that you obtain after your self-assessment:\n\n\n\n\n\n\n\n\nLevel\nScore\nAction\n\n\n\n\nHigh TRUST\n&gt; 18 pts\nImplement the system while periodically reassessing if any dimensions have changed.\n\n\nModerate TRUST\nBetween 13-18 pts\nIdentify and address specific weaknesses in the lowest-scoring stages Reassess before implementing the system.\n\n\nLow TRUST\nBetween 5-12 pts\nReview all stages of the system (training, processing, implementation) for compliance with current policies and regulations.\n\n\nMinimal TRUST\n&lt; 5pts\nConsider a system redesign and/or explore a different system. Consult with supervisors and search for alternatives.",
+    "crumbs": [
+      "<span class='chapter-number'>7</span>  <span class='chapter-title'>Best practices</span>"
+    ]
+  },
+  {
+    "objectID": "week5.html",
+    "href": "week5.html",
+    "title": "6  Limitaciones",
+    "section": "",
+    "text": "6.1 Ventanas de contexto\nLos Modelos de Lenguaje Grande tienen limitaciones dependiendo del uso y el contexto. Algunas de estas limitaciones se deben a barreras tecnológicas, otras a su diseño.\nPor diseño, la mayoría de los LLMs tienen una interfaz de usuario que se asemeja a un chatbot. Este diseño fomenta interacciones similares a conversaciones en lugar de simples consultas/respuestas.\nUno de los avances más importantes en los LLMs se debe al llamado “mecanismo de atención.” Esta arquitectura de red neuronal permite al modelo no solo prestar atención a las palabras más recientes, sino también a todo el texto desde el principio.\nUn ejemplo de esto es cómo el texto predictivo en teléfonos móviles parece solo proporcionar sugerencias basadas en las últimas 1 o 2 palabras escritas. Esto no es ideal ya que el modelo no tiene memoria de nada dicho anteriormente en la conversación. Para abordar esto, el mecanismo de atención incorpora una codificación dinámica de palabras que captura la evolución del texto.\nEn la práctica, al usar un LLM, este mayor rango de atención consume recursos y a menudo se limita a un número particular de palabras de contexto o ventana de contexto. Esta ventana de contexto puede pensarse como la información de antecedentes que se pasa al modelo para proporcionar salidas específicas relacionadas con nuestras conversaciones.\nEsta ventana de contexto también se usa para ajustar finamente el modelo. Es decir, para decirle al modelo la experiencia específica, idioma o carácter que debe asumir.\nLas compañías de LLM generalmente tienen diferentes niveles de modelos que permiten, entre otras cosas, seleccionar ventanas de contexto más grandes. Esto se vuelve relevante cuando las conversaciones se vuelven largas o cuando los documentos de referencia son extensos.\nUsualmente los chatbots LLM agregan salidas previas como parte de la entrada para nuevas consultas. De esta manera, la información y contexto previos se pasan a las nuevas consultas y los chatbots pueden recordar lo que ha pasado en la conversación.\nDe manera similar, los documentos de referencia se pasan al LLM como parte del contexto, de ahí la limitación en el número de referencias activas que una conversación puede manejar.\nLas ventanas de contexto pueden ser muy pequeñas en algunos de los niveles gratuitos para LLMs comerciales. Este es un aspecto importante a tener en mente, ya que los usuarios de pago podrían tener una ventaja sobre los usuarios gratuitos en el tipo de tareas que pueden completar efectivamente.",
+    "crumbs": [
+      "<span class='chapter-number'>6</span>  <span class='chapter-title'>Limitaciones</span>"
+    ]
+  },
+  {
+    "objectID": "week5.html#context-windows",
+    "href": "week5.html#context-windows",
+    "title": "Limitations",
+    "section": "",
+    "text": "By design, most LLMs have a user interface that resemble a chatbot. This design fosters conversation-like interactions rather than just simple query/response.\nOne of the most important advances in LLMs is due to the so-called “attention mechanism.” This neural network architecture allows the model to not only to pay attention to the most recent words, but also to all the text from the beginning.\nAn example of this is how predictive text in cellphones seem to only provide suggestions based in the last 1 or 2 words typed. This is not ideal since the model doesn’t have memory of anything said earlier in the conversation. In order to address this, the attention mechanism incorporates a dynamic encoding of words that captures the evolution of the text.\nIn practice when using an LLM, this bigger attention span consumes resources and it often is limited to a particular number of context words or context window. This context window can be thought of as the background information that is passed to the model in order to provide specific outputs related to our conversations.\nThis context window is also used for fine tunning the model. That is, to tell the model the specific expertise, language, or character that should assume.\nLLM companies usually have different tiers of models that allow, among other things, to select bigger context windows. This becomes relevant when conversations become long or when reference documents are lengthy.\nUsually LLM chatbots append previous outputs as part of the input for new prompts. In this way, the previous information and context is passed to the new queries and the chatbots are able to remember what has happened in the conversation.\nSimilarly, reference documents are passed to the LLM as part of the context, hence the limitation on the number of active references that a conversation can handle.\nContext windows can be very small in some of the free tiers for commercial LLMs. This is an important aspect to have in mind, since paid users might have an advantage over free users in the type of tasks that they can effectively complete."
+  },
+  {
+    "objectID": "week5.html#data-bias",
+    "href": "week5.html#data-bias",
+    "title": "6  Limitations",
+    "section": "6.2 Data bias",
+    "text": "6.2 Data bias\nLarge Language Models are trained using big amounts of data. This means that they often include different perspectives or views about something. Different training algorithms face this challenge in various ways, either by ranking the information or by providing some sort of average description.\nThis limitation influences the type of responses that LLMs are able to provide, usually providing responses that, in some sense, average the information, being less sensitive for outliers or less common sources.",
+    "crumbs": [
+      "<span class='chapter-number'>6</span>  <span class='chapter-title'>Limitations</span>"
+    ]
+  },
+  {
+    "objectID": "week5.html#complex-tasks",
+    "href": "week5.html#complex-tasks",
+    "title": "6  Limitations",
+    "section": "6.3 Complex tasks",
+    "text": "6.3 Complex tasks\nThere has been great progress in the so-called reasoning feature of LLMs. This usually involves a combination of back-and-forth internal interactions of the LLMs, together with explicit planning and step-by-step strategies about the LLM’s course of action. This is particularly useful for minimizing hallucinations, however when tasks are very complex and/or involve multiple steps, LLMs tend to to reduce in performance. Currently, this threshold is more noticeable for tasks that require one hour or more of processing.",
+    "crumbs": [
+      "<span class='chapter-number'>6</span>  <span class='chapter-title'>Limitations</span>"
+    ]
+  },
+  {
+    "objectID": "week5.html#fast-forward-v.-black-box",
+    "href": "week5.html#fast-forward-v.-black-box",
+    "title": "6  Limitations",
+    "section": "6.4 Fast-forward v. black-box",
+    "text": "6.4 Fast-forward v. black-box\nLarge Language Models are very useful at fast-forwarding tasks. Even at the corporate level, users report that using LLMs can help them accomplish tasks in only 20% of the normal time. This approach enhances the ability of users to do what they know already, but faster.\nOn the other hand, LLMs also enable a black-box approach, where users have no prior knowledge of a field or task. Here, the models are replacing or outsourcing the human intervention.\nThese two approaches could be both useful or dangerous for teaching and learning purposes. It depends on the specific goals, usage, and context. However, it is important to fully understand in which sense instructors and students are using LLMs, whether it is to fast-forward a task or as a black-box.",
+    "crumbs": [
+      "<span class='chapter-number'>6</span>  <span class='chapter-title'>Limitations</span>"
+    ]
+  },
+  {
+    "objectID": "week5.html#vibe-learning",
+    "href": "week5.html#vibe-learning",
+    "title": "6  Limitaciones",
+    "section": "6.5 Vibe-learning",
+    "text": "6.5 Vibe-learning\nMás allá del enfoque de caja negra está lo que llamo vibe-learning. A principios de 2025 se acuñó el término vibe-coding para describir la manera en que muchos desarrolladores y científicos de la computación estaban usando LLMs “enfocándose en el objetivo de lo que necesita ser logrado y olvidándose de la sintaxis de la codificación.” En este sentido, el vibe-coding permite a los desarrolladores olvidarse de los pequeños detalles y enfocarse en el panorama general de los proyectos que están persiguiendo.\nEn general, los LLMs pueden ser usados con este enfoque de vib-ing. Aunque, una palabra de precaución es relevante en el entorno de enseñanza y aprendizaje. Una diferencia importante entre novatos y expertos en un campo es la atención a los detalles. Los expertos tienden a pensar más en el panorama general y temas generales, mientras que los novatos se enfocan en pequeños detalles. Esta atención a los detalles es fundamental para el proceso de aprendizaje en cualquier campo. El uso excesivo -o mal uso- de LLMs en entornos de enseñanza y aprendizaje puede obstaculizar la habilidad de los estudiantes para aprender conceptos efectivamente al saltarse o reducir su atención a los detalles.\nYa que los LLMs pueden producir productos independientemente de la experiencia o conocimiento del usuario sobre un área temática, este uso podría llevar falsamente a los usuarios a sentir que están participando en el aprendizaje. Si hay algo más peligroso que la ignorancia es la ilusión del conocimiento.",
+    "crumbs": [
+      "<span class='chapter-number'>6</span>  <span class='chapter-title'>Limitaciones</span>"
+    ]
+  },
+  {
+    "objectID": "week2.html#example-of-ai-guidelines-for-a-course",
+    "href": "week2.html#example-of-ai-guidelines-for-a-course",
+    "title": "3  Academic integrity and copyright",
+    "section": "3.3 Example of AI Guidelines for a course",
+    "text": "3.3 Example of AI Guidelines for a course\nThis is an AI Guideline resource that I share with my students in class. I include this as a separate resource for class (on our Learning Management System) as a complement to my AI policy described in the syllabus.\n\n3.3.1 Introduction to Proofs\nArtificial Intelligence - specifically Large Language Models- have become more popular in recent time. These can useful or hinder your experience in class depending on the possible usage. \nExpected\nUsage of LLMs is not required but could be useful depending on particular tasks or situations. \n\nCitation: cite every time you use an LLM.\nTranslation: you can use it to translate statements or questions to other languages (if English is not your first language) or to rephrase to simplify the language. Search: sometimes searching for references or concepts could be enhanced by using LLMs. As usual, be careful with hallucinations. Check for the actual references and sources.\nFeedback: you can use LLMs to ask for feedback on your proofs and typesetting. \n\nNot Expected\n\nDo not generate proofs using LLMs.\nDo not copy-paste outputs of LLMs.\nDo not solve problems using LLMs.\n\nUseful prompts\n\ni am a student in a introduction to mathematical proofs course at ucsc...\nrephrase the following statement\ncheck my language for consistency and clarity and give me feedback\nhelp me understand this LaTex error\n\nGeneral considerations\nLLMs are mathematical models that generate words (tokens) based on the prior words (tokens) given to it. These are trained by performing regression (gradient decent on a particular loss function). These usually happen on high-dimensional spaces (about a trillion dimensions). As such, achievement of absolute minima is not expected. Usually the regression only achieves a neighborhood of a minimum (with a particular threshold). Therefore, LLMs have a high level of non-deterministic elements.\nTraining data often considers Big Data (in the order of all public internet information). As such, this requires a huge amount of computing. The latest models usually require a few months of processing in data centers that amount to the electricity usage of a small US city for an entire year. *",
+    "crumbs": [
+      "<span class='chapter-number'>3</span>  <span class='chapter-title'>Academic integrity and copyright</span>"
+    ]
+  },
+  {
+    "objectID": "week2.html#an-example-of-ai-guidelines-for-a-course",
+    "href": "week2.html#an-example-of-ai-guidelines-for-a-course",
+    "title": "3  Academic integrity and copyright",
+    "section": "3.2 An example of AI Guidelines for a course",
+    "text": "3.2 An example of AI Guidelines for a course\nThis is an AI Guideline resource that I share with my students in class. I include this as a separate resource for class (on our Learning Management System) as a complement to my AI policy described in the syllabus.\n\nArtificial Intelligence - specifically Large Language Models- have become more popular in recent time. These can useful or hinder your experience in class depending on the possible usage. \nExpected\nUsage of LLMs is not required but could be useful depending on particular tasks or situations. \n\nCitation: cite every time you use an LLM.\nTranslation: you can use it to translate statements or questions to other languages (if English is not your first language) or to rephrase to simplify the language. Search: sometimes searching for references or concepts could be enhanced by using LLMs. As usual, be careful with hallucinations. Check for the actual references and sources.\nFeedback: you can use LLMs to ask for feedback on your proofs and typesetting. \n\nNot Expected\n\nDo not generate proofs using LLMs.\nDo not copy-paste outputs of LLMs.\nDo not solve problems using LLMs.\n\nUseful prompts\n\ni am a student in a introduction to mathematical proofs course at ucsc...\nrephrase the following statement\ncheck my language for consistency and clarity and give me feedback\nhelp me understand this LaTex error\n\nGeneral considerations\nLLMs are mathematical models that generate words (tokens) based on the prior words (tokens) given to it. These are trained by performing regression (gradient decent on a particular loss function). These usually happen on high-dimensional spaces (about a trillion dimensions). As such, achievement of absolute minima is not expected. Usually the regression only achieves a neighborhood of a minimum (with a particular threshold). Therefore, LLMs have a high level of non-deterministic elements.\nTraining data often considers Big Data (in the order of all public internet information). As such, this requires a huge amount of computing. The latest models usually require a few months of processing in data centers that amount to the electricity usage of a small US city for an entire year. *",
+    "crumbs": [
+      "<span class='chapter-number'>3</span>  <span class='chapter-title'>Academic integrity and copyright</span>"
+    ]
+  },
+  {
+    "objectID": "week2.html#integridad-académica",
+    "href": "week2.html#integridad-académica",
+    "title": "3  Integridad académica y derechos de autor",
+    "section": "",
+    "text": "3.1.1 Programa de estudios (Syllabus)\nUna concepción común para los programas de estudios de los cursos es que proporcionan un tipo de contrato entre instructores y estudiantes. Similar a un acuerdo de usuario, los programas de estudios dan a los instructores una oportunidad para describir claramente las expectativas para los estudiantes en un curso. Como tal, este es un gran lugar para aclarar qué está permitido o no, o qué se espera o no con respecto al uso de LLMs.\n\n\n\n\n\n\n\n\nPara estudiantes\nPara instructores\n\n\n\n\nAsegúrate de leer la sección “Política de IA” y/o “Integridad Académica” de tu programa de estudios. Si estas son demasiado genéricas o no están claras, comunícate con tu instructor y solicita que establezcan claramente hasta qué punto permiten que se usen LLMs en tu clase.\nIncluye una sección muy detallada de “Política de IA” y/o “Integridad Académica” en tu programa de estudios. Considera dar algunos ejemplos explícitos de uso esperado.\n\n\n\n\nLos asuntos de integridad académica pueden ser complicados. Una forma efectiva de explorar qué funciona en tu caso particular es ir más allá del uso permitido vs. prohibido y considerar hasta qué punto se puede usar algo.\nPor ejemplo, prohibir completamente el uso de LLM (o IA) en una clase podría no ser realista ni productivo. Por otro lado, permitir completamente el uso sin restricciones podría ser perjudicial para el aprendizaje del estudiante. Trata de ver esto como un espectro. La tarea entonces se convierte en descubrir dónde en ese espectro te ubicas para el curso específico.\n\nMUESTRA DE POLÍTICA DE IA\nEsta es parte de la política de IA que estoy incluyendo en mi curso más reciente de Introducción a las Demostraciones:\nUso de IA generativa\nEl uso de IA generativa en entornos académicos debe considerarse con cuidado. Una buena regla a tener en cuenta es que usar IA generativa para reemplazar lo que un humano podría hacer podría entrar en conflicto con las reglas generales de honestidad académica. Para nuestro curso, la recomendación es evitar el uso de herramientas de IA generativa para las tareas a menos que se indique explícitamente. Cuando esto esté permitido, asegúrate de citar, atribuir y/o describir hasta qué punto la usaste en tu trabajo y aprendizaje.\n\n\n\n3.1.2 Tareas\nA veces los programas de estudios pueden ser un poco genéricos con las políticas y podrían quedarse cortos en consideraciones específicas para tareas particulares.\n\n\n\n\n\n\n\n\nPara estudiantes\nPara instructores\n\n\n\n\nAsegúrate de preguntar a tu instructor sobre el grado en que puedes usar LLMs para cada tipo de tarea. Cuando tengas dudas, una buena práctica general es divulgar y describir cómo usaste los LLMs.\nIncluye en las instrucciones de tu tarea hasta qué punto los estudiantes pueden usar LLMs y qué tipo de atribución se espera que incluyan.\n\n\n\n\nLos LLMs pueden pensarse como una herramienta muy sofisticada. Así como referenciar Wikipedia se ha vuelto normal, citar o referenciar LLMs es, en general, una buena práctica. Sin embargo, los LLMs también pueden pensarse como más que solo herramientas. También actúan como agentes, lo que les da un aire de autonomía y toma de decisiones. En este sentido, también es útil pensar en los LLMs como entidades, de ahí la idea de atribución. Esto podría depender del uso.\nPor ejemplo, si se usó un LLM para encontrar un sinónimo, la atribución podría no ser necesaria; sin embargo, si se usó para generar un ejemplo o crear un resumen, este podría ser el caso.\nUna buena regla práctica es pensar cuál sería la mejor práctica si en lugar de usar un LLM hubiéramos pedido a un compañero que hiciera la misma tarea. ¿Habríamos atribuido su ayuda?\n\nAlgunas formas en las que puedes atribuir o divulgar el uso de LLM es incluyendo lo siguiente, ya sea en tareas o material de clase:\n\npreparado con la asistencia de IA\nse usó IA para generar gráficos y esquemas\nejemplo generado con la asistencia de IA\n\n\n\n\n3.1.3 Directrices comunitarias\nCada curso es diferente. No solo debido a la materia, sino también debido al trasfondo y valores de todos. Promover discusiones sobre consideraciones de integridad académica también puede ser un buen ejercicio de formación de equipos en los cursos. Además, compartir la justificación detrás de por qué abogar o desalentar ciertas prácticas también puede obtener la adhesión tanto de instructores como de estudiantes.",
+    "crumbs": [
+      "<span class='chapter-number'>3</span>  <span class='chapter-title'>Integridad académica y derechos de autor</span>"
+    ]
+  },
+  {
+    "objectID": "week2.html#un-ejemplo-de-directrices-de-ia-para-un-curso",
+    "href": "week2.html#un-ejemplo-de-directrices-de-ia-para-un-curso",
+    "title": "3  Integridad académica y derechos de autor",
+    "section": "3.2 Un ejemplo de Directrices de IA para un curso",
+    "text": "3.2 Un ejemplo de Directrices de IA para un curso\nEsta es un recurso de Directrices de IA que comparto con mis estudiantes en clase. Incluyo esto como un recurso separado para la clase (en nuestro Sistema de Gestión de Aprendizaje) como complemento a mi política de IA descrita en el programa de estudios.\n\nLa Inteligencia Artificial - específicamente los Modelos de Lenguaje Grandes - se ha vuelto más popular en tiempos recientes. Estos pueden ser útiles o dificultar tu experiencia en clase dependiendo del posible uso.\nEsperado\nEl uso de LLMs no es requerido pero podría ser útil dependiendo de tareas o situaciones particulares.\n\nCita: cita cada vez que uses un LLM.\nTraducción: puedes usarlo para traducir declaraciones o preguntas a otros idiomas (si el inglés no es tu primer idioma) o para reformular para simplificar el lenguaje.\nBúsqueda: a veces buscar referencias o conceptos podría mejorar usando LLMs. Como siempre, ten cuidado con las alucinaciones. Verifica las referencias y fuentes reales.\nRetroalimentación: puedes usar LLMs para pedir retroalimentación sobre tus demostraciones y composición tipográfica.\n\nNo Esperado\n\nNo generes demostraciones usando LLMs.\nNo copies y pegues salidas de LLMs.\nNo resuelvas problemas usando LLMs.\n\nPrompts útiles\n\nsoy un estudiante en un curso de introducción a demostraciones matemáticas en ucsc...\nreformula la siguiente declaración\nrevisa mi lenguaje por consistencia y claridad y dame retroalimentación\nayúdame a entender este error de LaTeX\n\nConsideraciones generales\nLos LLMs son modelos matemáticos que generan palabras (tokens) basándose en las palabras previas (tokens) dadas a él. Estos son entrenados realizando regresión (descenso de gradiente en una función de pérdida particular). Esto usualmente sucede en espacios de alta dimensión (alrededor de un billón de dimensiones). Como tal, no se espera el logro de mínimos absolutos. Usualmente la regresión solo logra un vecindario de un mínimo (con un umbral particular). Por lo tanto, los LLMs tienen un alto nivel de elementos no determinísticos.\nLos datos de entrenamiento a menudo consideran Big Data (en el orden de toda la información pública de internet). Como tal, esto requiere una enorme cantidad de computación. Los modelos más recientes usualmente requieren unos pocos meses de procesamiento en centros de datos que equivalen al uso de electricidad de una pequeña ciudad estadounidense por un año entero. *",
+    "crumbs": [
+      "<span class='chapter-number'>3</span>  <span class='chapter-title'>Integridad académica y derechos de autor</span>"
+    ]
+  },
+  {
+    "objectID": "week2.html#derechos-de-autor-y-propiedad-intelectual",
+    "href": "week2.html#derechos-de-autor-y-propiedad-intelectual",
+    "title": "3  Integridad académica y derechos de autor",
+    "section": "3.3 Derechos de autor y propiedad intelectual",
+    "text": "3.3 Derechos de autor y propiedad intelectual\nLos LLMs han estado en el centro de un debate intenso alrededor de la propiedad intelectual. Tanto desde la perspectiva legal que involucra los datos de entrenamiento de las empresas, hasta la propiedad de las salidas de estos modelos, los derechos de autor son y probablemente serán un tema polémico que seguirá a los LLMs por algún tiempo.\nEn el caso de los cursos universitarios, los derechos de autor se convierten en una consideración tanto para estudiantes como para instructores. ¿Es el trabajo del estudiante si le pidieron a un LLM que escribiera un ensayo? ¿Es el trabajo del instructor si le pidieron al LLM que generara una presentación basada en sus notas de clase?\nComo muchos académicos del derecho responderían: depende. Un punto importante con los derechos de autor tiene que ver con la creatividad y la novedad.\nEs difícil tener una respuesta clara que se aplique en todos los casos, sin embargo las consideraciones a continuación pueden proporcionar algunas reflexiones prácticas\n\n\n\n\n\n\n\n\nPara estudiantes\nPara instructores\n\n\n\n\nToma la salida del LLM como si otra persona la hubiera escrito. Esta es una regla práctica útil que puede ayudarte a decidir si divulgar o no el uso de LLM. Una gran práctica de aprendizaje es siempre reformular y editar las salidas en tus propias palabras las salidas de los LLMs. Esto también ayuda con tu propio aprendizaje.\nConsidera incluir la frase asistido por IA cuando uses salidas de LLM para generar o preparar materiales para tus cursos.",
+    "crumbs": [
+      "<span class='chapter-number'>3</span>  <span class='chapter-title'>Integridad académica y derechos de autor</span>"
+    ]
+  },
+  {
+    "objectID": "week8.html#consideraciones-útiles",
+    "href": "week8.html#consideraciones-útiles",
+    "title": "9  Consejos, trucos y prompts útiles",
+    "section": "",
+    "text": "9.1.1 Proporciona suficiente contexto\nIncluye información en tu prompt sobre tu rol y el propósito de tu solicitud.\nestoy enseñando un curso de nivel superior para estudiantes de matemáticas en una institución de pregrado. revisa los siguientes problemas para claridad en el lenguaje. [adjunta o copia y pega los enunciados del problema]\n\n\n9.1.2 Seguimientos\nAsí como con la escritura, los LLMs proporcionan mejores resultados con ediciones/seguimientos. En lugar de elaborar un prompt integral único, pide mejoras o aclaraciones con seguimientos.\n\n\n9.1.3 Retroalimentación y reformulación\nPide a los LLMs que den retroalimentación sobre un texto dado. Puedes llevarlo un paso más allá asignando al LLM un rol editorial:\npara el texto de abajo, dame retroalimentación como si fueras un editor. enfócate en la claridad del texto, así como en el lenguaje utilizado. esto es para un curso de química de nivel inferior. revisa consistencia, gramática y lenguaje técnico.\n\n\n9.1.4 Resúmenes y esquemas*\nLos LLMs pueden ser muy útiles para resumir texto e identificar elementos importantes. Sin embargo, resumir un texto implica identificar elementos importantes en él. Esta identificación puede ser muy contextual y dependiente del curso. El mismo texto podría tener múltiples perspectivas de lo que es más relevante dependiendo del enfoque particular de un curso o instructor determinado. Un enfoque particular podría incluirse en el prompt para mejorar la utilidad del resultado.\n\n\n9.1.5 Razonamiento descubierto\nUna buena manera de mejorar la calidad de los resultados de los LLM es pedirle que explique su razonamiento. Cuando se usa para resolver problemas o analizar situaciones, incluir que explique su razonamiento al final generalmente lleva a mejores resultados.\n\n\n9.1.6 Tutor/discípulo (para estudiantes)\nPuedes dotar a los LLMs de roles (temporales). Úsalo como tutor si quieres que te ayude a aclarar conceptos relacionados con una clase:\nsoy un estudiante de segundo año tomando BIO 20 en UCSC. eres un tutor de biología ayudándome con mi tarea. te haré algunas preguntas relacionadas con conceptos que no están muy claros para mí. ayúdame a entenderlos y guíame a través de estas preguntas de tarea.\nUna manera muy efectiva de aprender un tema es enseñándolo. Considera también dotar a los LLMs de un rol de discípulo. Puedes pedirle que olvide todo lo que sabe sobre un tema y que tú se lo explicarás.\nolvida todo lo que sabes sobre movimiento de proyectiles. te explicaré los conceptos importantes relacionados con esto. hazme preguntas aclaratorias cuando algo no esté claro.\n\n\n9.1.7 Estudiante de prueba (para instructores)\nPuedes darle al LLM el rol de un estudiante de prueba en tu clase y pedirle que revise una tarea para claridad y nivel.\neres un estudiante en mi clase de cálculo 1. en este momento, estamos cubriendo la regla de la cadena. revisa la siguiente tarea para claridad (para estudiantes de primer año en STEM) y estima el nivel de los problemas.",
+    "crumbs": [
+      "<span class='chapter-number'>9</span>  <span class='chapter-title'>Consejos, trucos y prompts útiles</span>"
+    ]
+  },
+  {
+    "objectID": "week8.html#consideraciones-cuidadosas",
+    "href": "week8.html#consideraciones-cuidadosas",
+    "title": "9  Consejos, trucos y prompts útiles",
+    "section": "9.2 Consideraciones cuidadosas",
+    "text": "9.2 Consideraciones cuidadosas\nDel mismo modo, hay algunos usos que pueden ser problemáticos, no ideales o incluso peligrosos para la enseñanza y el aprendizaje.\n\n9.2.1 Escribir ensayos o resolver problemas (estudiantes)\nLos LLMs están mejorando en estas tareas, sin embargo se necesita hacer consideraciones cuidadosas aquí. Como estudiante, uno de los objetivos principales de escribir un ensayo o resolver una pregunta/problema es el proceso de hacerlo tú mismo. El aprendizaje ocurre al pensar sobre cómo estructurar el ensayo, sobre cómo abordar la pregunta o problema, y el ensayo y error para finalmente lograr el objetivo. Generar ensayos o soluciones se salta el proceso de aprendizaje por completo.\n\n\n9.2.2 Calificación (instructores)\nAún más cuando los LLMs se comportan como una caja negra, usarlos para tareas de alto riesgo como calificar tareas puede ser altamente inexacto. Para tareas de tipo clasificación (como calificar), los LLMs están sesgados hacia sus datos de entrenamiento. Si esto no está claro, los resultados pueden ser muy injustos e inconsistentes. Además de esto, usar LLMs para calificar puede ser problemático debido a problemas de privacidad al compartir datos de estudiantes.\n\n\n9.2.3 Alucinaciones\nEn general, los LLMs son modelos estocásticos que producen texto. Como tal, son propensos a generar resultados no factuales. Este problema está mejorando, sin embargo, es importante siempre verificar los resultados y no tomarlos como 100% verdaderos.\n\n\n9.2.4 Cálculos\nLos LLMs son modelos de lenguaje y en general, no tienen motores computacionales. Como tal, no son óptimos para realizar cálculos, como aritmética o cálculo. Es mucho mejor usar una calculadora en su lugar, ya que los resultados son confiables y reproducibles.\n\n\n9.2.5 Respuestas cortas\nPedir a los LLMs que produzcan respuestas cortas (algunas veces una sola palabra) puede aumentar las posibilidades de alucinaciones. Una de las mejores estrategias para mejorar la precisión en los LLMs es hacer que expliquen su razonamiento. Ir en la dirección opuesta y pedir que solo respondan con una respuesta corta puede producir ruido en el resultado.",
+    "crumbs": [
+      "<span class='chapter-number'>9</span>  <span class='chapter-title'>Consejos, trucos y prompts útiles</span>"
+    ]
+  },
+  {
+    "objectID": "week7.html#pensamiento-crítico",
+    "href": "week7.html#pensamiento-crítico",
+    "title": "8  Conceptos relevantes",
+    "section": "8.2 Pensamiento Crítico",
+    "text": "8.2 Pensamiento Crítico\nQuizás como una respuesta natural al desarrollo de la confianza, el concepto de pensamiento crítico aparece en todos los círculos que debaten el uso y la influencia de la IA en la educación superior. Entre profesores, estudiantes, e incluso la industria, todos coinciden en que el desarrollo del pensamiento crítico es una de las cualidades más importantes en esta era educativa habilitada por IA.\nSin embargo, el concepto de pensamiento crítico por sí mismo puede ser desafiante de definir con precisión. Enfocarse en qué significa el pensamiento crítico para ti como estudiante o instructor, especialmente en relación con el uso de LLM, se volverá crucial.",
+    "crumbs": [
+      "<span class='chapter-number'>8</span>  <span class='chapter-title'>Conceptos relevantes</span>"
+    ]
+  },
+  {
+    "objectID": "week7.html#agencia",
+    "href": "week7.html#agencia",
+    "title": "8  Conceptos relevantes",
+    "section": "8.3 Agencia",
+    "text": "8.3 Agencia\nEn el lado más práctico, al hablar sobre implementaciones generales de IA y algunas implementaciones más recientes, el concepto de agencia es clave para entender y promover efectivamente el uso de LLM. En general, la agencia tiene que ver con la cualidad de tomar decisiones. La mayoría de las implementaciones de LLM tienen agencia mínima, limitando esto a tomar decisiones sobre rutas de razonamiento, qué fuentes de datos usar, y qué información es más relevante para el usuario. Sin embargo, cuando se le da más agencia a los LLM (o a los sistemas de IA en general), se vuelve más relevante definir métodos claros de evaluación y supervisión para estos sistemas.\nMientras más agencia tiene un sistema de IA, más los humanos adquieren un papel de supervisor o gerente. Este concepto también va de la mano con la cantidad de confianza que se otorga -o se gana- por el sistema de IA.",
+    "crumbs": [
+      "<span class='chapter-number'>8</span>  <span class='chapter-title'>Conceptos relevantes</span>"
+    ]
+  },
+  {
+    "objectID": "week7.html#responsabilidad",
+    "href": "week7.html#responsabilidad",
+    "title": "8  Conceptos relevantes",
+    "section": "8.4 Responsabilidad",
+    "text": "8.4 Responsabilidad\nCuando las decisiones son tomadas por IA, o usando IA (o LLM) en el proceso de decisión, es importante pensar y definir dónde recae la responsabilidad. Cada vez que tomamos una decisión basada en el resultado de un LLM, debe haber una línea clara de responsabilidad. Por ejemplo, al entregar una tarea, el estudiante debe tener la responsabilidad por información falsa, deducciones erróneas, y calidad deficiente. De manera similar, al crear diapositivas o materiales de clase, el instructor debe cargar con la responsabilidad de información incorrecta o insensible, o descripciones poco útiles.",
+    "crumbs": [
+      "<span class='chapter-number'>8</span>  <span class='chapter-title'>Conceptos relevantes</span>"
+    ]
+  },
+  {
+    "objectID": "week7.html#atribución",
+    "href": "week7.html#atribución",
+    "title": "8  Conceptos relevantes",
+    "section": "8.5 Atribución",
+    "text": "8.5 Atribución\nDependiendo del nivel de uso de LLM, la atribución se convierte en un concepto relevante que apoya implementaciones transparentes y la toma de decisiones. Ya sea que los LLM se usen para buscar información, como ayudas de escritura, u organización de contenido, la atribución se vuelve relevante para la confianza y responsabilidad de la implementación.\nLos LLM pueden citarse como fuente de información, o atribuirse como colaborador en un proyecto. Esto muestra el espectro de diferentes roles que los LLM pueden desempeñar en un proyecto, y los diferentes niveles de atribución que pueden utilizarse.",
+    "crumbs": [
+      "<span class='chapter-number'>8</span>  <span class='chapter-title'>Conceptos relevantes</span>"
+    ]
+  },
+  {
+    "objectID": "week7.html#datos",
+    "href": "week7.html#datos",
+    "title": "8  Conceptos relevantes",
+    "section": "8.6 Datos",
+    "text": "8.6 Datos\nFinalmente, un concepto relevante que rodea a los LLM son los datos. No solo con los datos utilizados para entrenar el modelo específico, sino también con la gestión de datos del usuario.\nLa conciencia sobre los datos de entrenamiento puede ayudar a gestionar posibles sesgos en los resultados, ya sea en los hechos utilizados o en la forma en que se presenta la información. Un desafío presentado con los LLM es la tendencia hacia algún tipo de voz promedio. Muchos instructores se preocupan por que los estudiantes pierdan su voz de escritura.\nUna consideración práctica es con respecto a las políticas particulares de privacidad de datos del LLM. Esto se vuelve muy relevante al compartir información privada. Por ejemplo, para los instructores, compartir datos de estudiantes es muy sensible. También, proporcionar información concerniente a investigación o material con derechos de autor podría ser potencialmente conflictivo.",
+    "crumbs": [
+      "<span class='chapter-number'>8</span>  <span class='chapter-title'>Conceptos relevantes</span>"
+    ]
+  },
+  {
+    "objectID": "week6.html#contexto",
+    "href": "week6.html#contexto",
+    "title": "7  Mejores prácticas",
+    "section": "",
+    "text": "Considera describir el trasfondo de la tarea: ¿para qué es? ¿para qué curso es? ¿cuál es el nivel esperado (primer año, último año, etc.)? ¿cuál es tu objetivo con esto?\nDota al LLM con un carácter o un rol para la tarea: eres un tutor para este curso eres un asistente de curso eres un editor que proporciona retroalimentación eres un estudiante en este curso\nAjusta finamente el LLM para experiencia en lenguaje o conocimiento: piensa en limitar el conocimiento o referencias al curso actual o cualquier otro curso previo. Incluir un programa de estudios o programa del curso puede ayudar a dar más contexto.",
+    "crumbs": [
+      "<span class='chapter-number'>7</span>  <span class='chapter-title'>Mejores prácticas</span>"
+    ]
+  },
+  {
+    "objectID": "week6.html#evaluación",
+    "href": "week6.html#evaluación",
+    "title": "7  Mejores prácticas",
+    "section": "7.2 Evaluación",
+    "text": "7.2 Evaluación\nCargar trabajo por adelantado en los prompts no es la única manera en la que podemos hacer nuestras interacciones con LLMs más efectivas. Es importante analizar sus salidas y evaluar si están logrando nuestras expectativas.\nDado que los LLMs tienen algún nivel de autonomía -toman pequeñas decisiones como en qué texto producir- es útil evaluarlos como un supervisor lo haría con un asistente.\nPara esto, es importante tener elementos clave de rúbrica en los que podemos enfocarnos mientras evaluamos las salidas del LLM:\n\n\n\nElemento\nDescripción\n\n\n\n\nCumplimiento\n¿Generó el LLM lo que esperabas?\n\n\nAlucinaciones\n¿Son reales los hechos utilizados?\n\n\nDatos\n¿Utilizó el LLM los datos o referencias apropiados?\n\n\nVoz\n¿Se da la salida en la voz, lenguaje y terminología correctos?",
+    "crumbs": [
+      "<span class='chapter-number'>7</span>  <span class='chapter-title'>Mejores prácticas</span>"
+    ]
+  },
+  {
+    "objectID": "week6.html#puntuación-trust",
+    "href": "week6.html#puntuación-trust",
+    "title": "7  Mejores prácticas",
+    "section": "7.3 Puntuación TRUST",
+    "text": "7.3 Puntuación TRUST\nUno de los aspectos más importantes de las implementaciones de LLM es la confianza. Esto involucra diferentes niveles. Desde la arquitectura del modelo, los datos utilizados para entrenamiento, hasta la manera en que produce salidas, y la utilidad/veracidad de las respuestas, es importante tener un sentido holístico de confianza para la implementación.\nHay tres etapas que son relevantes para esto:\n\nEntrenamiento\nProcesamiento\nEvaluación\n\nUna manera simple de evaluar tu conciencia de tu implementación es calculando lo que llamo la puntuación TRUST: Transparencia, Riesgo, Utilidad, Seguridad y Confianza. Cada etapa tiene dos componentes y cada componente tiene un total máximo de puntos que pueden ser asignados. Estos son puntos auto-asignados que pueden ayudarte a evaluar tu propio conocimiento y conciencia de todo el sistema LLM e implementación que estás usando.\n\n\n\n\n\n\n\n\nEtapa\nDimensión\nDescripción\n\n\n\n\nEntrenamiento\nDatos (1 pt)\nEvalúa las fuentes de datos, calidad de datos, derechos de autor y privacidad de los datos utilizados para entrenamiento.\n\n\nEntrenamiento\nHuella (1 pt)\nConsidera el impacto ambiental y laboral del LLM.\n\n\nProcesamiento\nExplicabilidad (3 pts)\nQué tan bien entiende el usuario la salida.\n\n\nProcesamiento\nPrivacidad (3 pts)\nEvalúa la propiedad de datos, almacenamiento y prácticas de uso.\n\n\nEvaluación\nEvaluación (9 pts)\nMide la efectividad y precisión de las salidas.\n\n\nEvaluación\nResponsabilidad (9 pts)\nAsegura responsabilidad humana clara en cada etapa del proceso.\n\n\n\nLa puntuación TRUST total posible es 26 puntos.\nEsta puntuación puede ayudar a guiar hasta qué punto necesitas considerar un LLM diferente, considerar diferentes tareas para ser externalizadas, o hasta qué punto puedes aprender más sobre el sistema LLM mismo.\nAquí hay algunas acciones recomendadas basadas en la puntuación TRUST que obtienes después de tu autoevaluación:\n\n\n\n\n\n\n\n\nNivel\nPuntuación\nAcción\n\n\n\n\nTRUST Alto\n&gt; 18 pts\nImplementa el sistema mientras reevalúas periódicamente si alguna dimensión ha cambiado.\n\n\nTRUST Moderado\nEntre 13-18 pts\nIdentifica y aborda debilidades específicas en las etapas con puntuación más baja. Reevalúa antes de implementar el sistema.\n\n\nTRUST Bajo\nEntre 5-12 pts\nRevisa todas las etapas del sistema (entrenamiento, procesamiento, implementación) para cumplimiento con políticas y regulaciones actuales.\n\n\nTRUST Mínimo\n&lt; 5pts\nConsidera un rediseño del sistema y/o explora un sistema diferente. Consulta con supervisores y busca alternativas.",
+    "crumbs": [
+      "<span class='chapter-number'>7</span>  <span class='chapter-title'>Mejores prácticas</span>"
+    ]
+  },
+  {
+    "objectID": "week5.html#sesgo-de-datos",
+    "href": "week5.html#sesgo-de-datos",
+    "title": "6  Limitaciones",
+    "section": "6.2 Sesgo de datos",
+    "text": "6.2 Sesgo de datos\nLos Modelos de Lenguaje Grande se entrenan usando grandes cantidades de datos. Esto significa que a menudo incluyen diferentes perspectivas o puntos de vista sobre algo. Diferentes algoritmos de entrenamiento enfrentan este desafío de varias maneras, ya sea clasificando la información o proporcionando algún tipo de descripción promedio.\nEsta limitación influye en el tipo de respuestas que los LLMs pueden proporcionar, usualmente proporcionando respuestas que, en cierto sentido, promedian la información, siendo menos sensibles para valores atípicos o fuentes menos comunes.",
+    "crumbs": [
+      "<span class='chapter-number'>6</span>  <span class='chapter-title'>Limitaciones</span>"
+    ]
+  },
+  {
+    "objectID": "week5.html#tareas-complejas",
+    "href": "week5.html#tareas-complejas",
+    "title": "6  Limitaciones",
+    "section": "6.3 Tareas complejas",
+    "text": "6.3 Tareas complejas\nHa habido gran progreso en la llamada característica de razonamiento de los LLMs. Esto usualmente involucra una combinación de interacciones internas de ida y vuelta de los LLMs, junto con planificación explícita y estrategias paso a paso sobre el curso de acción del LLM. Esto es particularmente útil para minimizar las alucinaciones, sin embargo, cuando las tareas son muy complejas y/o involucran múltiples pasos, los LLMs tienden a reducir su rendimiento. Actualmente, este umbral es más notable para tareas que requieren una hora o más de procesamiento.",
+    "crumbs": [
+      "<span class='chapter-number'>6</span>  <span class='chapter-title'>Limitaciones</span>"
+    ]
+  },
+  {
+    "objectID": "week5.html#avance-rápido-vs.-caja-negra",
+    "href": "week5.html#avance-rápido-vs.-caja-negra",
+    "title": "6  Limitaciones",
+    "section": "6.4 Avance rápido vs. caja negra",
+    "text": "6.4 Avance rápido vs. caja negra\nLos Modelos de Lenguaje Grande son muy útiles para acelerar tareas. Incluso a nivel corporativo, los usuarios reportan que usar LLMs puede ayudarlos a realizar tareas en solo el 20% del tiempo normal. Este enfoque mejora la habilidad de los usuarios para hacer lo que ya saben, pero más rápido.\nPor otro lado, los LLMs también habilitan un enfoque de caja negra, donde los usuarios no tienen conocimiento previo de un campo o tarea. Aquí, los modelos están reemplazando o subcontratando la intervención humana.\nEstos dos enfoques podrían ser tanto útiles como peligrosos para propósitos de enseñanza y aprendizaje. Depende de los objetivos específicos, uso y contexto. Sin embargo, es importante entender completamente en qué sentido los instructores y estudiantes están usando LLMs, ya sea para acelerar una tarea o como una caja negra.",
+    "crumbs": [
+      "<span class='chapter-number'>6</span>  <span class='chapter-title'>Limitaciones</span>"
+    ]
+  },
+  {
+    "objectID": "week4.html#conversación-v.-preguntas",
+    "href": "week4.html#conversación-v.-preguntas",
+    "title": "5  Interactuando con LLMs",
+    "section": "",
+    "text": "– &gt; dame un resumen de las Leyes del Movimiento de Newton\n– &gt; hazlo de dos párrafos\n– &gt; enmarácalo a nivel de primer año de universidad\n– &gt; dame un ejemplo",
+    "crumbs": [
+      "<span class='chapter-number'>5</span>  <span class='chapter-title'>Interactuando con LLMs</span>"
+    ]
+  },
+  {
+    "objectID": "week4.html#cadena-de-pensamiento-cot",
+    "href": "week4.html#cadena-de-pensamiento-cot",
+    "title": "5  Interactuando con LLMs",
+    "section": "5.2 Cadena de pensamiento (CoT)",
+    "text": "5.2 Cadena de pensamiento (CoT)\nNo solo los usuarios se benefician de este enfoque dialéctico para interactuar con LLMs. El modelo mismo generalmente se desempeña mejor cuando proporcionan un proceso de razonamiento paso a paso.\n\n\n\n\n\n\n\n\nPrompt regular\nPrompt CoT\n\n\n\n\n¿cuál es la mejor manera de estudiar para un examen parcial?\n¿cuál es la mejor manera de estudiar para un examen parcial? respalda tu respuesta con investigación pedagógica e incluye pros y contras.\n\n\n\n\nAún más cuando las consultas son subjetivas, o nuestro propio conocimiento del tema es limitado, usar CoT puede proporcionar más contexto para valorar la salida del LLM.",
+    "crumbs": [
+      "<span class='chapter-number'>5</span>  <span class='chapter-title'>Interactuando con LLMs</span>"
+    ]
+  },
+  {
+    "objectID": "week4.html#comportamiento-tipo-agente",
+    "href": "week4.html#comportamiento-tipo-agente",
+    "title": "5  Interactuando con LLMs",
+    "section": "5.3 Comportamiento tipo agente",
+    "text": "5.3 Comportamiento tipo agente\nUn agente es una entidad independiente que es capaz de tomar decisiones y acciones por sí mismo. Aunque los LLMs no presentan todas las características de los agentes, es útil pensar en ellos como tipo agente ya que están tomando activamente decisiones sobre qué texto, hechos o referencias usar para las salidas.\n\n5.3.1 Contexto\nProporcionar suficiente contexto sobre las solicitudes puede ser efectivo para obtener mejores salidas. Esto incluye dar un trasfondo claro de la tarea, tema, propósito y detalles del usuario.\n\n\n\n\n\n\n\n\nEstudiante\nInstructor\n\n\n\n\nAsegúrate de incluir detalles sobre tu curso, tu especialidad, nivel de experiencia, el propósito de la consulta, si es para una tarea, para estudiar, etc.\nIncluye el trasfondo de tu audiencia, el nivel de participación, objetivos de aprendizaje, resultados deseados, etc.\n\n\n\n\nEn este sentido, es útil pensar en el LLM como una persona que te está asistiendo y no tiene idea de quién eres, cuál es tu objetivo y qué es valioso para ti.\n\n\n5.3.2 Proceso\nEs clave enfocarse en procesos y no solo en productos. Esto no solo mejora la calidad de las salidas, sino que también sirve mejor al usuario para obtener una comprensión más profunda de la tarea en cuestión.\nPrompting para que el LLM incluya pasos intermedios o para respaldar las respuestas es una buena manera de mejorar su efectividad. Los seguimientos aclaratorios y agregar más contexto también son estrategias efectivas para aumentar la precisión y obtener salidas más útiles.\n\nPráctica peligrosa\nEl extremo opuesto es cuando se solicita a los LLMs “responder en una palabra” o “responder en una oración”. Eliminar argumento, contexto y pasos aumenta las posibilidades de alucinaciones y ruido.\n\n\n\n5.3.3 Supervisión\nAunque no completamente autónomos, los LLMs pueden descargar completamente o parcialmente tareas. En este sentido, los usuarios pueden asumir el papel de un gerente o supervisor al interactuar con LLMs. Esto incluye proporcionar orientación e información clara, y evaluar e interpretar sus resultados.\nAsegúrate de evaluar y reflexionar constantemente sobre el rendimiento de tu LLM. Esto puede ayudarte a identificar si necesitas proporcionar más contexto, ser más claro con tus direcciones, o quizás probar un modelo o implementación diferente.",
+    "crumbs": [
+      "<span class='chapter-number'>5</span>  <span class='chapter-title'>Interactuando con LLMs</span>"
+    ]
+  },
+  {
+    "objectID": "week3.html#conocimiento-y-predicción",
+    "href": "week3.html#conocimiento-y-predicción",
+    "title": "4  ¿Qué son los LLM de todos modos?",
+    "section": "4.2 Conocimiento y predicción",
+    "text": "4.2 Conocimiento y predicción\nSolo confiar en la palabra anterior para predecir la siguiente palabra puede sentirse demasiado simplista. Nótese que la misma idea de las cadenas de Markov puede aplicarse para bi-gramas (pares de palabras) en lugar de palabras individuales. Podemos estimar probabilidades de cuál es la siguiente palabra dadas las dos palabras anteriores. En general, es posible extender esta idea a n-gramas, secuencias de \\(n\\) palabras, como la entrada para predecir la siguiente palabra.\nComo esperaríamos, tomar más palabras que solo la anterior conduce a mejores resultados en texto predictivo. El precio a pagar es no solo ahora llevar el registro de una secuencia más larga de palabras para predicciones, sino también considerar más combinaciones posibles al estimar las probabilidades de transición.\nAmpliar la ventana de contexto para un sistema predictivo requiere más atención a la estimación de las probabilidades de transición. Estas probabilidades pueden entonces pensarse como el conocimiento que el sistema tiene con respecto a ciertos corpus. El sistema predictivo emerge con dos componentes importantes: a) el conocimiento que tiene, y b) la capacidad de predecir la siguiente palabra dada una entrada.\nCada uno de estos componentes tiene diferentes estrategias y algoritmos involucrados que pueden diferir de implementación a implementación, pero la esencia es aproximadamente la misma:\n\nEl conocimiento se representa definiendo probabilidades.\nLa predicción se obtiene por secuencias de entrada de palabras, interpretando probabilidades, e introduciendo elecciones aleatorias.\n\nNótese que la probabilidad y la aleatoriedad son partes importantes del sistema. Hay algunas razones teóricas y prácticas para esto, pero uno de los puntos principales para nosotros es la naturaleza estocástica intrínseca del texto predictivo.",
+    "crumbs": [
+      "<span class='chapter-number'>4</span>  <span class='chapter-title'>¿Qué son los LLM de todos modos?</span>"
+    ]
+  },
+  {
+    "objectID": "week3.html#modelos-de-lenguaje-grandes",
+    "href": "week3.html#modelos-de-lenguaje-grandes",
+    "title": "4  ¿Qué son los LLM de todos modos?",
+    "section": "4.3 Modelos de Lenguaje Grandes",
+    "text": "4.3 Modelos de Lenguaje Grandes\nNótese que la descripción anterior no toma en cuenta la gramática del idioma. Este enfoque infiere la estructura del idioma del corpus de referencia -también conocido como los datos de entrenamiento.\nHay diferentes modelos de lenguaje usados por lingüistas y científicos de la computación que tienen fortalezas y debilidades dependiendo de sus casos de uso. Es importante notar que los LLM son un tipo especial de modelos de lenguaje que surgieron como un tipo de mejora de nuestro sistema simple de texto predictivo.\nAdemás de las diferencias matemáticas técnicas, podemos enfocarnos en cómo los LLM definen su conocimiento y predicen las siguientes palabras.\nA diferencia de nuestro sistema de texto predictivo de antes, los LLM se llaman modelos de lenguaje grandes debido a la cantidad de datos de entrenamiento. Antes, podríamos tener las letras de una canción, algunas páginas de Wikipedia, o un libro como posibles corpus para estimar probabilidades de transición. En el caso de los LLM, los datos de entrenamiento alcanzan el nivel de toda la internet. Incluso más allá de esto, muchos de los LLM actuales están entrenados en conjuntos de datos que incluyen todos los libros digitalizados, música, películas, etc. Ha habido múltiples demandas por derechos de autor abordando el uso no autorizado de material con derechos de autor en el entrenamiento de algunos de los modelos más grandes.\nEn el lado de la predicción, una de las diferencias más relevantes de nuestro ejemplo anterior es la ventana de contexto dinámico usada para predecir palabras. El principio principal permanece igual: dada una secuencia de palabras, cuál es la palabra más probable que siga. Sin embargo, los LLM toman toda la secuencia de palabras dada en una instrucción en lugar de solo una ventana de contexto fija. Esto permanece cierto cuando se hacen seguimientos. Ahora, los LLM no solo toman la nueva solicitud como la ventana de contexto, sino también la instrucción inicial, junto con la salida que él mismo produjo al respecto.\n\nUna nota técnica: Los LLM no están entrenados en palabras sino en tokens. Estos pueden ser palabras, signos de puntuación, símbolos matemáticos, símbolos e instrucciones de codificación, etc. Por ejemplo, cuando se escribe “7x8=” el LLM predecirá que el seguimiento más probable es un “5” y luego un “6”.",
+    "crumbs": [
+      "<span class='chapter-number'>4</span>  <span class='chapter-title'>¿Qué son los LLM de todos modos?</span>"
+    ]
+  },
+  {
+    "objectID": "week3.html#entrenamiento",
+    "href": "week3.html#entrenamiento",
+    "title": "4  ¿Qué son los LLM de todos modos?",
+    "section": "4.4 Entrenamiento",
+    "text": "4.4 Entrenamiento\nUsar toda la internet para entrenar un LLM requiere, no solo muchos datos, sino también mucha computación. Aunque los detalles matemáticos específicos de entrenar un LLM y estimar probabilidades de transición en una cadena de Markov son diferentes, el principio central permanece igual: necesitamos representar conocimiento sobre cómo predecir la siguiente palabra dada una secuencia de palabras anteriores. Este conocimiento se representa por números que serán almacenados y se conocen como los parámetros del modelo. Al momento de escribir este documento, los modelos actuales van entre unas pocas decenas de miles de millones a más de un billón de parámetros (\\(10^9-10^{12}\\)).\nTodos estos números son el resultado de resolver o estimar ecuaciones matemáticas basadas en la tokenización de los datos de entrenamiento. Esto significa primero limpiar y dividir los datos de entrenamiento en una secuencia de tokens. Para incorporar modelos matemáticos basados en estos tokens, se necesita representar estos tokens como números -más específicamente como vectores-, que pueden pensarse como arreglos de números.\nEste proceso se llama codificación. Podemos pensar en la codificación como un diccionario matemático que equipara cada token con un vector diferente. ¿Pero cómo se construye este diccionario?\nEl desafío es hacer este diccionario tan útil como sea posible. Esto significa que estos números deberían representar tokens y cómo interactúan entre sí de una manera útil. Una estrategia inicial que abordaba este problema era tener un diccionario universal que pueda usarse para todo tipo de modelo de lenguaje. Sin embargo, un problema práctico ocurre con palabras polisémicas como “Buffalo buffalo Buffalo buffalo buffalo buffalo Buffalo buffalo.” Aquí, los humanos son capaces de entender el significado de tal oración debido a que la palabra buffalo cambia de significado dependiendo de la posición en la oración. Para permitir esta flexibilidad, los LLM no asumen una codificación dada para una palabra, sino que calculan la codificación para cada palabra en la secuencia, permitiendo que sea diferente en diferentes lugares. Esto permite que el contexto se actualice conforme se incluye más información en el texto.\nEsto es importante no solo para palabras que pueden tener múltiples significados, sino también que pueden cambiar de significado dependiendo de otras palabras:\n\n\nNunca\nNunca mejor.\n\n\nLa capacidad de cambiar la codificación de tokens dependiendo del contexto se refiere como auto-codificación. Esto se suma a la computación necesaria para entrenar LLM.\nDespués de la etapa de auto-codificación, la mayoría de los LLM tienen una combinación de redes neuronales que se usan para calcular posibles tokens siguientes. En términos simples, las redes neuronales son funciones matemáticas que dependen de ciertos parámetros. Los parámetros se determinan minimizando el error entre los tokens predichos y los tokens reales presentes en los datos de entrenamiento.\nEstas son tareas computacionales altamente intensivas debido al número de parámetros (entre \\(10^9\\) y \\(10^{12}\\)). Para esto, se usan varias computadoras (centros de datos) donde el proceso de entrenamiento toma unos pocos meses de computaciones sin parar.\nEn este momento, algunos de los modelos más nuevos tomaron entre 1.5 a 3 meses de entrenamiento, usando entre 10,000 y 25,000 GPU (unidad de procesamiento gráfico, que son especialmente eficientes en multiplicación de matrices), gastando un estimado de 5GWh - 60GWh de energía. Como referencia, esto sería el equivalente al consumo anual de electricidad de un pueblo pequeño con 50,000 hogares.",
+    "crumbs": [
+      "<span class='chapter-number'>4</span>  <span class='chapter-title'>¿Qué son los LLM de todos modos?</span>"
+    ]
+  },
+  {
+    "objectID": "week1.html#resúmenes-y-esquemas",
+    "href": "week1.html#resúmenes-y-esquemas",
+    "title": "2  Consejos prácticos y consideraciones",
+    "section": "",
+    "text": "PARA ESTUDIANTES\nUsar LLM para resumir notas de clase.\nPrueba:\ndame los puntos más importantes de estas notas de clase [adjunta o copia y pega las notas]\n\n\nPARA INSTRUCTORES\nUsar LLM para identificar conceptos clave de las fuentes.\nPrueba:\ndame las cinco ideas más importantes de este artículo [adjunta, copia y pega, o incluye URL]\n\n\n\n\n\n\nPrueba:\nEn lugar de los prompts simples de antes, intenta agregar más contexto incluyendo descripciones detalladas sobre el curso, el tipo de recurso, la audiencia y el enfoque esperado,\nEstas notas son de un curso de biología universitario de primer año dirigido a estudiantes que no son especialistas, enfocándose en las semanas anteriores en la teoría celular, orgánulos celulares y sus funciones.",
+    "crumbs": [
+      "<span class='chapter-number'>2</span>  <span class='chapter-title'>Consejos prácticos y consideraciones</span>"
+    ]
+  },
+  {
+    "objectID": "week1.html#traducirreformular",
+    "href": "week1.html#traducirreformular",
+    "title": "2  Consejos prácticos y consideraciones",
+    "section": "2.3 Traducir/reformular",
+    "text": "2.3 Traducir/reformular\nUna implementación muy útil de los LLM para cursos es traducir y reformular texto. Esto es particularmente relevante para comunicar ideas en un lenguaje más accesible, así como para individuos ESL (Inglés como Segunda Lengua).\n\n\n\n\n\n\n\n\nPara estudiantes\nPara instructores\n\n\n\n\nUsa LLM para reformular preguntas o problemas. Puedes hacer prompts para reformular algo con lenguaje menos o más técnico. Para estudiantes ESL, haz prompts a los LLM para traducir las preguntas o materiales a tu idioma nativo.\nUsa LLM para simplificar el lenguaje o para proporcionar notas aclaratorias. También puedes usarlos como una forma de revisar tu material y calibrar el nivel académico del mismo.",
+    "crumbs": [
+      "<span class='chapter-number'>2</span>  <span class='chapter-title'>Consejos prácticos y consideraciones</span>"
+    ]
+  },
+  {
+    "objectID": "week1.html#ejemplos-y-seguimientos",
+    "href": "week1.html#ejemplos-y-seguimientos",
+    "title": "2  Consejos prácticos y consideraciones",
+    "section": "2.4 Ejemplos y seguimientos",
+    "text": "2.4 Ejemplos y seguimientos\nOtro uso práctico de los LLM es la capacidad de generar ejemplos de ciertos temas, así como producir seguimientos, justo como en una conversación regular.\n\nPARA ESTUDIANTES\nPuedes hacer prompts para generar ejemplos de un tema o concepto.\nPrueba:\ndame un ejemplo de equilibrio de ecuaciones químicas\nCon el ejemplo proporcionado, haz preguntas de seguimiento para aclarar, reformular o modificar la respuesta\n¿por qué necesitamos 2 H2O en el lado derecho en el paso 4?\n\n\nPARA INSTRUCTORES\nGenerar ideas de posibles ejemplos para explorar en clase\ndame ideas para problemas que involucren la ecuación de Schrödinger para un curso de química de segundo año sin usar ecuaciones diferenciales.\nComo seguimiento puedes hacer prompts para sugerencias sobre las actividades\nsugiere una actividad en grupos por 20 minutos basada en el tipo de problema 4.",
+    "crumbs": [
+      "<span class='chapter-number'>2</span>  <span class='chapter-title'>Consejos prácticos y consideraciones</span>"
+    ]
+  },
+  {
+    "objectID": "week1.html#alucinaciones",
+    "href": "week1.html#alucinaciones",
+    "title": "2  Consejos prácticos y consideraciones",
+    "section": "2.5 Alucinaciones",
+    "text": "2.5 Alucinaciones\nUna consideración común al usar LLM son las alucinaciones. Estas son respuestas no factuales o referencias inventadas. Es importante siempre verificar los hechos en las respuestas generadas por cualquier LLM.\nUna buena estrategia es tomar las salidas de LLM como borradores iniciales, puntos de partida o ideas amplias sobre un tema.\nLos modelos más nuevos están mejorando en el manejo de alucinaciones, sin embargo no deberíamos confiar ciegamente en la salida de un LLM.",
+    "crumbs": [
+      "<span class='chapter-number'>2</span>  <span class='chapter-title'>Consejos prácticos y consideraciones</span>"
+    ]
+  }
+]
