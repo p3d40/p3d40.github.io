@@ -364,8 +364,9 @@ ul.task-list li input[type="checkbox"] {
   <li><a href="#context-windows" id="toc-context-windows" class="nav-link active" data-scroll-target="#context-windows"><span class="header-section-number">6.1</span> Context windows</a></li>
   <li><a href="#data-bias" id="toc-data-bias" class="nav-link" data-scroll-target="#data-bias"><span class="header-section-number">6.2</span> Data bias</a></li>
   <li><a href="#complex-tasks" id="toc-complex-tasks" class="nav-link" data-scroll-target="#complex-tasks"><span class="header-section-number">6.3</span> Complex tasks</a></li>
-  <li><a href="#fast-forward-v.-black-box" id="toc-fast-forward-v.-black-box" class="nav-link" data-scroll-target="#fast-forward-v.-black-box"><span class="header-section-number">6.4</span> Fast-forward v. black-box</a></li>
-  <li><a href="#vibe-learning" id="toc-vibe-learning" class="nav-link" data-scroll-target="#vibe-learning"><span class="header-section-number">6.5</span> Vibe-learning</a></li>
+  <li><a href="#computations" id="toc-computations" class="nav-link" data-scroll-target="#computations"><span class="header-section-number">6.4</span> Computations</a></li>
+  <li><a href="#fast-forward-v.-black-box" id="toc-fast-forward-v.-black-box" class="nav-link" data-scroll-target="#fast-forward-v.-black-box"><span class="header-section-number">6.5</span> Fast-forward v. black-box</a></li>
+  <li><a href="#vibe-learning" id="toc-vibe-learning" class="nav-link" data-scroll-target="#vibe-learning"><span class="header-section-number">6.6</span> Vibe-learning</a></li>
   </ul>
 <div class="quarto-other-links"><h2>Other Links</h2><ul><li><a href="../es/"><i class="bi bi-link-45deg"></i>Español</a></li><li><a href="../"><i class="bi bi-link-45deg"></i>English</a></li></ul></div></nav>
     </div>
@@ -408,22 +409,27 @@ ul.task-list li input[type="checkbox"] {
 <section id="data-bias" class="level2" data-number="6.2">
 <h2 data-number="6.2" class="anchored" data-anchor-id="data-bias"><span class="header-section-number">6.2</span> Data bias</h2>
 <p>Large Language Models are trained using <strong>big</strong> amounts of data. This means that they often include different perspectives or views about something. Different training algorithms face this challenge in various ways, either by ranking the information or by providing some sort of <em>average</em> description.</p>
-<p>This limitation influences the type of responses that LLMs are able to provide, usually providing responses that, in some sense, average the information, being less sensitive for outliers or less common sources.</p>
+<p>This limitation influences the type of responses that LLMs are able to provide, usually providing responses that, in some sense, average the information, being less sensitive for outliers or less common sources. More specialized topics or perspectives could be overlooked.</p>
 </section>
 <section id="complex-tasks" class="level2" data-number="6.3">
 <h2 data-number="6.3" class="anchored" data-anchor-id="complex-tasks"><span class="header-section-number">6.3</span> Complex tasks</h2>
 <p>There has been great progress in the so-called <strong>reasoning</strong> feature of LLMs. This usually involves a combination of back-and-forth internal interactions of the LLMs, together with explicit planning and step-by-step strategies about the LLM’s course of action. This is particularly useful for minimizing hallucinations, however when tasks are very complex and/or involve multiple steps, LLMs tend to to reduce in performance. Currently, this threshold is more noticeable for tasks that require one hour or more of processing.</p>
 </section>
-<section id="fast-forward-v.-black-box" class="level2" data-number="6.4">
-<h2 data-number="6.4" class="anchored" data-anchor-id="fast-forward-v.-black-box"><span class="header-section-number">6.4</span> Fast-forward v. black-box</h2>
-<p>Large Language Models are very useful at <em>fast-forwarding</em> tasks. Even at the corporate level, users report that using LLMs can help them accomplish tasks in only 20% of the normal time. This approach <em>enhances</em> the ability of users to do what they <em>know</em> already, but faster.</p>
+<section id="computations" class="level2" data-number="6.4">
+<h2 data-number="6.4" class="anchored" data-anchor-id="computations"><span class="header-section-number">6.4</span> Computations</h2>
+<p>LLMs are probabilistic language models. As such, they are not intrinsically suitable for computations. As mentioned before, the way an LLM would <em>understand</em> the prompt <code>7x8=</code> is to find the most probable characters (tokens) that would follow the sequence of characters (tokens) “7”, “x”, “8”, “=”. It might correctly predict that the next character (token) would be “5” and then the next one would be “6”, but it might as well predict that after “=” would come “4” and then after it would come “2”.</p>
+<p>Recently, many companies have found a way around this limitation. In the background, when a computation is prompted, the LLM is asked to generated a script (many times in python) to evaluate the expression. This improve the performance on computational tasks. However, it is important to keep in mind that the LLM could also hallucinate on the code. In the end, if you want to perform computations, just use a calculator.</p>
+</section>
+<section id="fast-forward-v.-black-box" class="level2" data-number="6.5">
+<h2 data-number="6.5" class="anchored" data-anchor-id="fast-forward-v.-black-box"><span class="header-section-number">6.5</span> Fast-forward v. black-box</h2>
+<p>Large Language Models are very useful to <em>fast-forwarding</em> tasks. Even at the corporate level, users report that using LLMs can help them accomplish tasks in only 20% of the normal time. This approach <em>enhances</em> the ability of users to do what they <em>know</em> already, but faster.</p>
 <p>On the other hand, LLMs also enable a <em>black-box</em> approach, where users have no prior knowledge of a field or task. Here, the models are <em>replacing</em> or outsourcing the human intervention.</p>
 <p>These two approaches could be both useful or dangerous for teaching and learning purposes. It depends on the specific goals, usage, and context. However, it is important to fully understand in which sense instructors and students are using LLMs, whether it is to fast-forward a task or as a black-box.</p>
 </section>
-<section id="vibe-learning" class="level2" data-number="6.5">
-<h2 data-number="6.5" class="anchored" data-anchor-id="vibe-learning"><span class="header-section-number">6.5</span> Vibe-learning</h2>
+<section id="vibe-learning" class="level2" data-number="6.6">
+<h2 data-number="6.6" class="anchored" data-anchor-id="vibe-learning"><span class="header-section-number">6.6</span> Vibe-learning</h2>
 <p>Beyond the black-box approach is what I call <strong>vibe-learning</strong>. In early 2025 the term <em>vibe-coding</em> was coined to describe the way in which many developers and computer scientists were using LLMs by “focusing on the goal of what needs to be accomplished and forgetting about the syntax of coding.” In this sense, vibe-coding enables developers to forget about the small details and focus on the big picture of the projects they are pursuing.</p>
-<p>In general, LLMs can be used with this <em>vib-ing</em> approach. Although, a word of caution is relevant in the teaching and learning setting. One important difference between novices and experts in a field is the attention to details. Experts tend to think more on the big picture and overarching themes, while novices focus on small details. This attention to details is fundamental for the learning process in any field. The overuse -or misuse- of LLMs in teaching and learning environments can hinder students’ ability to effectively learn concepts by skipping or reducing their attention to details.</p>
+<p>In general, LLMs can be used with this <em>vib-ing</em> approach. Although, a word of caution is relevant in the teaching and learning setting: one important difference between novices and experts in a field is the attention to details. Experts tend to think more on the big picture and overarching themes, while novices focus on small details. This attention to details is fundamental for the learning process in any field. The overuse -or misuse- of LLMs in teaching and learning environments can hinder students’ ability to effectively learn concepts by skipping or reducing their attention to details.</p>
 <p>Since LLMs can output products regardless of the users expertise or knowledge of a subject area, this usage could falsely lead users to <em>feel</em> they are engaging in learning. If there is anything more dangerous than ignorance is the illusion of knowledge.</p>
 
 

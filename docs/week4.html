@@ -395,7 +395,7 @@ ul.task-list li input[type="checkbox"] {
 </header>
 
 
-<p>Large Language Models are designed to provide the most probable sequence of follow up tokens given an input sequence. We can think of this input sequence as the <strong>context</strong> given to the LLM. Just as what happens in conversations with strangers, context plays a big role. One way of providing context is by constructing complex and details <em>prompts</em> that try to fully describe the background information of the request. Another -more conversational- way is through back-and-forth interactions.</p>
+<p>Large Language Models are designed to provide the most probable sequence of tokens following up tokens given as an input sequence. We can think of this input sequence as the <strong>context</strong> given to the LLM. Just as what happens in conversations with strangers, context plays a big role. One way of providing context is by constructing complex and details <em>prompts</em> that try to fully describe the background information of the request. Another -more conversational- way is through back-and-forth interactions.</p>
 <p>Currently, most publicly available LLMs are designed as <strong>chatbots</strong>. Their user interfaces are designed for conversational interactions and the back-end models are optimized to perform better in these types of interactions settings.</p>
 <section id="conversation-v.-questions" class="level2" data-number="5.1">
 <h2 data-number="5.1" class="anchored" data-anchor-id="conversation-v.-questions"><span class="header-section-number">5.1</span> Conversation v. questions</h2>
@@ -462,6 +462,7 @@ ul.task-list li input[type="checkbox"] {
 </table>
 </blockquote>
 <p>In this sense, it is useful to think about the LLM as a person that is assisting you and has no clue of who you are, what is your goal, and what is valuable for you.</p>
+<p><em>Pro-tip:</em> Save all the context that you’ll be using for your course as a text file for easy reuse. Alternatively, some LLMs offer to create special bots, agents, or projects (each company has their own terminology) that allows you to save general instructions that can be pre-appended to all your prompts.</p>
 </section>
 <section id="process" class="level3" data-number="5.3.2">
 <h3 data-number="5.3.2" class="anchored" data-anchor-id="process"><span class="header-section-number">5.3.2</span> Process</h3>
@@ -469,7 +470,7 @@ ul.task-list li input[type="checkbox"] {
 <p>Prompting for the LLM to include intermediate steps or to support the responses is a good way to improve its effectiveness. Clarifying follow-ups and adding more context are also effective strategies for increasing accuracy and obtaining more useful outputs.</p>
 <blockquote class="blockquote">
 <p><strong>Dangerous practice</strong></p>
-<p>The opposite extreme is when requesting LLMs to “reply in one word” or “reply in one sentence.” Removing argument, context, and steps increases the chances of hallucinations and noise.</p>
+<p>The opposite extreme is dangerous. When requesting LLMs to “reply in one word” or “reply in one sentence,” we are opening the door for possible hallucinations. Skipping context and reasoning steps increases the chances of hallucinations and noise.</p>
 </blockquote>
 </section>
 <section id="supervising" class="level3" data-number="5.3.3">

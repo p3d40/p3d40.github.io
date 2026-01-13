@@ -364,8 +364,9 @@ ul.task-list li input[type="checkbox"] {
   <li><a href="#summaries-and-outlines" id="toc-summaries-and-outlines" class="nav-link active" data-scroll-target="#summaries-and-outlines"><span class="header-section-number">2.1</span> Summaries and outlines</a></li>
   <li><a href="#wikipedia" id="toc-wikipedia" class="nav-link" data-scroll-target="#wikipedia"><span class="header-section-number">2.2</span> Wikipedia++</a></li>
   <li><a href="#translaterephrase" id="toc-translaterephrase" class="nav-link" data-scroll-target="#translaterephrase"><span class="header-section-number">2.3</span> Translate/rephrase</a></li>
-  <li><a href="#examples-and-follow-ups" id="toc-examples-and-follow-ups" class="nav-link" data-scroll-target="#examples-and-follow-ups"><span class="header-section-number">2.4</span> Examples and follow ups</a></li>
-  <li><a href="#hallucinations" id="toc-hallucinations" class="nav-link" data-scroll-target="#hallucinations"><span class="header-section-number">2.5</span> Hallucinations</a></li>
+  <li><a href="#grammar-and-coherence" id="toc-grammar-and-coherence" class="nav-link" data-scroll-target="#grammar-and-coherence"><span class="header-section-number">2.4</span> Grammar and coherence</a></li>
+  <li><a href="#examples-and-follow-ups" id="toc-examples-and-follow-ups" class="nav-link" data-scroll-target="#examples-and-follow-ups"><span class="header-section-number">2.5</span> Examples and follow ups</a></li>
+  <li><a href="#hallucinations" id="toc-hallucinations" class="nav-link" data-scroll-target="#hallucinations"><span class="header-section-number">2.6</span> Hallucinations</a></li>
   </ul>
 <div class="quarto-other-links"><h2>Other Links</h2><ul><li><a href="../es/"><i class="bi bi-link-45deg"></i>Español</a></li><li><a href="../"><i class="bi bi-link-45deg"></i>English</a></li></ul></div></nav>
     </div>
@@ -418,9 +419,9 @@ ul.task-list li input[type="checkbox"] {
 <p><em>Try:</em></p>
 <p><code>give me the five biggest ideas in this article [attach, copy paste, or include URL]</code></p>
 </blockquote>
-<p>Nowadays, most LLMs have the option to take multiple input formats. You can include a combination of text, image, videos, slide decks, and others as part of your prompt.</p>
+<p>Nowadays, most LLMs have the option to take multiple input formats (multimodal). You can include a combination of text, image, videos, slide decks, and others as part of your prompt.</p>
 <p>LLMs provide with very good summaries, however, as we will see throughout this course, there could be shortcomings such as hallucinations and context bias.</p>
-<p>Summarizing entails subject specific knowledge. In other words, creating a summary requires to define <strong>what</strong> is important or relevant from the given information. What is important might be a slightly subjective task.</p>
+<p><em>Remark</em>: Summarizing entails subject specific knowledge. In other words, creating a summary requires to define <strong>what</strong> is important or relevant from the given information. What is important might be a slightly subjective task.</p>
 <p>Providing LLMs with more context can make results more effective.</p>
 <blockquote class="blockquote">
 <p><strong>Try:</strong></p>
@@ -446,8 +447,8 @@ ul.task-list li input[type="checkbox"] {
 </thead>
 <tbody>
 <tr class="odd">
-<td>you can prompt for information about a class topic and even for references and online resources. <br> <strong>Try:</strong> <br> <code>what are eigenvalues for the disk?</code></td>
-<td>you can use LLMs to search for teaching strategies, group activities, or assignment ideas. <br> <strong>Try:</strong> <br><code>give me ideas for worksheets for eigenvalues of the laplacian in 2D domains.</code></td>
+<td>you can prompt for information about a class topic and even for references and online resources. <br> <strong>Try:</strong> <br> <code>what are eigenvalues for the disk? Search for resources on the internet.</code></td>
+<td>you can use LLMs to search for teaching strategies, group activities, or assignment ideas. <br> <strong>Try:</strong> <br><code>give me ideas for worksheets for eigenvalues of the laplacian in 2D domains. find examples on the internet from college courses.</code></td>
 </tr>
 </tbody>
 </table>
@@ -479,8 +480,32 @@ ul.task-list li input[type="checkbox"] {
 </table>
 </blockquote>
 </section>
-<section id="examples-and-follow-ups" class="level2" data-number="2.4">
-<h2 data-number="2.4" class="anchored" data-anchor-id="examples-and-follow-ups"><span class="header-section-number">2.4</span> Examples and follow ups</h2>
+<section id="grammar-and-coherence" class="level2" data-number="2.4">
+<h2 data-number="2.4" class="anchored" data-anchor-id="grammar-and-coherence"><span class="header-section-number">2.4</span> Grammar and coherence</h2>
+<p>Not only ESL students and instructors can benefit from a grammar/phrasing check up! Using LLMs as personalized writing aids can help polish drafts without loosing your voice.</p>
+<blockquote class="blockquote">
+<table class="caption-top table">
+<colgroup>
+<col style="width: 50%">
+<col style="width: 50%">
+</colgroup>
+<thead>
+<tr class="header">
+<th><strong>For students</strong></th>
+<th><strong>For instructors</strong></th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td><code>in the following text, keep my voice and fix grammar issues. [text...]</code></td>
+<td><code>check the following text for coherence, clarity, and typos. make sure the language is clear for a freshman level calculus course for math majors. [text...]</code></td>
+</tr>
+</tbody>
+</table>
+</blockquote>
+</section>
+<section id="examples-and-follow-ups" class="level2" data-number="2.5">
+<h2 data-number="2.5" class="anchored" data-anchor-id="examples-and-follow-ups"><span class="header-section-number">2.5</span> Examples and follow ups</h2>
 <p>Another practical use of LLMs is the ability to generate examples of certain topics, as well as to produce follow ups, just like in a regular conversation.</p>
 <blockquote class="blockquote">
 <p><strong>FOR STUDENTS</strong></p>
@@ -498,8 +523,8 @@ ul.task-list li input[type="checkbox"] {
 <p><code>suggest an activity in groups for 20 minutes based on problem type 4.</code></p>
 </blockquote>
 </section>
-<section id="hallucinations" class="level2" data-number="2.5">
-<h2 data-number="2.5" class="anchored" data-anchor-id="hallucinations"><span class="header-section-number">2.5</span> Hallucinations</h2>
+<section id="hallucinations" class="level2" data-number="2.6">
+<h2 data-number="2.6" class="anchored" data-anchor-id="hallucinations"><span class="header-section-number">2.6</span> Hallucinations</h2>
 <p>A common consideration when using LLMs are <em>hallucinations</em>. These are non-factual responses or made-up references. It is important to <strong>always</strong> fact check responses generated by any LLM.</p>
 <p>A good strategy is to take LLM outputs as initial drafts, starting points, or broad insights about a topic.</p>
 <p>Newer models are getting better with handling hallucinations, however we shouldn’t blindly trust the output of an LLMs.</p>

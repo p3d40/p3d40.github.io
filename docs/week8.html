@@ -411,7 +411,7 @@ ul.task-list li input[type="checkbox"] {
 <section id="give-enough-context" class="level3" data-number="9.1.1">
 <h3 data-number="9.1.1" class="anchored" data-anchor-id="give-enough-context"><span class="header-section-number">9.1.1</span> Give enough context</h3>
 <p>Include information in your prompt about your role and the purpose of your request.</p>
-<p><code>i am teaching an upper division course for math majors in an undergraduate institution. check the following problems for clarity in language. [attach or copy-paste the problem statments]</code></p>
+<p><code>i am teaching an upper division course for math majors in an higher education institution. check the following problems for clarity in language. [attach or copy-paste the problem statements...]</code></p>
 </section>
 <section id="follow-ups" class="level3" data-number="9.1.2">
 <h3 data-number="9.1.2" class="anchored" data-anchor-id="follow-ups"><span class="header-section-number">9.1.2</span> Follow-ups</h3>
@@ -420,7 +420,7 @@ ul.task-list li input[type="checkbox"] {
 <section id="feedback-and-rephrasing" class="level3" data-number="9.1.3">
 <h3 data-number="9.1.3" class="anchored" data-anchor-id="feedback-and-rephrasing"><span class="header-section-number">9.1.3</span> Feedback and rephrasing</h3>
 <p>Ask LLMs to give feedback on a given text. You can take it a step further by assigning the LLM an editorial role:</p>
-<p><code>for the text below, give me feedback as if you were an editor. focus on clarity of the text, as well as the language used. this is for a lower division chemistry course. check consistency, grammar, and technical language.</code></p>
+<p><code>for the text below, give me feedback as if you were an editor. focus on clarity of the text, as well as the language used. this is for a lower division chemistry course. check consistency, grammar, and technical language. keep my voice.</code></p>
 </section>
 <section id="summaries-and-outlines" class="level3" data-number="9.1.4">
 <h3 data-number="9.1.4" class="anchored" data-anchor-id="summaries-and-outlines"><span class="header-section-number">9.1.4</span> Summaries and outlines*</h3>
@@ -428,14 +428,14 @@ ul.task-list li input[type="checkbox"] {
 </section>
 <section id="uncovered-reasoning" class="level3" data-number="9.1.5">
 <h3 data-number="9.1.5" class="anchored" data-anchor-id="uncovered-reasoning"><span class="header-section-number">9.1.5</span> Uncovered reasoning</h3>
-<p>A good way to improve the quality of LLM outputs is by prompting it to <em>explain it’s reasoning</em>. When used for solving problems or analyzing situations, including to explain it’s reasoning at the end usually leads to better results.</p>
+<p>A good way to improve the quality of LLM outputs is by prompting it to <em>explain it’s reasoning</em>. When used for solving problems or analyzing situations, including to explain or show its reasoning at the end usually leads to better results.</p>
 </section>
 <section id="tutordisciple-for-learners" class="level3" data-number="9.1.6">
 <h3 data-number="9.1.6" class="anchored" data-anchor-id="tutordisciple-for-learners"><span class="header-section-number">9.1.6</span> Tutor/disciple (for learners)</h3>
 <p>You can endow LLMs with (temporary) roles. Use it as a tutor if you want it to help you clarify concepts related to a class:</p>
 <p><code>i am a sophomore student taking BIO 20 at UCSC. you are a biology tutor helping me with my homework. i will ask you some questions related to concepts that are not very clear to me. help me understand them and guide me through these homework questions.</code></p>
 <p>A very effective way to learn a topic is by teaching it. Consider also endowing the LLMs with a disciple role. You can prompt it to forget everything it knows about a topic and that you will explain it.</p>
-<p><code>forget everything you know about projectile motion. i will explain you the important concepts related to this. ask me clarifying questions when something is not clear.</code></p>
+<p><code>forget everything you know about projectile motion. i will explain to you the important concepts related to this. ask me clarifying questions when something is not clear.</code></p>
 </section>
 <section id="test-student-for-instructors" class="level3" data-number="9.1.7">
 <h3 data-number="9.1.7" class="anchored" data-anchor-id="test-student-for-instructors"><span class="header-section-number">9.1.7</span> Test student (for instructors)</h3>
@@ -448,15 +448,15 @@ ul.task-list li input[type="checkbox"] {
 <p>Likewise, there are some uses that can be problematic, not ideal, or even dangerous for teaching and learning.</p>
 <section id="writing-essays-or-solving-problems-learners" class="level3" data-number="9.2.1">
 <h3 data-number="9.2.1" class="anchored" data-anchor-id="writing-essays-or-solving-problems-learners"><span class="header-section-number">9.2.1</span> Writing essays or solving problems (learners)</h3>
-<p>LLMs are becoming better at these tasks, however careful considerations needs to be made here. As a learner, one of the main goals of writing an essay or solving a question/problem is the <strong>process</strong> of doing it yourself. Learning happens in thinking about how to structure the essay, on how to approach the question or problem, and the trail and error to finally achieve the goal. Generating essays or solutions skips the learning process altogether.</p>
+<p>LLMs are becoming better at these tasks, however careful considerations needs to be made here. As a learner, one of the main goals of writing an essay or solving a question/problem is the <strong>process</strong> of doing it yourself. Learning happens in thinking about how to structure the essay, on how to approach the question or problem, and the trail and error to finally achieve the goal. Generating essays or problem solutions without paying attention to the process skips the learning process altogether.</p>
 </section>
 <section id="grading-instructors" class="level3" data-number="9.2.2">
 <h3 data-number="9.2.2" class="anchored" data-anchor-id="grading-instructors"><span class="header-section-number">9.2.2</span> Grading (instructors)</h3>
-<p>Even more when LLMs behave as a black-box, using them for high-stakes tasks such as grading assignments can be highly inaccurate. For classification type tasks (such as grading), LLMs are biased towards their training data. If this is not clear, the results can be very unfair and inconsistent. Besides this, using LLMs for grading can be problematic due to privacy issues when sharing student data.</p>
+<p>Even more when LLMs behave as a black-box, using them for high-stakes tasks such as grading assignments can be highly inaccurate and problematic. For classification type tasks (such as grading), LLMs are biased towards their training data. Also, due to their probabilistic nature, these classifications could not be replicable. The results can be very unfair and inconsistent. Besides this, using LLMs for grading can be problematic due to privacy issues when sharing student data.</p>
 </section>
 <section id="hallucinations" class="level3" data-number="9.2.3">
 <h3 data-number="9.2.3" class="anchored" data-anchor-id="hallucinations"><span class="header-section-number">9.2.3</span> Hallucinations</h3>
-<p>In general, LLMs are stochastic models that produce text. As such, they are prone to generating non-factual outputs. This issue is getting better, however, it is important to always double check the outputs and not to take them as 100% true.</p>
+<p>In general, LLMs are stochastic models that produce text. As such, they are prone to generating non-factual outputs. This issue is improving, however, it is important to always double check the outputs and not to take them as 100% true.</p>
 </section>
 <section id="calculations" class="level3" data-number="9.2.4">
 <h3 data-number="9.2.4" class="anchored" data-anchor-id="calculations"><span class="header-section-number">9.2.4</span> Calculations</h3>
