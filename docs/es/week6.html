@@ -20,6 +20,41 @@ ul.task-list li input[type="checkbox"] {
   margin: 0 0.8em 0.2em -1em; /* quarto-specific, see https://github.com/quarto-dev/quarto-cli/issues/4556 */ 
   vertical-align: middle;
 }
+/* CSS for syntax highlighting */
+html { -webkit-text-size-adjust: 100%; }
+pre > code.sourceCode { white-space: pre; position: relative; }
+pre > code.sourceCode > span { display: inline-block; line-height: 1.25; }
+pre > code.sourceCode > span:empty { height: 1.2em; }
+.sourceCode { overflow: visible; }
+code.sourceCode > span { color: inherit; text-decoration: inherit; }
+div.sourceCode { margin: 1em 0; }
+pre.sourceCode { margin: 0; }
+@media screen {
+div.sourceCode { overflow: auto; }
+}
+@media print {
+pre > code.sourceCode { white-space: pre-wrap; }
+pre > code.sourceCode > span { text-indent: -5em; padding-left: 5em; }
+}
+pre.numberSource code
+  { counter-reset: source-line 0; }
+pre.numberSource code > span
+  { position: relative; left: -4em; counter-increment: source-line; }
+pre.numberSource code > span > a:first-child::before
+  { content: counter(source-line);
+    position: relative; left: -1em; text-align: right; vertical-align: baseline;
+    border: none; display: inline-block;
+    -webkit-touch-callout: none; -webkit-user-select: none;
+    -khtml-user-select: none; -moz-user-select: none;
+    -ms-user-select: none; user-select: none;
+    padding: 0 4px; width: 4em;
+  }
+pre.numberSource { margin-left: 3em;  padding-left: 4px; }
+div.sourceCode
+  {   }
+@media screen {
+pre > code.sourceCode > span > a:first-child::before { text-decoration: underline; }
+}
 </style>
 
 
@@ -312,7 +347,7 @@ ul.task-list li input[type="checkbox"] {
         <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="./week3.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text"><span class="chapter-number">4</span>&nbsp; <span class="chapter-title">¿Qué son los LLM de todos modos?</span></span></a>
+ <span class="menu-text"><span class="chapter-number">4</span>&nbsp; <span class="chapter-title">¿Qué son los LLMs de todos modos?</span></span></a>
   </div>
 </li>
         <li class="sidebar-item">
@@ -357,16 +392,8 @@ ul.task-list li input[type="checkbox"] {
 <div id="quarto-sidebar-glass" class="quarto-sidebar-collapse-item" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item"></div>
 <!-- margin-sidebar -->
     <div id="quarto-margin-sidebar" class="sidebar margin-sidebar">
-        <nav id="TOC" role="doc-toc" class="toc-active">
-    <h2 id="toc-title">Tabla de contenidos</h2>
-   
-  <ul>
-  <li><a href="#contexto" id="toc-contexto" class="nav-link active" data-scroll-target="#contexto"><span class="header-section-number">7.1</span> Contexto</a></li>
-  <li><a href="#evaluación" id="toc-evaluación" class="nav-link" data-scroll-target="#evaluación"><span class="header-section-number">7.2</span> Evaluación</a></li>
-  <li><a href="#puntuación-trust" id="toc-puntuación-trust" class="nav-link" data-scroll-target="#puntuación-trust"><span class="header-section-number">7.3</span> Puntuación TRUST</a></li>
-  </ul>
-<div class="quarto-other-links"><h2>Otros Enlaces</h2><ul><li><a href="../es/"><i class="bi bi-link-45deg"></i>Español</a></li><li><a href="../"><i class="bi bi-link-45deg"></i>English</a></li></ul></div></nav>
-    </div>
+        
+    <div class="quarto-other-links"><h2>Otros Enlaces</h2><ul><li><a href="../es/"><i class="bi bi-link-45deg"></i>Español</a></li><li><a href="../"><i class="bi bi-link-45deg"></i>English</a></li></ul></div></div>
 <!-- main -->
 <main class="content" id="quarto-document-content">
 
@@ -390,149 +417,85 @@ ul.task-list li input[type="checkbox"] {
 </header>
 
 
-<p>Existen múltiples opiniones con respecto al papel de los LLMs en la educación. Independientemente del alcance en el que estés utilizando Modelos de Lenguaje Grande para tu propia enseñanza y aprendizaje, hay ciertas cosas que tener en cuenta para <em>mejorar</em> -y no reemplazar- tu pensamiento.</p>
-<section id="contexto" class="level2" data-number="7.1">
-<h2 data-number="7.1" class="anchored" data-anchor-id="contexto"><span class="header-section-number">7.1</span> Contexto</h2>
-<p>Uno de los desafíos más críticos de las salidas de LLM es que pueden ser demasiado genéricas -y posiblemente no muy útiles. Proporcionar suficiente contexto sobre la tarea es importante para hacer prompts efectivos y conversaciones.</p>
-<blockquote class="blockquote">
-<ul>
-<li>Considera describir el trasfondo de la tarea: ¿para qué es? ¿para qué curso es? ¿cuál es el nivel esperado (primer año, último año, etc.)? ¿cuál es tu objetivo con esto?</li>
-<li>Dota al LLM con un carácter o un rol para la tarea: <code>eres un tutor para este curso</code> <code>eres un asistente de curso</code> <code>eres un editor que proporciona retroalimentación</code> <code>eres un estudiante en este curso</code></li>
-<li>Ajusta finamente el LLM para experiencia en lenguaje o conocimiento: piensa en limitar el conocimiento o referencias al curso actual o cualquier otro curso <em>previo</em>. Incluir un programa de estudios o programa del curso puede ayudar a dar más contexto.</li>
-</ul>
-</blockquote>
-<p><em>Ajuste fino</em> a menudo significa dar un contexto específico para cada prompt individual. Considera guardar este contexto básico como un archivo de referencia en el LLM o incluso como una nota de texto que puedes copiar y pegar cada vez que preguntes algo relacionado con una clase en particular.</p>
-</section>
-<section id="evaluación" class="level2" data-number="7.2">
-<h2 data-number="7.2" class="anchored" data-anchor-id="evaluación"><span class="header-section-number">7.2</span> Evaluación</h2>
-<p>Cargar trabajo por adelantado en los prompts no es la única manera en la que podemos hacer nuestras interacciones con LLMs más efectivas. Es importante analizar sus salidas y evaluar si están logrando nuestras expectativas.</p>
-<p>Dado que los LLMs tienen algún nivel de autonomía -toman pequeñas decisiones como en qué texto producir- es útil evaluarlos como un supervisor lo haría con un asistente.</p>
-<p>Para esto, es importante tener elementos clave de rúbrica en los que podemos enfocarnos mientras evaluamos las salidas del LLM:</p>
-<table class="caption-top table">
-<thead>
-<tr class="header">
-<th>Elemento</th>
-<th>Descripción</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>Cumplimiento</td>
-<td>¿Generó el LLM lo que esperabas?</td>
-</tr>
-<tr class="even">
-<td>Alucinaciones</td>
-<td>¿Son reales los hechos utilizados?</td>
-</tr>
-<tr class="odd">
-<td>Datos</td>
-<td>¿Utilizó el LLM los datos o referencias apropiados?</td>
-</tr>
-<tr class="even">
-<td>Voz</td>
-<td>¿Se da la salida en la voz, lenguaje y terminología correctos?</td>
-</tr>
-</tbody>
-</table>
-</section>
-<section id="puntuación-trust" class="level2" data-number="7.3">
-<h2 data-number="7.3" class="anchored" data-anchor-id="puntuación-trust"><span class="header-section-number">7.3</span> Puntuación TRUST</h2>
-<p>Uno de los aspectos más importantes de las implementaciones de LLM es la confianza. Esto involucra diferentes niveles. Desde la arquitectura del modelo, los datos utilizados para entrenamiento, hasta la manera en que produce salidas, y la utilidad/veracidad de las respuestas, es importante tener un sentido holístico de confianza para la implementación.</p>
-<p>Hay tres etapas que son relevantes para esto:</p>
-<ul>
-<li>Entrenamiento</li>
-<li>Procesamiento</li>
-<li>Evaluación</li>
-</ul>
-<p>Una manera simple de evaluar tu conciencia de tu implementación es calculando lo que llamo la <strong>puntuación TRUST</strong>: Transparencia, Riesgo, Utilidad, Seguridad y Confianza. Cada etapa tiene dos componentes y cada componente tiene un total máximo de puntos que pueden ser asignados. Estos son puntos <em>auto-asignados</em> que pueden ayudarte a evaluar tu propio conocimiento y conciencia de todo el sistema LLM e implementación que estás usando.</p>
-<table class="caption-top table">
-<colgroup>
-<col style="width: 28%">
-<col style="width: 38%">
-<col style="width: 33%">
-</colgroup>
-<thead>
-<tr class="header">
-<th>Etapa</th>
-<th>Dimensión</th>
-<th>Descripción</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>Entrenamiento</td>
-<td>Datos (1 pt)</td>
-<td>Evalúa las fuentes de datos, calidad de datos, derechos de autor y privacidad de los datos utilizados para entrenamiento.</td>
-</tr>
-<tr class="even">
-<td>Entrenamiento</td>
-<td>Huella (1 pt)</td>
-<td>Considera el impacto ambiental y laboral del LLM.</td>
-</tr>
-<tr class="odd">
-<td>Procesamiento</td>
-<td>Explicabilidad (3 pts)</td>
-<td>Qué tan bien entiende el usuario la salida.</td>
-</tr>
-<tr class="even">
-<td>Procesamiento</td>
-<td>Privacidad (3 pts)</td>
-<td>Evalúa la propiedad de datos, almacenamiento y prácticas de uso.</td>
-</tr>
-<tr class="odd">
-<td>Evaluación</td>
-<td>Evaluación (9 pts)</td>
-<td>Mide la efectividad y precisión de las salidas.</td>
-</tr>
-<tr class="even">
-<td>Evaluación</td>
-<td>Responsabilidad (9 pts)</td>
-<td>Asegura responsabilidad humana clara en cada etapa del proceso.</td>
-</tr>
-</tbody>
-</table>
-<p>La puntuación TRUST total posible es 26 puntos.</p>
-<p>Esta puntuación puede ayudar a guiar hasta qué punto necesitas considerar un LLM diferente, considerar diferentes tareas para ser externalizadas, o hasta qué punto puedes aprender más sobre el sistema LLM mismo.</p>
-<p>Aquí hay algunas acciones recomendadas basadas en la puntuación TRUST que obtienes después de tu autoevaluación:</p>
-<table class="caption-top table">
-<colgroup>
-<col style="width: 30%">
-<col style="width: 40%">
-<col style="width: 30%">
-</colgroup>
-<thead>
-<tr class="header">
-<th>Nivel</th>
-<th>Puntuación</th>
-<th>Acción</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>TRUST Alto</td>
-<td>&gt; 18 pts</td>
-<td>Implementa el sistema mientras reevalúas periódicamente si alguna dimensión ha cambiado.</td>
-</tr>
-<tr class="even">
-<td>TRUST Moderado</td>
-<td>Entre 13-18 pts</td>
-<td>Identifica y aborda debilidades específicas en las etapas con puntuación más baja. Reevalúa antes de implementar el sistema.</td>
-</tr>
-<tr class="odd">
-<td>TRUST Bajo</td>
-<td>Entre 5-12 pts</td>
-<td>Revisa todas las etapas del sistema (entrenamiento, procesamiento, implementación) para cumplimiento con políticas y regulaciones actuales.</td>
-</tr>
-<tr class="even">
-<td>TRUST Mínimo</td>
-<td>&lt; 5pts</td>
-<td>Considera un rediseño del sistema y/o explora un sistema diferente. Consulta con supervisores y busca alternativas.</td>
-</tr>
-</tbody>
-</table>
+<p>Here’s the Spanish translation of week 6 content:</p>
+<div class="sourceCode" id="cb1"><pre class="sourceCode markdown code-with-copy"><code class="sourceCode markdown"><span id="cb1-1"><a href="#cb1-1" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-2"><a href="#cb1-2" aria-hidden="true" tabindex="-1"></a>Hay múltiples opiniones sobre el papel de los LLMs en la educación. Independientemente del grado en que estés usando Modelos de Lenguaje Extensos para tu propia enseñanza y aprendizaje, hay ciertas cosas a tener en mente para *mejorar* -y no reemplazar- tu pensamiento.</span>
+<span id="cb1-3"><a href="#cb1-3" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-4"><a href="#cb1-4" aria-hidden="true" tabindex="-1"></a><span class="fu">## Contexto</span></span>
+<span id="cb1-5"><a href="#cb1-5" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-6"><a href="#cb1-6" aria-hidden="true" tabindex="-1"></a>Uno de los desafíos más críticos de las salidas de LLM es que pueden ser demasiado genéricas -y posiblemente no muy útiles. Proporcionar suficiente contexto sobre la tarea es importante para hacer prompts y conversaciones efectivas.</span>
+<span id="cb1-7"><a href="#cb1-7" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-8"><a href="#cb1-8" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-9"><a href="#cb1-9" aria-hidden="true" tabindex="-1"></a><span class="at">&gt; - Considera describir el trasfondo de la tarea: ¿para qué es? ¿para qué curso es? ¿cuál es el nivel esperado (primer año, último año, etc.)? ¿cuál es tu objetivo con ello?</span></span>
+<span id="cb1-10"><a href="#cb1-10" aria-hidden="true" tabindex="-1"></a><span class="at">&gt; - Dota al LLM con un carácter o un rol para la tarea:</span></span>
+<span id="cb1-11"><a href="#cb1-11" aria-hidden="true" tabindex="-1"></a><span class="at">&gt; </span><span class="in">`eres un tutor para este curso`</span></span>
+<span id="cb1-12"><a href="#cb1-12" aria-hidden="true" tabindex="-1"></a><span class="at">&gt; </span><span class="in">`eres un asistente de curso`</span></span>
+<span id="cb1-13"><a href="#cb1-13" aria-hidden="true" tabindex="-1"></a><span class="at">&gt; </span><span class="in">`eres un editor proporcionando retroalimentación`</span></span>
+<span id="cb1-14"><a href="#cb1-14" aria-hidden="true" tabindex="-1"></a><span class="at">&gt; </span><span class="in">`eres un estudiante en este curso`</span></span>
+<span id="cb1-15"><a href="#cb1-15" aria-hidden="true" tabindex="-1"></a><span class="at">&gt; - Ajusta el LLM para experiencia en lenguaje o conocimiento: piensa en limitar el conocimiento o referencias al curso actual o cualquier otro curso *previo*. Incluir un programa de estudios o programa de curso puede ayudar a dar más contexto.</span></span>
+<span id="cb1-16"><a href="#cb1-16" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-17"><a href="#cb1-17" aria-hidden="true" tabindex="-1"></a>*Ajuste fino* a menudo significa dar un contexto específico para cada prompt individual. Considera guardar este contexto básico como un archivo de referencia en el LLM o incluso como una nota de texto que puedas copiar y pegar cada vez que hagas un prompt de algo relacionado con una clase particular.</span>
+<span id="cb1-18"><a href="#cb1-18" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-19"><a href="#cb1-19" aria-hidden="true" tabindex="-1"></a><span class="fu">## Evaluación</span></span>
+<span id="cb1-20"><a href="#cb1-20" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-21"><a href="#cb1-21" aria-hidden="true" tabindex="-1"></a>Cargar trabajo por adelantado en los prompts no es la única forma en que podemos hacer nuestras interacciones con LLMs más efectivas. Es importante analizar sus salidas y evaluar si están logrando nuestras expectativas.</span>
+<span id="cb1-22"><a href="#cb1-22" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-23"><a href="#cb1-23" aria-hidden="true" tabindex="-1"></a>Como los LLMs tienen algún nivel de agencia -toman pequeñas decisiones como en qué texto producir- es útil evaluarlos como un supervisor haría con un asistente.</span>
+<span id="cb1-24"><a href="#cb1-24" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-25"><a href="#cb1-25" aria-hidden="true" tabindex="-1"></a>Para esto, es importante tener elementos clave de rúbrica en los que podamos enfocarnos mientras evaluamos las salidas del LLM:</span>
+<span id="cb1-26"><a href="#cb1-26" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-27"><a href="#cb1-27" aria-hidden="true" tabindex="-1"></a><span class="pp">|</span> Elemento <span class="pp">|</span> Descripción <span class="pp">|</span></span>
+<span id="cb1-28"><a href="#cb1-28" aria-hidden="true" tabindex="-1"></a><span class="pp">|------|-------------|</span></span>
+<span id="cb1-29"><a href="#cb1-29" aria-hidden="true" tabindex="-1"></a><span class="pp">|</span>Cumplimiento<span class="pp">|</span> ¿Generó el LLM lo que estabas esperando?<span class="pp">|</span></span>
+<span id="cb1-30"><a href="#cb1-30" aria-hidden="true" tabindex="-1"></a><span class="pp">|</span>Alucinaciones<span class="pp">|</span> ¿Son reales los hechos utilizados? <span class="pp">|</span></span>
+<span id="cb1-31"><a href="#cb1-31" aria-hidden="true" tabindex="-1"></a><span class="pp">|</span>Datos<span class="pp">|</span> ¿Usó el LLM los datos o referencias apropiados?<span class="pp">|</span></span>
+<span id="cb1-32"><a href="#cb1-32" aria-hidden="true" tabindex="-1"></a><span class="pp">|</span>Voz<span class="pp">|</span> ¿Está la salida dada en la voz, lenguaje y terminología correctos?<span class="pp">|</span></span>
+<span id="cb1-33"><a href="#cb1-33" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-34"><a href="#cb1-34" aria-hidden="true" tabindex="-1"></a><span class="co">[</span><span class="ot">## Atribución</span><span class="co">]</span>:#</span>
+<span id="cb1-35"><a href="#cb1-35" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-36"><a href="#cb1-36" aria-hidden="true" tabindex="-1"></a><span class="fu">## Puntuación TRUST</span></span>
+<span id="cb1-37"><a href="#cb1-37" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-38"><a href="#cb1-38" aria-hidden="true" tabindex="-1"></a>Uno de los aspectos más importantes de las implementaciones de LLM es la **confianza**. Esto involucra diferentes niveles. Desde la arquitectura del modelo, los datos usados para entrenamiento, hasta la forma en que produce salidas, y la utilidad/veracidad de las respuestas, es importante tener un sentido holístico de confianza para la implementación.</span>
+<span id="cb1-39"><a href="#cb1-39" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-40"><a href="#cb1-40" aria-hidden="true" tabindex="-1"></a>Hay tres etapas que son relevantes para esto:</span>
+<span id="cb1-41"><a href="#cb1-41" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-42"><a href="#cb1-42" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span>Entrenamiento</span>
+<span id="cb1-43"><a href="#cb1-43" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span>Procesamiento</span>
+<span id="cb1-44"><a href="#cb1-44" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span>Evaluación</span>
+<span id="cb1-45"><a href="#cb1-45" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-46"><a href="#cb1-46" aria-hidden="true" tabindex="-1"></a>Una forma simple de evaluar tu conciencia y conocimiento de tu implementación es calculando lo que llamo la **puntuación TRUST**: Transparencia, Riesgo, Utilidad, Seguridad y Confianza (por sus siglas en inglés). Cada etapa tiene dos componentes y cada componente tiene un máximo de puntos totales que pueden asignarse. Estos son puntos *auto-asignados* que pueden ayudarte a evaluar tu propio conocimiento y conciencia de todo el sistema LLM e implementación que estás usando.</span>
+<span id="cb1-47"><a href="#cb1-47" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-48"><a href="#cb1-48" aria-hidden="true" tabindex="-1"></a><span class="pp">|</span> Etapa <span class="pp">|</span> Dimensión <span class="pp">|</span> Descripción<span class="pp">|</span></span>
+<span id="cb1-49"><a href="#cb1-49" aria-hidden="true" tabindex="-1"></a><span class="pp">|------|--------|-------|</span></span>
+<span id="cb1-50"><a href="#cb1-50" aria-hidden="true" tabindex="-1"></a><span class="pp">|</span>Entrenamiento<span class="pp">|</span> Datos (1 pto) <span class="pp">|</span> Evalúa las fuentes de datos, calidad de datos, derechos de autor y privacidad de los datos usados para entrenamiento. <span class="pp">|</span></span>
+<span id="cb1-51"><a href="#cb1-51" aria-hidden="true" tabindex="-1"></a><span class="pp">|</span>Entrenamiento <span class="pp">|</span>Huella (1 pto)<span class="pp">|</span> Considera el impacto ambiental y laboral del LLM. <span class="pp">|</span></span>
+<span id="cb1-52"><a href="#cb1-52" aria-hidden="true" tabindex="-1"></a><span class="pp">|</span>Procesamiento<span class="pp">|</span> Explicabilidad (3 ptos)<span class="pp">|</span> Qué tan bien entiende el usuario la salida.<span class="pp">|</span></span>
+<span id="cb1-53"><a href="#cb1-53" aria-hidden="true" tabindex="-1"></a><span class="pp">|</span>Procesamiento<span class="pp">|</span> Privacidad (3 ptos)<span class="pp">|</span> Evalúa la propiedad, almacenamiento y prácticas de uso de datos.<span class="pp">|</span></span>
+<span id="cb1-54"><a href="#cb1-54" aria-hidden="true" tabindex="-1"></a><span class="pp">|</span>Evaluación<span class="pp">|</span> Valoración (9 ptos)<span class="pp">|</span> Mide la efectividad y precisión de las salidas.<span class="pp">|</span></span>
+<span id="cb1-55"><a href="#cb1-55" aria-hidden="true" tabindex="-1"></a><span class="pp">|</span>Evaluación<span class="pp">|</span> Responsabilidad (9 ptos)<span class="pp">|</span> Asegura responsabilidad humana clara en cada etapa del proceso. <span class="pp">|</span></span>
+<span id="cb1-56"><a href="#cb1-56" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-57"><a href="#cb1-57" aria-hidden="true" tabindex="-1"></a>La puntuación TRUST total posible es de hasta 26 puntos.</span>
+<span id="cb1-58"><a href="#cb1-58" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-59"><a href="#cb1-59" aria-hidden="true" tabindex="-1"></a>Esta puntuación puede ayudar a guiar hasta qué punto necesitas considerar un LLM diferente, considerar diferentes tareas para ser subcontratadas, o hasta qué punto puedes aprender más sobre el sistema LLM en sí.</span>
+<span id="cb1-60"><a href="#cb1-60" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-61"><a href="#cb1-61" aria-hidden="true" tabindex="-1"></a>Aquí hay algunas acciones recomendadas basadas en la puntuación TRUST que obtienes después de tu autoevaluación:</span>
+<span id="cb1-62"><a href="#cb1-62" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-63"><a href="#cb1-63" aria-hidden="true" tabindex="-1"></a><span class="pp">|</span>Nivel <span class="pp">|</span>Puntuación<span class="pp">|</span> Acción<span class="pp">|</span></span>
+<span id="cb1-64"><a href="#cb1-64" aria-hidden="true" tabindex="-1"></a><span class="pp">|---|----|---|</span></span>
+<span id="cb1-65"><a href="#cb1-65" aria-hidden="true" tabindex="-1"></a><span class="pp">|</span>TRUST Alto<span class="pp">|</span> &gt; 18 ptos <span class="pp">|</span> Implementa el sistema mientras reevalúas periódicamente si alguna dimensión ha cambiado.<span class="pp">|</span></span>
+<span id="cb1-66"><a href="#cb1-66" aria-hidden="true" tabindex="-1"></a><span class="pp">|</span>TRUST Moderado<span class="pp">|</span> Entre 13-18 ptos <span class="pp">|</span> Identifica y aborda debilidades específicas en las etapas con menor puntuación. Reevalúa antes de implementar el sistema. <span class="pp">|</span></span>
+<span id="cb1-67"><a href="#cb1-67" aria-hidden="true" tabindex="-1"></a><span class="pp">|</span>TRUST Bajo <span class="pp">|</span> Entre 5-12 ptos <span class="pp">|</span> Revisa todas las etapas del sistema (entrenamiento, procesamiento, implementación) para cumplimiento con políticas y regulaciones actuales. <span class="pp">|</span></span>
+<span id="cb1-68"><a href="#cb1-68" aria-hidden="true" tabindex="-1"></a><span class="pp">|</span>TRUST Mínimo<span class="pp">|</span> &lt; 5 ptos<span class="pp">|</span> Considera un rediseño del sistema y/o explora un sistema diferente. Consulta con supervisores y busca alternativas. <span class="pp">|</span></span>
+<span id="cb1-69"><a href="#cb1-69" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-70"><a href="#cb1-70" aria-hidden="true" tabindex="-1"></a><span class="co">[</span><span class="ot">### Ejemplos</span><span class="co">]</span>:#</span>
+<span id="cb1-71"><a href="#cb1-71" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-72"><a href="#cb1-72" aria-hidden="true" tabindex="-1"></a><span class="co">[</span><span class="ot">## Referencias</span><span class="co">]</span>:#</span>
+<span id="cb1-73"><a href="#cb1-73" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-74"><a href="#cb1-74" aria-hidden="true" tabindex="-1"></a><span class="co">[</span><span class="ot">/Users/pedromorales/Dropbox/Projects/LLMs in Teaching and Learning/references/2306.05685v4.pdf</span><span class="co">]</span>:#</span>
+<span id="cb1-75"><a href="#cb1-75" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-76"><a href="#cb1-76" aria-hidden="true" tabindex="-1"></a><span class="co">[</span><span class="ot">/Users/pedromorales/Dropbox/Projects/LLMs in Teaching and Learning/references/s11023-018-9482-5.pdf</span><span class="co">]</span>:#</span></code><button title="Copiar al portapapeles" class="code-copy-button"><i class="bi"></i></button></pre></div>
 
 
-</section>
 
 </main> <!-- /main -->
 <script id="quarto-html-after-body" type="application/javascript">

@@ -20,6 +20,41 @@ ul.task-list li input[type="checkbox"] {
   margin: 0 0.8em 0.2em -1em; /* quarto-specific, see https://github.com/quarto-dev/quarto-cli/issues/4556 */ 
   vertical-align: middle;
 }
+/* CSS for syntax highlighting */
+html { -webkit-text-size-adjust: 100%; }
+pre > code.sourceCode { white-space: pre; position: relative; }
+pre > code.sourceCode > span { display: inline-block; line-height: 1.25; }
+pre > code.sourceCode > span:empty { height: 1.2em; }
+.sourceCode { overflow: visible; }
+code.sourceCode > span { color: inherit; text-decoration: inherit; }
+div.sourceCode { margin: 1em 0; }
+pre.sourceCode { margin: 0; }
+@media screen {
+div.sourceCode { overflow: auto; }
+}
+@media print {
+pre > code.sourceCode { white-space: pre-wrap; }
+pre > code.sourceCode > span { text-indent: -5em; padding-left: 5em; }
+}
+pre.numberSource code
+  { counter-reset: source-line 0; }
+pre.numberSource code > span
+  { position: relative; left: -4em; counter-increment: source-line; }
+pre.numberSource code > span > a:first-child::before
+  { content: counter(source-line);
+    position: relative; left: -1em; text-align: right; vertical-align: baseline;
+    border: none; display: inline-block;
+    -webkit-touch-callout: none; -webkit-user-select: none;
+    -khtml-user-select: none; -moz-user-select: none;
+    -ms-user-select: none; user-select: none;
+    padding: 0 4px; width: 4em;
+  }
+pre.numberSource { margin-left: 3em;  padding-left: 4px; }
+div.sourceCode
+  {   }
+@media screen {
+pre > code.sourceCode > span > a:first-child::before { text-decoration: underline; }
+}
 </style>
 
 
@@ -312,7 +347,7 @@ ul.task-list li input[type="checkbox"] {
         <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="./week3.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text"><span class="chapter-number">4</span>&nbsp; <span class="chapter-title">¿Qué son los LLM de todos modos?</span></span></a>
+ <span class="menu-text"><span class="chapter-number">4</span>&nbsp; <span class="chapter-title">¿Qué son los LLMs de todos modos?</span></span></a>
   </div>
 </li>
         <li class="sidebar-item">
@@ -357,19 +392,8 @@ ul.task-list li input[type="checkbox"] {
 <div id="quarto-sidebar-glass" class="quarto-sidebar-collapse-item" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item"></div>
 <!-- margin-sidebar -->
     <div id="quarto-margin-sidebar" class="sidebar margin-sidebar">
-        <nav id="TOC" role="doc-toc" class="toc-active">
-    <h2 id="toc-title">Tabla de contenidos</h2>
-   
-  <ul>
-  <li><a href="#confianza" id="toc-confianza" class="nav-link active" data-scroll-target="#confianza"><span class="header-section-number">8.1</span> Confianza</a></li>
-  <li><a href="#pensamiento-crítico" id="toc-pensamiento-crítico" class="nav-link" data-scroll-target="#pensamiento-crítico"><span class="header-section-number">8.2</span> Pensamiento Crítico</a></li>
-  <li><a href="#agencia" id="toc-agencia" class="nav-link" data-scroll-target="#agencia"><span class="header-section-number">8.3</span> Agencia</a></li>
-  <li><a href="#responsabilidad" id="toc-responsabilidad" class="nav-link" data-scroll-target="#responsabilidad"><span class="header-section-number">8.4</span> Responsabilidad</a></li>
-  <li><a href="#atribución" id="toc-atribución" class="nav-link" data-scroll-target="#atribución"><span class="header-section-number">8.5</span> Atribución</a></li>
-  <li><a href="#datos" id="toc-datos" class="nav-link" data-scroll-target="#datos"><span class="header-section-number">8.6</span> Datos</a></li>
-  </ul>
-<div class="quarto-other-links"><h2>Otros Enlaces</h2><ul><li><a href="../es/"><i class="bi bi-link-45deg"></i>Español</a></li><li><a href="../"><i class="bi bi-link-45deg"></i>English</a></li></ul></div></nav>
-    </div>
+        
+    <div class="quarto-other-links"><h2>Otros Enlaces</h2><ul><li><a href="../es/"><i class="bi bi-link-45deg"></i>Español</a></li><li><a href="../"><i class="bi bi-link-45deg"></i>English</a></li></ul></div></div>
 <!-- main -->
 <main class="content" id="quarto-document-content">
 
@@ -393,39 +417,57 @@ ul.task-list li input[type="checkbox"] {
 </header>
 
 
-<p>Invariablemente, hay algunos conceptos que siguen apareciendo en la mayoría de las conversaciones, discusiones, paneles y eventos sobre inteligencia artificial. Más allá de implementaciones generales o específicas de IA, estos conceptos pueden utilizarse como reflexiones individuales o institucionales que pueden ayudarnos a navegar este panorama emergente, especialmente en la educación superior.</p>
-<section id="confianza" class="level2" data-number="8.1">
-<h2 data-number="8.1" class="anchored" data-anchor-id="confianza"><span class="header-section-number">8.1</span> Confianza</h2>
-<p>Este es uno de los conceptos más ubicuos que aparece en las discusiones sobre IA. Estamos experimentando una realineación en la confianza con respecto a las empresas e implementaciones de LLM. Esto incluye cuánto confiamos en los modelos, los datos utilizados para el entrenamiento, la calidad de los resultados, y la forma en que como individuos y como sociedad estamos implementando esta tecnología. En general, puedo aventurarme a decir que todavía estamos descubriendo, como sociedad, la cantidad de confianza que podemos depositar en las implementaciones de LLM.</p>
-<p>Por lo general, la confianza y la reputación son conceptos que requieren tiempo para solidificarse. Sin embargo, los LLM son muy nuevos para el público general y puede requerir algo de tiempo establecer su nivel de confianza. En este momento, considero saludable tener cierto nivel de escepticismo mientras esta confianza social se estabiliza.</p>
-</section>
-<section id="pensamiento-crítico" class="level2" data-number="8.2">
-<h2 data-number="8.2" class="anchored" data-anchor-id="pensamiento-crítico"><span class="header-section-number">8.2</span> Pensamiento Crítico</h2>
-<p>Quizás como una respuesta natural al desarrollo de la <em>confianza</em>, el concepto de pensamiento crítico aparece en todos los círculos que debaten el uso y la influencia de la IA en la educación superior. Entre profesores, estudiantes, e incluso la industria, todos coinciden en que el desarrollo del pensamiento crítico es una de las cualidades más importantes en esta era educativa habilitada por IA.</p>
-<p>Sin embargo, el concepto de pensamiento crítico por sí mismo puede ser desafiante de definir con precisión. Enfocarse en qué significa el pensamiento crítico para ti como estudiante o instructor, especialmente en relación con el uso de LLM, se volverá crucial.</p>
-</section>
-<section id="agencia" class="level2" data-number="8.3">
-<h2 data-number="8.3" class="anchored" data-anchor-id="agencia"><span class="header-section-number">8.3</span> Agencia</h2>
-<p>En el lado más práctico, al hablar sobre implementaciones generales de IA y algunas implementaciones más recientes, el concepto de agencia es clave para entender y promover efectivamente el uso de LLM. En general, la agencia tiene que ver con la cualidad de tomar decisiones. La mayoría de las implementaciones de LLM tienen agencia mínima, limitando esto a tomar decisiones sobre rutas de razonamiento, qué fuentes de datos usar, y qué información es más relevante para el usuario. Sin embargo, cuando se le da más agencia a los LLM (o a los sistemas de IA en general), se vuelve más relevante definir métodos claros de evaluación y supervisión para estos sistemas.</p>
-<p>Mientras más agencia tiene un sistema de IA, más los humanos adquieren un papel de supervisor o gerente. Este concepto también va de la mano con la cantidad de confianza que se otorga -o se gana- por el sistema de IA.</p>
-</section>
-<section id="responsabilidad" class="level2" data-number="8.4">
-<h2 data-number="8.4" class="anchored" data-anchor-id="responsabilidad"><span class="header-section-number">8.4</span> Responsabilidad</h2>
-<p>Cuando las decisiones son tomadas por IA, o usando IA (o LLM) en el proceso de decisión, es importante pensar y definir dónde recae la responsabilidad. Cada vez que tomamos una decisión basada en el resultado de un LLM, debe haber una línea clara de responsabilidad. Por ejemplo, al entregar una tarea, el estudiante debe tener la responsabilidad por información falsa, deducciones erróneas, y calidad deficiente. De manera similar, al crear diapositivas o materiales de clase, el instructor debe cargar con la responsabilidad de información incorrecta o insensible, o descripciones poco útiles.</p>
-</section>
-<section id="atribución" class="level2" data-number="8.5">
-<h2 data-number="8.5" class="anchored" data-anchor-id="atribución"><span class="header-section-number">8.5</span> Atribución</h2>
-<p>Dependiendo del nivel de uso de LLM, la atribución se convierte en un concepto relevante que apoya implementaciones transparentes y la toma de decisiones. Ya sea que los LLM se usen para buscar información, como ayudas de escritura, u organización de contenido, la atribución se vuelve relevante para la confianza y responsabilidad de la implementación.</p>
-<p>Los LLM pueden citarse como fuente de información, o atribuirse como colaborador en un proyecto. Esto muestra el espectro de diferentes roles que los LLM pueden desempeñar en un proyecto, y los diferentes niveles de atribución que pueden utilizarse.</p>
-</section>
-<section id="datos" class="level2" data-number="8.6">
-<h2 data-number="8.6" class="anchored" data-anchor-id="datos"><span class="header-section-number">8.6</span> Datos</h2>
-<p>Finalmente, un concepto relevante que rodea a los LLM son los datos. No solo con los datos utilizados para entrenar el modelo específico, sino también con la gestión de datos del usuario.</p>
-<p>La conciencia sobre los datos de entrenamiento puede ayudar a gestionar posibles sesgos en los resultados, ya sea en los hechos utilizados o en la forma en que se presenta la información. Un desafío presentado con los LLM es la tendencia hacia algún tipo de <em>voz promedio</em>. Muchos instructores se preocupan por que los estudiantes pierdan su voz de escritura.</p>
-<p>Una consideración práctica es con respecto a las políticas particulares de privacidad de datos del LLM. Esto se vuelve muy relevante al compartir información privada. Por ejemplo, para los instructores, compartir datos de estudiantes es muy sensible. También, proporcionar información concerniente a investigación o material con derechos de autor podría ser potencialmente conflictivo.</p>
+<p>Here’s the Spanish translation of week 7 content:</p>
+<div class="sourceCode" id="cb1"><pre class="sourceCode markdown code-with-copy"><code class="sourceCode markdown"><span id="cb1-1"><a href="#cb1-1" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-2"><a href="#cb1-2" aria-hidden="true" tabindex="-1"></a>Invariablemente hay algunos conceptos que siguen apareciendo en la mayoría de las conversaciones, discusiones, paneles y eventos sobre inteligencia artificial. Más allá de implementaciones generales o específicas de IA, estos conceptos pueden usarse como reflexiones individuales o institucionales que pueden ayudarnos a navegar este panorama emergente, especialmente en la educación superior.</span>
+<span id="cb1-3"><a href="#cb1-3" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-4"><a href="#cb1-4" aria-hidden="true" tabindex="-1"></a><span class="fu">## Confianza</span></span>
+<span id="cb1-5"><a href="#cb1-5" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-6"><a href="#cb1-6" aria-hidden="true" tabindex="-1"></a>Este es uno de los conceptos más ubicuos que aparece en las discusiones sobre IA. Estamos experimentando una realineación en la confianza con respecto a las compañías e implementaciones de LLM. Esto incluye cuánto confiamos en los modelos, los datos usados para entrenamiento, la calidad de las salidas, y la forma en que los individuos y la sociedad están implementando esta tecnología. En general, puedo aventurarme a decir que todavía estamos descubriendo, como sociedad, la cantidad de confianza que podemos dar a las implementaciones de LLM.</span>
+<span id="cb1-7"><a href="#cb1-7" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-8"><a href="#cb1-8" aria-hidden="true" tabindex="-1"></a>Usualmente, la confianza y la reputación son conceptos que requieren tiempo para solidificarse. Aún así, los LLMs son muy nuevos para el público en general y podría requerir algo de tiempo para establecer su nivel de confianza. En este momento, considero saludable tener un cierto nivel de escepticismo mientras esta confianza societal se estabiliza.</span>
+<span id="cb1-9"><a href="#cb1-9" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-10"><a href="#cb1-10" aria-hidden="true" tabindex="-1"></a><span class="fu">## Pensamiento Crítico</span></span>
+<span id="cb1-11"><a href="#cb1-11" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-12"><a href="#cb1-12" aria-hidden="true" tabindex="-1"></a>Quizás como una respuesta natural al desarrollo de la *confianza*, el concepto de pensamiento crítico aparece en cada círculo que debate el uso e influencia de la IA en la educación superior. Entre el profesorado, estudiantes, e incluso la industria, todos coinciden en que el desarrollo del pensamiento crítico es una de las cualidades más importantes en esta era educativa habilitada por IA.</span>
+<span id="cb1-13"><a href="#cb1-13" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-14"><a href="#cb1-14" aria-hidden="true" tabindex="-1"></a>Sin embargo, el concepto de pensamiento crítico en sí mismo puede ser desafiante de definir con precisión. Enfocarse en qué significa el pensamiento crítico para ti como estudiante o instructor, aún más en relación con el uso de LLM, se volverá crucial.</span>
+<span id="cb1-15"><a href="#cb1-15" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-16"><a href="#cb1-16" aria-hidden="true" tabindex="-1"></a><span class="fu">## Agencia</span></span>
+<span id="cb1-17"><a href="#cb1-17" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-18"><a href="#cb1-18" aria-hidden="true" tabindex="-1"></a>En el lado más práctico, cuando se habla de implementaciones generales de IA y algunas implementaciones más recientes, el concepto de agencia es clave para entender y promover efectivamente el uso de LLM. En general, la agencia tiene que ver con la cualidad de tomar decisiones. La mayoría de las implementaciones de LLM tienen agencia mínima, limitando esto a tomar decisiones sobre caminos de razonamiento, qué fuentes de datos usar, y qué información es más relevante para el usuario. Sin embargo, siempre que se da más agencia a los LLMs (o sistemas de IA para el caso), se vuelve más relevante definir métodos claros de evaluación y supervisión para estos sistemas.</span>
+<span id="cb1-19"><a href="#cb1-19" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-20"><a href="#cb1-20" aria-hidden="true" tabindex="-1"></a>Cuanta más agencia tiene un sistema de IA, más los humanos adquieren un rol de supervisor o gerente. Este concepto también va a la par con la cantidad de confianza que se da -o se gana- por el sistema de IA.</span>
+<span id="cb1-21"><a href="#cb1-21" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-22"><a href="#cb1-22" aria-hidden="true" tabindex="-1"></a><span class="fu">## Responsabilidad</span></span>
+<span id="cb1-23"><a href="#cb1-23" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-24"><a href="#cb1-24" aria-hidden="true" tabindex="-1"></a>Cuando las decisiones son tomadas por IA, o usando IA (o LLMs) en el proceso de decisión, es importante pensar y definir dónde recae la responsabilidad. Cada vez que tomamos una decisión basada en la salida de un LLM, debe haber una línea clara de responsabilidad. Por ejemplo, al enviar una tarea, el estudiante debe tener la responsabilidad por información falsa, deducciones incorrectas y mala calidad. De manera similar, al crear diapositivas o materiales de clase, el instructor debe cargar con la responsabilidad de información incorrecta o insensible, o descripciones poco útiles.</span>
+<span id="cb1-25"><a href="#cb1-25" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-26"><a href="#cb1-26" aria-hidden="true" tabindex="-1"></a><span class="fu">## Atribución</span></span>
+<span id="cb1-27"><a href="#cb1-27" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-28"><a href="#cb1-28" aria-hidden="true" tabindex="-1"></a>Dependiendo del nivel de uso de LLM, la atribución se convierte en un concepto relevante que apoya implementaciones transparentes y toma de decisiones. Ya sea que los LLMs se usen para buscar información, como ayudas de escritura, u organización de contenido, la atribución se vuelve relevante para la confianza y responsabilidad de la implementación.</span>
+<span id="cb1-29"><a href="#cb1-29" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-30"><a href="#cb1-30" aria-hidden="true" tabindex="-1"></a>Los LLMs pueden citarse como una fuente de información, o atribuirse como un colaborador en un proyecto. Esto muestra el espectro de diferentes roles que los LLMs pueden desempeñar en un proyecto, y los diferentes niveles de atribución que pueden usarse.</span>
+<span id="cb1-31"><a href="#cb1-31" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-32"><a href="#cb1-32" aria-hidden="true" tabindex="-1"></a><span class="fu">## Datos</span></span>
+<span id="cb1-33"><a href="#cb1-33" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-34"><a href="#cb1-34" aria-hidden="true" tabindex="-1"></a>Finalmente, un concepto relevante que rodea a los LLMs son los datos. No solo con los datos usados para entrenar el modelo específico, sino también con la gestión de datos del usuario.</span>
+<span id="cb1-35"><a href="#cb1-35" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-36"><a href="#cb1-36" aria-hidden="true" tabindex="-1"></a>La conciencia de los datos de entrenamiento puede ayudar a gestionar posible sesgo de salida ya sea en los hechos usados o en la forma en que se presenta la información. Un desafío presentado con los LLMs es la tendencia hacia algún tipo de *voz promedio*. Muchos instructores se preocupan por que los estudiantes pierdan su voz de escritura.</span>
+<span id="cb1-37"><a href="#cb1-37" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-38"><a href="#cb1-38" aria-hidden="true" tabindex="-1"></a>Una consideración práctica es con respecto a las políticas particulares de privacidad de datos del LLM. Esto se vuelve muy relevante cuando se comparte información privada. Por ejemplo, para instructores, compartir datos de estudiantes. También, incluir información concerniente a investigación o material con derechos de autor podría potencialmente ser peligroso, ya que el LLM podría estar usando datos de usuario para mejorar su entrenamiento y estos datos con derechos de autor podrían convertirse en parte del conocimiento del LMM.</span>
+<span id="cb1-39"><a href="#cb1-39" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-40"><a href="#cb1-40" aria-hidden="true" tabindex="-1"></a><span class="co">[</span><span class="ot">## Referencias</span><span class="co">]</span>:#</span>
+<span id="cb1-41"><a href="#cb1-41" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-42"><a href="#cb1-42" aria-hidden="true" tabindex="-1"></a><span class="co">[</span><span class="ot">/Users/pedromorales/Dropbox/Projects/LLMs in Teaching and Learning/references/winfield-jirotka-2018-ethical-governance-is-essential-to-building-trust-in-robotics-and-artificial-intelligence-systems.pdf</span><span class="co">]</span>:#</span>
+<span id="cb1-43"><a href="#cb1-43" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-44"><a href="#cb1-44" aria-hidden="true" tabindex="-1"></a><span class="co">[</span><span class="ot">/Users/pedromorales/Dropbox/Projects/LLMs in Teaching and Learning/references/s40561-023-00269-3.pdf</span><span class="co">]</span>:#</span>
+<span id="cb1-45"><a href="#cb1-45" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-46"><a href="#cb1-46" aria-hidden="true" tabindex="-1"></a><span class="co">[</span><span class="ot">/Users/pedromorales/Dropbox/Projects/LLMs in Teaching and Learning/references/FLOTPI-2v1.pdf</span><span class="co">]</span>:#</span>
+<span id="cb1-47"><a href="#cb1-47" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-48"><a href="#cb1-48" aria-hidden="true" tabindex="-1"></a><span class="co">[</span><span class="ot">/Users/pedromorales/Dropbox/Projects/LLMs in Teaching and Learning/references/Chatting and cheating  Ensuring academic integrity in the era of ChatGPT.pdf</span><span class="co">]</span>:#</span></code><button title="Copiar al portapapeles" class="code-copy-button"><i class="bi"></i></button></pre></div>
 
 
-</section>
 
 </main> <!-- /main -->
 <script id="quarto-html-after-body" type="application/javascript">

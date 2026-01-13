@@ -20,6 +20,41 @@ ul.task-list li input[type="checkbox"] {
   margin: 0 0.8em 0.2em -1em; /* quarto-specific, see https://github.com/quarto-dev/quarto-cli/issues/4556 */ 
   vertical-align: middle;
 }
+/* CSS for syntax highlighting */
+html { -webkit-text-size-adjust: 100%; }
+pre > code.sourceCode { white-space: pre; position: relative; }
+pre > code.sourceCode > span { display: inline-block; line-height: 1.25; }
+pre > code.sourceCode > span:empty { height: 1.2em; }
+.sourceCode { overflow: visible; }
+code.sourceCode > span { color: inherit; text-decoration: inherit; }
+div.sourceCode { margin: 1em 0; }
+pre.sourceCode { margin: 0; }
+@media screen {
+div.sourceCode { overflow: auto; }
+}
+@media print {
+pre > code.sourceCode { white-space: pre-wrap; }
+pre > code.sourceCode > span { text-indent: -5em; padding-left: 5em; }
+}
+pre.numberSource code
+  { counter-reset: source-line 0; }
+pre.numberSource code > span
+  { position: relative; left: -4em; counter-increment: source-line; }
+pre.numberSource code > span > a:first-child::before
+  { content: counter(source-line);
+    position: relative; left: -1em; text-align: right; vertical-align: baseline;
+    border: none; display: inline-block;
+    -webkit-touch-callout: none; -webkit-user-select: none;
+    -khtml-user-select: none; -moz-user-select: none;
+    -ms-user-select: none; user-select: none;
+    padding: 0 4px; width: 4em;
+  }
+pre.numberSource { margin-left: 3em;  padding-left: 4px; }
+div.sourceCode
+  {   }
+@media screen {
+pre > code.sourceCode > span > a:first-child::before { text-decoration: underline; }
+}
 </style>
 
 
@@ -312,7 +347,7 @@ ul.task-list li input[type="checkbox"] {
         <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="./week3.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text"><span class="chapter-number">4</span>&nbsp; <span class="chapter-title">¿Qué son los LLM de todos modos?</span></span></a>
+ <span class="menu-text"><span class="chapter-number">4</span>&nbsp; <span class="chapter-title">¿Qué son los LLMs de todos modos?</span></span></a>
   </div>
 </li>
         <li class="sidebar-item">
@@ -357,18 +392,8 @@ ul.task-list li input[type="checkbox"] {
 <div id="quarto-sidebar-glass" class="quarto-sidebar-collapse-item" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item"></div>
 <!-- margin-sidebar -->
     <div id="quarto-margin-sidebar" class="sidebar margin-sidebar">
-        <nav id="TOC" role="doc-toc" class="toc-active">
-    <h2 id="toc-title">Tabla de contenidos</h2>
-   
-  <ul>
-  <li><a href="#resúmenes-y-esquemas" id="toc-resúmenes-y-esquemas" class="nav-link active" data-scroll-target="#resúmenes-y-esquemas"><span class="header-section-number">2.1</span> Resúmenes y esquemas</a></li>
-  <li><a href="#wikipedia" id="toc-wikipedia" class="nav-link" data-scroll-target="#wikipedia"><span class="header-section-number">2.2</span> Wikipedia++</a></li>
-  <li><a href="#traducirreformular" id="toc-traducirreformular" class="nav-link" data-scroll-target="#traducirreformular"><span class="header-section-number">2.3</span> Traducir/reformular</a></li>
-  <li><a href="#ejemplos-y-seguimientos" id="toc-ejemplos-y-seguimientos" class="nav-link" data-scroll-target="#ejemplos-y-seguimientos"><span class="header-section-number">2.4</span> Ejemplos y seguimientos</a></li>
-  <li><a href="#alucinaciones" id="toc-alucinaciones" class="nav-link" data-scroll-target="#alucinaciones"><span class="header-section-number">2.5</span> Alucinaciones</a></li>
-  </ul>
-<div class="quarto-other-links"><h2>Otros Enlaces</h2><ul><li><a href="../es/"><i class="bi bi-link-45deg"></i>Español</a></li><li><a href="../"><i class="bi bi-link-45deg"></i>English</a></li></ul></div></nav>
-    </div>
+        
+    <div class="quarto-other-links"><h2>Otros Enlaces</h2><ul><li><a href="../es/"><i class="bi bi-link-45deg"></i>Español</a></li><li><a href="../"><i class="bi bi-link-45deg"></i>English</a></li></ul></div></div>
 <!-- main -->
 <main class="content" id="quarto-document-content">
 
@@ -392,120 +417,137 @@ ul.task-list li input[type="checkbox"] {
 </header>
 
 
-<p>En este momento, los LLM más populares son:</p>
-<ul>
-<li><a href="https://chat.openai.com/">Chat-GPT</a></li>
-<li><a href="https://claude.ai/">Claude</a></li>
-<li><a href="https://gemini.google.com/">Gemini</a></li>
-<li><a href="http://grok.com/">Grok</a></li>
-<li><a href="https://www.deepseek.com/">DeepSeek</a></li>
-<li><a href="https://www.llama.com/">Llama*</a></li>
-</ul>
-<p>Estos tienen una amplia gama de uso, desde cuentas gratuitas hasta diferentes niveles de suscripciones de pago. Los siguientes casos de uso son independientes del modelo utilizado.</p>
-<p>*Llama no tiene un sitio web dedicado, pero está disponible como compañero en las aplicaciones de Meta, como Facebook, Instagram y WhatsApp.</p>
-<section id="resúmenes-y-esquemas" class="level2" data-number="2.1">
-<h2 data-number="2.1" class="anchored" data-anchor-id="resúmenes-y-esquemas"><span class="header-section-number">2.1</span> Resúmenes y esquemas</h2>
-<p>Una forma poderosa de usar los LLM en la universidad es para resumir información.</p>
-<blockquote class="blockquote">
-<p><strong>PARA ESTUDIANTES</strong></p>
-<p>Usar LLM para resumir notas de clase.</p>
-<p><em>Prueba:</em></p>
-<p><code>dame los puntos más importantes de estas notas de clase [adjunta o copia y pega las notas]</code></p>
-</blockquote>
-<blockquote class="blockquote">
-<p><strong>PARA INSTRUCTORES</strong></p>
-<p>Usar LLM para identificar conceptos clave de las fuentes.</p>
-<p><em>Prueba:</em></p>
-<p><code>dame las cinco ideas más importantes de este artículo [adjunta, copia y pega, o incluye URL]</code></p>
-</blockquote>
-<p>Hoy en día, la mayoría de los LLM tienen la opción de tomar múltiples formatos de entrada. Puedes incluir una combinación de texto, imágenes, videos, presentaciones de diapositivas y otros como parte de tu prompt.</p>
-<p>Los LLM proporcionan resúmenes muy buenos, sin embargo, como veremos a lo largo de este curso, podrían haber deficiencias como alucinaciones y sesgo de contexto.</p>
-<p>Resumir implica conocimiento específico del tema. En otras palabras, crear un resumen requiere definir <strong>qué</strong> es importante o relevante de la información dada. Lo que es importante podría ser una tarea ligeramente subjetiva.</p>
-<p>Proporcionar a los LLM más contexto puede hacer que los resultados sean más efectivos.</p>
-<blockquote class="blockquote">
-<p><strong>Prueba:</strong></p>
-<p>En lugar de los prompts simples de antes, intenta agregar más contexto incluyendo descripciones detalladas sobre el curso, el tipo de recurso, la audiencia y el enfoque esperado,</p>
-<p><code>Estas notas son de un curso de biología universitario de primer año dirigido a estudiantes que no son especialistas, enfocándose en las semanas anteriores en la teoría celular, orgánulos celulares y sus funciones.</code></p>
-</blockquote>
-</section>
-<section id="wikipedia" class="level2" data-number="2.2">
-<h2 data-number="2.2" class="anchored" data-anchor-id="wikipedia"><span class="header-section-number">2.2</span> Wikipedia++</h2>
-<p>Más que resumir información dada, los LLM también pueden ayudar con la búsqueda de información muy específica en la web.</p>
-<p>Internet está lleno de información sobre prácticamente cualquier tema conocido por los humanos -hasta cierto punto-. A veces navegar esto puede ser difícil. Los LLM pueden ser utilizados para recopilar información sobre conceptos del curso, herramientas o estrategias.</p>
-<blockquote class="blockquote">
-<table class="caption-top table">
-<colgroup>
-<col style="width: 50%">
-<col style="width: 50%">
-</colgroup>
-<thead>
-<tr class="header">
-<th><strong>Para estudiantes</strong></th>
-<th><strong>Para instructores</strong></th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>puedes hacer prompts para obtener información sobre un tema de clase e incluso para referencias y recursos en línea. <br> <strong>Prueba:</strong> <br> <code>¿qué son los valores propios para el disco?</code></td>
-<td>puedes usar LLM para buscar estrategias de enseñanza, actividades grupales o ideas para tareas. <br> <strong>Prueba:</strong> <br><code>dame ideas para hojas de trabajo sobre valores propios del laplaciano en dominios 2D.</code></td>
-</tr>
-</tbody>
-</table>
-</blockquote>
-<p>Una de las ventajas de usar LLM es que son bastante útiles incluso si no estás 100% seguro de cómo formular tu consulta. En este caso, una ventaja sobre la búsqueda web regular es que solo una descripción vaga de una pregunta aún puede proporcionar información útil.</p>
-<p>Muchas de las salidas incluyen referencias que pueden ser utilizadas para verificar la precisión de la respuesta e ir más profundo en el tema. Como siempre, ten cuidado con las <em>alucinaciones</em>.</p>
-</section>
-<section id="traducirreformular" class="level2" data-number="2.3">
-<h2 data-number="2.3" class="anchored" data-anchor-id="traducirreformular"><span class="header-section-number">2.3</span> Traducir/reformular</h2>
-<p>Una implementación muy útil de los LLM para cursos es traducir y reformular texto. Esto es particularmente relevante para comunicar ideas en un lenguaje más accesible, así como para individuos ESL (Inglés como Segunda Lengua).</p>
-<blockquote class="blockquote">
-<table class="caption-top table">
-<colgroup>
-<col style="width: 50%">
-<col style="width: 50%">
-</colgroup>
-<thead>
-<tr class="header">
-<th><strong>Para estudiantes</strong></th>
-<th><strong>Para instructores</strong></th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>Usa LLM para reformular preguntas o problemas. Puedes hacer prompts para reformular algo con lenguaje menos o más técnico. Para estudiantes ESL, haz prompts a los LLM para traducir las preguntas o materiales a tu idioma nativo.</td>
-<td>Usa LLM para simplificar el lenguaje o para proporcionar notas aclaratorias. También puedes usarlos como una forma de revisar tu material y calibrar el nivel académico del mismo.</td>
-</tr>
-</tbody>
-</table>
-</blockquote>
-</section>
-<section id="ejemplos-y-seguimientos" class="level2" data-number="2.4">
-<h2 data-number="2.4" class="anchored" data-anchor-id="ejemplos-y-seguimientos"><span class="header-section-number">2.4</span> Ejemplos y seguimientos</h2>
-<p>Otro uso práctico de los LLM es la capacidad de generar ejemplos de ciertos temas, así como producir seguimientos, justo como en una conversación regular.</p>
-<blockquote class="blockquote">
-<p><strong>PARA ESTUDIANTES</strong></p>
-<p>Puedes hacer prompts para generar ejemplos de un tema o concepto.</p>
-<p><strong>Prueba:</strong></p>
-<p><code>dame un ejemplo de equilibrio de ecuaciones químicas</code></p>
-<p>Con el ejemplo proporcionado, haz preguntas de seguimiento para aclarar, reformular o modificar la respuesta</p>
-<p><code>¿por qué necesitamos 2 H2O en el lado derecho en el paso 4?</code></p>
-</blockquote>
-<blockquote class="blockquote">
-<p><strong>PARA INSTRUCTORES</strong></p>
-<p>Generar ideas de posibles ejemplos para explorar en clase</p>
-<p><code>dame ideas para problemas que involucren la ecuación de Schrödinger para un curso de química de segundo año sin usar ecuaciones diferenciales.</code></p>
-<p>Como seguimiento puedes hacer prompts para sugerencias sobre las actividades</p>
-<p><code>sugiere una actividad en grupos por 20 minutos basada en el tipo de problema 4.</code></p>
-</blockquote>
-</section>
-<section id="alucinaciones" class="level2" data-number="2.5">
-<h2 data-number="2.5" class="anchored" data-anchor-id="alucinaciones"><span class="header-section-number">2.5</span> Alucinaciones</h2>
-<p>Una consideración común al usar LLM son las <em>alucinaciones</em>. Estas son respuestas no factuales o referencias inventadas. Es importante <strong>siempre</strong> verificar los hechos en las respuestas generadas por cualquier LLM.</p>
-<p>Una buena estrategia es tomar las salidas de LLM como borradores iniciales, puntos de partida o ideas amplias sobre un tema.</p>
-<p>Los modelos más nuevos están mejorando en el manejo de alucinaciones, sin embargo no deberíamos confiar ciegamente en la salida de un LLM.</p>
+<p>Here’s the Spanish translation of the first week content:</p>
+<div class="sourceCode" id="cb1"><pre class="sourceCode markdown code-with-copy"><code class="sourceCode markdown"><span id="cb1-1"><a href="#cb1-1" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-2"><a href="#cb1-2" aria-hidden="true" tabindex="-1"></a>Al momento actual, los LLMs más populares son:</span>
+<span id="cb1-3"><a href="#cb1-3" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-4"><a href="#cb1-4" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span><span class="co">[</span><span class="ot">Chat-GPT</span><span class="co">](https://chat.openai.com/)</span></span>
+<span id="cb1-5"><a href="#cb1-5" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span><span class="co">[</span><span class="ot">Claude</span><span class="co">](https://claude.ai/)</span></span>
+<span id="cb1-6"><a href="#cb1-6" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span><span class="co">[</span><span class="ot">Gemini</span><span class="co">](https://gemini.google.com/)</span></span>
+<span id="cb1-7"><a href="#cb1-7" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span><span class="co">[</span><span class="ot">Grok</span><span class="co">](http://grok.com/)</span></span>
+<span id="cb1-8"><a href="#cb1-8" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span><span class="co">[</span><span class="ot">DeepSeek</span><span class="co">](https://www.deepseek.com/)</span></span>
+<span id="cb1-9"><a href="#cb1-9" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span><span class="co">[</span><span class="ot">Llama*</span><span class="co">](https://www.llama.com/)</span></span>
+<span id="cb1-10"><a href="#cb1-10" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-11"><a href="#cb1-11" aria-hidden="true" tabindex="-1"></a>Estos tienen una amplia gama de uso, desde cuentas gratuitas hasta diferentes niveles de suscripciones pagadas. Los siguientes casos de uso son independientes del modelo utilizado.</span>
+<span id="cb1-12"><a href="#cb1-12" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-13"><a href="#cb1-13" aria-hidden="true" tabindex="-1"></a>*Llama no tiene un sitio web dedicado pero está disponible como compañero en las aplicaciones de Meta, como Facebook, Instagram y WhatsApp.</span>
+<span id="cb1-14"><a href="#cb1-14" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-15"><a href="#cb1-15" aria-hidden="true" tabindex="-1"></a><span class="fu">## Resúmenes y esquemas</span></span>
+<span id="cb1-16"><a href="#cb1-16" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-17"><a href="#cb1-17" aria-hidden="true" tabindex="-1"></a>Una forma poderosa de usar LLMs en la universidad es para resumir información.</span>
+<span id="cb1-18"><a href="#cb1-18" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-19"><a href="#cb1-19" aria-hidden="true" tabindex="-1"></a><span class="at">&gt; **PARA ESTUDIANTES**</span></span>
+<span id="cb1-20"><a href="#cb1-20" aria-hidden="true" tabindex="-1"></a><span class="at">&gt;</span></span>
+<span id="cb1-21"><a href="#cb1-21" aria-hidden="true" tabindex="-1"></a><span class="at">&gt; Usar LLMs para resumir notas de clase.</span></span>
+<span id="cb1-22"><a href="#cb1-22" aria-hidden="true" tabindex="-1"></a><span class="at">&gt; </span></span>
+<span id="cb1-23"><a href="#cb1-23" aria-hidden="true" tabindex="-1"></a><span class="at">&gt; *Prueba:*</span></span>
+<span id="cb1-24"><a href="#cb1-24" aria-hidden="true" tabindex="-1"></a><span class="at">&gt;</span></span>
+<span id="cb1-25"><a href="#cb1-25" aria-hidden="true" tabindex="-1"></a><span class="at">&gt; </span><span class="in">`dame los puntos más importantes de estas notas de clase [adjuntar o copiar y pegar notas]`</span></span>
+<span id="cb1-26"><a href="#cb1-26" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-27"><a href="#cb1-27" aria-hidden="true" tabindex="-1"></a><span class="at">&gt; **PARA INSTRUCTORES**</span></span>
+<span id="cb1-28"><a href="#cb1-28" aria-hidden="true" tabindex="-1"></a><span class="at">&gt;</span></span>
+<span id="cb1-29"><a href="#cb1-29" aria-hidden="true" tabindex="-1"></a><span class="at">&gt; Usar LLMs para identificar conceptos clave de fuentes.</span></span>
+<span id="cb1-30"><a href="#cb1-30" aria-hidden="true" tabindex="-1"></a><span class="at">&gt;</span></span>
+<span id="cb1-31"><a href="#cb1-31" aria-hidden="true" tabindex="-1"></a><span class="at">&gt; *Prueba:*</span></span>
+<span id="cb1-32"><a href="#cb1-32" aria-hidden="true" tabindex="-1"></a><span class="at">&gt;</span></span>
+<span id="cb1-33"><a href="#cb1-33" aria-hidden="true" tabindex="-1"></a><span class="at">&gt;</span><span class="in">`dame las cinco ideas más importantes de este artículo [adjuntar, copiar y pegar, o incluir URL]`</span></span>
+<span id="cb1-34"><a href="#cb1-34" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-35"><a href="#cb1-35" aria-hidden="true" tabindex="-1"></a>Hoy en día, la mayoría de los LLMs tienen la opción de aceptar múltiples formatos de entrada (multimodal). Puedes incluir una combinación de texto, imagen, videos, presentaciones y otros como parte de tu prompt.</span>
+<span id="cb1-36"><a href="#cb1-36" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-37"><a href="#cb1-37" aria-hidden="true" tabindex="-1"></a>Los LLMs proporcionan resúmenes muy buenos, sin embargo, como veremos a lo largo de este curso, podría haber deficiencias como alucinaciones y sesgo de contexto.</span>
+<span id="cb1-38"><a href="#cb1-38" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-39"><a href="#cb1-39" aria-hidden="true" tabindex="-1"></a>*Observación*: Resumir implica conocimiento específico de la materia. En otras palabras, crear un resumen requiere definir **qué** es importante o relevante de la información dada. Lo que es importante podría ser una tarea ligeramente subjetiva.</span>
+<span id="cb1-40"><a href="#cb1-40" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-41"><a href="#cb1-41" aria-hidden="true" tabindex="-1"></a>Proporcionar a los LLMs más contexto puede hacer los resultados más efectivos.</span>
+<span id="cb1-42"><a href="#cb1-42" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-43"><a href="#cb1-43" aria-hidden="true" tabindex="-1"></a><span class="at">&gt; **Prueba:**</span></span>
+<span id="cb1-44"><a href="#cb1-44" aria-hidden="true" tabindex="-1"></a><span class="at">&gt;</span></span>
+<span id="cb1-45"><a href="#cb1-45" aria-hidden="true" tabindex="-1"></a><span class="at">&gt; En lugar de los prompts simples de antes, intenta agregar más contexto incluyendo descripciones detalladas sobre el curso, el tipo de recurso, la audiencia y el enfoque esperado,</span></span>
+<span id="cb1-46"><a href="#cb1-46" aria-hidden="true" tabindex="-1"></a><span class="at">&gt;</span></span>
+<span id="cb1-47"><a href="#cb1-47" aria-hidden="true" tabindex="-1"></a><span class="at">&gt; </span><span class="in">`Estas notas son de un curso universitario de biología de primer año dirigido a estudiantes que no son de la especialidad, enfocándose en las semanas anteriores en la teoría celular, los orgánulos celulares y sus funciones.`</span></span>
+<span id="cb1-48"><a href="#cb1-48" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-49"><a href="#cb1-49" aria-hidden="true" tabindex="-1"></a><span class="fu">## Wikipedia++</span></span>
+<span id="cb1-50"><a href="#cb1-50" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-51"><a href="#cb1-51" aria-hidden="true" tabindex="-1"></a>Más allá de resumir información dada, los LLMs también pueden ayudar con la búsqueda de información muy específica en la web.</span>
+<span id="cb1-52"><a href="#cb1-52" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-53"><a href="#cb1-53" aria-hidden="true" tabindex="-1"></a>El internet está lleno de información sobre prácticamente cualquier tema conocido por los humanos -hasta cierto grado-. A veces navegar esto puede ser difícil. Los LLMs pueden usarse para reunir información sobre conceptos del curso, herramientas o estrategias.</span>
+<span id="cb1-54"><a href="#cb1-54" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-55"><a href="#cb1-55" aria-hidden="true" tabindex="-1"></a><span class="at">&gt; </span><span class="pp">|</span><span class="at">**Para estudiantes** | **Para instructores**</span><span class="pp">|</span></span>
+<span id="cb1-56"><a href="#cb1-56" aria-hidden="true" tabindex="-1"></a><span class="at">&gt; </span><span class="pp">|---|---|</span></span>
+<span id="cb1-57"><a href="#cb1-57" aria-hidden="true" tabindex="-1"></a><span class="at">&gt; </span><span class="pp">|</span><span class="at">puedes hacer prompts para obtener información sobre un tema de clase e incluso para referencias y recursos en línea. </span><span class="dt">&lt;</span><span class="kw">br</span><span class="dt">&gt;</span><span class="at"> **Prueba:** &lt;br&gt; `¿qué son los valores propios para el disco? Busca recursos en internet.` | puedes usar LLMs para buscar estrategias de enseñanza, actividades grupales o ideas de tareas. &lt;br&gt; **Prueba:**  </span><span class="dt">&lt;</span><span class="kw">br</span><span class="dt">&gt;</span><span class="in">`dame ideas para hojas de trabajo sobre valores propios del laplaciano en dominios 2D. encuentra ejemplos en internet de cursos universitarios.`</span><span class="pp">|</span></span>
+<span id="cb1-58"><a href="#cb1-58" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-59"><a href="#cb1-59" aria-hidden="true" tabindex="-1"></a>Una de las ventajas de usar LLMs es que son bastante útiles incluso si no estás 100% seguro de cómo formular tu consulta. En este caso, una ventaja sobre la búsqueda web regular es que solo una descripción vaga de una pregunta aún puede proporcionar información útil.</span>
+<span id="cb1-60"><a href="#cb1-60" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-61"><a href="#cb1-61" aria-hidden="true" tabindex="-1"></a>Muchas de las respuestas incluyen referencias que pueden usarse para verificar la precisión de la respuesta y para profundizar en el tema. Como siempre, ten cuidado con las *alucinaciones*.</span>
+<span id="cb1-62"><a href="#cb1-62" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-63"><a href="#cb1-63" aria-hidden="true" tabindex="-1"></a><span class="fu">## Traducir/reformular</span></span>
+<span id="cb1-64"><a href="#cb1-64" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-65"><a href="#cb1-65" aria-hidden="true" tabindex="-1"></a>Una implementación muy útil de los LLMs para cursos es traducir y reformular texto. Esto es particularmente relevante para comunicar ideas en un lenguaje más accesible, así como para individuos ESL (inglés como segundo idioma).</span>
+<span id="cb1-66"><a href="#cb1-66" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-67"><a href="#cb1-67" aria-hidden="true" tabindex="-1"></a><span class="at">&gt; </span><span class="pp">|</span><span class="at">**Para estudiantes** | **Para instructores**</span><span class="pp">|</span></span>
+<span id="cb1-68"><a href="#cb1-68" aria-hidden="true" tabindex="-1"></a><span class="at">&gt; </span><span class="pp">|---|---|</span></span>
+<span id="cb1-69"><a href="#cb1-69" aria-hidden="true" tabindex="-1"></a><span class="at">&gt; </span><span class="pp">|</span><span class="at">Usa LLMs para reformular preguntas o problemas. Puedes hacer prompts para reformular algo con lenguaje menos o más técnico. Para estudiantes ESL, haz prompts a los LLMs para traducir las preguntas o materiales a tu idioma nativo. </span><span class="pp">|</span><span class="at"> Usa LLMs para simplificar el lenguaje o para proporcionar notas aclaratorias. También puedes usarlos como una forma de revisar tu material y calibrar el nivel académico del mismo.</span><span class="pp">|</span></span>
+<span id="cb1-70"><a href="#cb1-70" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-71"><a href="#cb1-71" aria-hidden="true" tabindex="-1"></a><span class="fu">## Gramática y coherencia</span></span>
+<span id="cb1-72"><a href="#cb1-72" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-73"><a href="#cb1-73" aria-hidden="true" tabindex="-1"></a>¡No solo los estudiantes e instructores ESL pueden beneficiarse de una revisión de gramática/redacción! Usar LLMs como ayudas de escritura personalizadas puede ayudar a pulir borradores sin perder tu voz.</span>
+<span id="cb1-74"><a href="#cb1-74" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-75"><a href="#cb1-75" aria-hidden="true" tabindex="-1"></a><span class="at">&gt; </span><span class="pp">|</span><span class="at">**Para estudiantes** | **Para instructores**</span><span class="pp">|</span></span>
+<span id="cb1-76"><a href="#cb1-76" aria-hidden="true" tabindex="-1"></a><span class="at">&gt; </span><span class="pp">|---|---|</span></span>
+<span id="cb1-77"><a href="#cb1-77" aria-hidden="true" tabindex="-1"></a><span class="at">&gt; </span><span class="pp">|</span><span class="in">`en el siguiente texto, mantén mi voz y corrige problemas de gramática. [texto...]`</span><span class="pp">|</span><span class="at"> </span><span class="in">`revisa el siguiente texto en busca de coherencia, claridad y errores tipográficos. asegúrate de que el lenguaje sea claro para un curso de cálculo de primer año para estudiantes de matemáticas. [texto...]`</span><span class="pp">|</span></span>
+<span id="cb1-78"><a href="#cb1-78" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-79"><a href="#cb1-79" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-80"><a href="#cb1-80" aria-hidden="true" tabindex="-1"></a><span class="fu">## Ejemplos y seguimientos</span></span>
+<span id="cb1-81"><a href="#cb1-81" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-82"><a href="#cb1-82" aria-hidden="true" tabindex="-1"></a>Otro uso práctico de los LLMs es la capacidad de generar ejemplos de ciertos temas, así como producir seguimientos, igual que en una conversación regular.</span>
+<span id="cb1-83"><a href="#cb1-83" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-84"><a href="#cb1-84" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-85"><a href="#cb1-85" aria-hidden="true" tabindex="-1"></a><span class="at">&gt;**PARA ESTUDIANTES** </span></span>
+<span id="cb1-86"><a href="#cb1-86" aria-hidden="true" tabindex="-1"></a><span class="at">&gt; </span></span>
+<span id="cb1-87"><a href="#cb1-87" aria-hidden="true" tabindex="-1"></a><span class="at">&gt; Puedes hacer prompts para generar ejemplos de un tema o concepto.</span></span>
+<span id="cb1-88"><a href="#cb1-88" aria-hidden="true" tabindex="-1"></a><span class="at">&gt;</span></span>
+<span id="cb1-89"><a href="#cb1-89" aria-hidden="true" tabindex="-1"></a><span class="at">&gt;**Prueba:**</span></span>
+<span id="cb1-90"><a href="#cb1-90" aria-hidden="true" tabindex="-1"></a><span class="at">&gt;</span></span>
+<span id="cb1-91"><a href="#cb1-91" aria-hidden="true" tabindex="-1"></a><span class="at">&gt; </span><span class="in">`dame un ejemplo de balanceo de ecuaciones químicas`</span>  </span>
+<span id="cb1-92"><a href="#cb1-92" aria-hidden="true" tabindex="-1"></a><span class="at">&gt; </span></span>
+<span id="cb1-93"><a href="#cb1-93" aria-hidden="true" tabindex="-1"></a><span class="at">&gt; Con el ejemplo proporcionado, haz preguntas de seguimiento para aclarar, reformular o modificar la respuesta</span></span>
+<span id="cb1-94"><a href="#cb1-94" aria-hidden="true" tabindex="-1"></a><span class="at">&gt;</span></span>
+<span id="cb1-95"><a href="#cb1-95" aria-hidden="true" tabindex="-1"></a><span class="at">&gt; </span><span class="in">`¿por qué necesitamos 2 H2Os en el lado derecho en el paso 4?`</span></span>
+<span id="cb1-96"><a href="#cb1-96" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-97"><a href="#cb1-97" aria-hidden="true" tabindex="-1"></a><span class="at">&gt;**PARA INSTRUCTORES** </span></span>
+<span id="cb1-98"><a href="#cb1-98" aria-hidden="true" tabindex="-1"></a><span class="at">&gt; </span></span>
+<span id="cb1-99"><a href="#cb1-99" aria-hidden="true" tabindex="-1"></a><span class="at">&gt; Genera ideas de posibles ejemplos para explorar en clase</span></span>
+<span id="cb1-100"><a href="#cb1-100" aria-hidden="true" tabindex="-1"></a><span class="at">&gt;</span></span>
+<span id="cb1-101"><a href="#cb1-101" aria-hidden="true" tabindex="-1"></a><span class="at">&gt; </span><span class="in">`dame ideas para problemas que involucren la ecuación de Schrödinger para un curso de química de segundo año sin usar ecuaciones diferenciales.`</span><span class="at"> </span></span>
+<span id="cb1-102"><a href="#cb1-102" aria-hidden="true" tabindex="-1"></a><span class="at">&gt; </span></span>
+<span id="cb1-103"><a href="#cb1-103" aria-hidden="true" tabindex="-1"></a><span class="at">&gt; Como seguimiento puedes hacer prompts para sugerencias sobre las actividades</span></span>
+<span id="cb1-104"><a href="#cb1-104" aria-hidden="true" tabindex="-1"></a><span class="at">&gt; </span></span>
+<span id="cb1-105"><a href="#cb1-105" aria-hidden="true" tabindex="-1"></a><span class="at">&gt; </span><span class="in">`sugiere una actividad en grupos de 20 minutos basada en el tipo de problema 4.`</span></span>
+<span id="cb1-106"><a href="#cb1-106" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-107"><a href="#cb1-107" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-108"><a href="#cb1-108" aria-hidden="true" tabindex="-1"></a><span class="fu">## Alucinaciones</span></span>
+<span id="cb1-109"><a href="#cb1-109" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-110"><a href="#cb1-110" aria-hidden="true" tabindex="-1"></a>Una consideración común al usar LLMs son las *alucinaciones*. Estas son respuestas no factuales o referencias inventadas. Es importante **siempre** verificar los hechos en las respuestas generadas por cualquier LLM.</span>
+<span id="cb1-111"><a href="#cb1-111" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-112"><a href="#cb1-112" aria-hidden="true" tabindex="-1"></a>Una buena estrategia es tomar las respuestas de los LLMs como borradores iniciales, puntos de partida o perspectivas amplias sobre un tema.</span>
+<span id="cb1-113"><a href="#cb1-113" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-114"><a href="#cb1-114" aria-hidden="true" tabindex="-1"></a>Los modelos más nuevos están mejorando en el manejo de alucinaciones, sin embargo no debemos confiar ciegamente en la salida de los LLMs.</span>
+<span id="cb1-115"><a href="#cb1-115" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-116"><a href="#cb1-116" aria-hidden="true" tabindex="-1"></a><span class="co">[</span><span class="ot">## Referencias</span><span class="co">]</span>:#</span>
+<span id="cb1-117"><a href="#cb1-117" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-118"><a href="#cb1-118" aria-hidden="true" tabindex="-1"></a><span class="co">[</span><span class="ot">/Users/pedromorales/Dropbox/Projects/LLMs in Teaching and Learning/references/1-s2.0-S1041608023000195-main.pdf</span><span class="co">]</span>:#</span>
+<span id="cb1-119"><a href="#cb1-119" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-120"><a href="#cb1-120" aria-hidden="true" tabindex="-1"></a><span class="co">[</span><span class="ot">/Users/pedromorales/Dropbox/Projects/LLMs in Teaching and Learning/references/feduc-09-1392091.pdf</span><span class="co">]</span>:# </span>
+<span id="cb1-121"><a href="#cb1-121" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-122"><a href="#cb1-122" aria-hidden="true" tabindex="-1"></a><span class="co">[</span><span class="ot">/Users/pedromorales/Dropbox/Projects/LLMs in Teaching and Learning/references/qian-2025-prompt-engineering-in-education-a-systematic-review-of-approaches-and-educational-applications.pdf</span><span class="co">]</span>:# </span>
+<span id="cb1-123"><a href="#cb1-123" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-124"><a href="#cb1-124" aria-hidden="true" tabindex="-1"></a><span class="co">[</span><span class="ot">/Users/pedromorales/Dropbox/Projects/LLMs in Teaching and Learning/references/s40561-024-00295-9.pdf</span><span class="co">]</span>:# </span>
+<span id="cb1-125"><a href="#cb1-125" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-126"><a href="#cb1-126" aria-hidden="true" tabindex="-1"></a><span class="co">[</span><span class="ot">/Users/pedromorales/Dropbox/Projects/LLMs in Teaching and Learning/references/s43621-025-00815-8.pdf</span><span class="co">]</span>:# </span>
+<span id="cb1-127"><a href="#cb1-127" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-128"><a href="#cb1-128" aria-hidden="true" tabindex="-1"></a><span class="co">[</span><span class="ot">/Users/pedromorales/Dropbox/Projects/LLMs in Teaching and Learning/references/su-(su-jia-hong)-yang-(yang-wei-peng)-2023-unlocking-the-power-of-chatgpt-a-framework-for-applying-generative-ai-in.pdf</span><span class="co">]</span>:#</span></code><button title="Copiar al portapapeles" class="code-copy-button"><i class="bi"></i></button></pre></div>
 
 
-</section>
 
 </main> <!-- /main -->
 <script id="quarto-html-after-body" type="application/javascript">
